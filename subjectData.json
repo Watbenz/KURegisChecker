@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "∑∫dx",
+    "subjectId": "01417111",
+    "name": "Calculus 1",
+    "difficultLevel": "QUITE_HARD",
+    "credit": 3,
+    "isFinish": false
+  },
+  {
+    "icon": "0101",
+    "subjectId": "01418114",
+    "name": "Introduction to computer science",
+    "difficultLevel": "QUITE_EASY",
+    "credit": 2,
+    "isFinish": false
+  },
+  {
+    "icon": "KU",
+    "subjectId": "01999111",
+    "name": "Knowledge of the land",
+    "difficultLevel": "EASY",
+    "credit": 2,
+    "isFinish": false
+  }
+]
