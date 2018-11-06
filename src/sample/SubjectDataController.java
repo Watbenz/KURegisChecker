@@ -1,11 +1,10 @@
 package sample;
 
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
+import javafx.scene.shape.Ellipse;
 
 public class SubjectDataController {
     @FXML StackPane subjectDetailStackPane;
@@ -15,6 +14,7 @@ public class SubjectDataController {
     @FXML Label difficultLevelLabel;
     @FXML Label creditLabel;
     @FXML CheckBox subjectPassedCheckbox;
+    @FXML Ellipse iconEllipse;
     private Subject subject;
 
     @FXML
@@ -29,13 +29,9 @@ public class SubjectDataController {
         difficultLevelLabel.setText("ระดับความยาก : " + subject.getDifficultLevel());
         creditLabel.setText(subject.getCredit() + " หน่วยกิต");
         subjectPassedCheckbox.setAllowIndeterminate(subject.isFinish());
-    }
 
-    public Label getNameLabel() {
-        return subjectNameLabel;
-    }
-
-    public ObservableList<Node> getChildren() {
-        return subjectDetailStackPane.getChildren();
+        iconEllipse.setFill(subject.getDifficlutLevelColor());
+        iconEllipse.setStroke(subject.getDifficlutLevelColor());
+        difficultLevelLabel.setTextFill(subject.getDifficlutLevelColor());
     }
 }

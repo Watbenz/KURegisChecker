@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.scene.paint.Color;
+
 public class Subject {
     private String icon;
     private String subjectId;
@@ -31,6 +33,10 @@ public class Subject {
 
     public String getDifficultLevel() {
         return difficultLevel.getAsString();
+    }
+
+    public Color getDifficlutLevelColor() {
+        return difficultLevel.getColor();
     }
 
     public int getCredit() {
