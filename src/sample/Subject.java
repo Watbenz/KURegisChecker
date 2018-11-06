@@ -6,24 +6,15 @@ public class Subject {
     private String name;
     private DifficultLevel difficultLevel;
     private int credit;
-    private boolean isFinish;
+    private boolean finish;
 
-    public Subject() {
-        this.icon = "";
-        this.subjectId = "";
-        this.name = "";
-        this.difficultLevel = DifficultLevel.NONE;
-        this.credit = 0;
-        this.isFinish = false;
-    }
-
-    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int weight, boolean isFinish) {
+    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int weight, boolean finish) {
         this.icon = icon;
         this.subjectId = subjectId;
         this.name = name;
         this.difficultLevel = difficultLevel;
         this.credit = weight;
-        this.isFinish = isFinish;
+        this.finish = finish;
     }
 
     public String getIcon() {
@@ -47,10 +38,10 @@ public class Subject {
     }
 
     public boolean isFinish() {
-        return isFinish;
+        return finish;
     }
 
     public void setFinish(boolean finish) {
-        isFinish = finish;
+        this.finish = finish;
     }
 }

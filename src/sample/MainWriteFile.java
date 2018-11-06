@@ -23,7 +23,7 @@ public class MainWriteFile {
         String json = gson.toJson(allSubject);
 
         try {
-            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("subjectData.json")));
+            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("SubjectDataController.json")));
             writer.println(json);
             writer.close();
         } catch (IOException e) {
