@@ -1,1 +1,50 @@
-[{"icon":"∑∫dx","subjectId":"01417111","name":"Calculus 1","difficultLevel":"QUITE_HARD","credit":3,"finish":false},{"icon":"0101","subjectId":"01418114","name":"Introduction to computer science","difficultLevel":"QUITE_EASY","credit":2,"finish":false},{"icon":"KU","subjectId":"01999111","name":"Knowledge of the land","difficultLevel":"EASY","credit":2,"finish":false},{"icon":".py","subjectId":"01418113","name":"Fundamental Programing","difficultLevel":"MEDIUM","credit":3,"finish":false},{"icon":"IC_","subjectId":"01418131","name":"Digital computer logic","difficultLevel":"MEDIUM","credit":3,"finish":false},{"icon":"Eng","subjectId":"01355112","name":"English xxxxxx","difficultLevel":"ANY","credit":3,"finish":false}]
+[
+  {
+    "icon": "∑∫dx",
+    "subjectId": "01417111",
+    "name": "Calculus 1",
+    "difficultLevel": "QUITE_HARD",
+    "credit": 3,
+    "finish": false
+  },
+  {
+    "icon": "0101",
+    "subjectId": "01418114",
+    "name": "Introduction to computer science",
+    "difficultLevel": "QUITE_EASY",
+    "credit": 2,
+    "finish": false
+  },
+  {
+    "icon": "KU",
+    "subjectId": "01999111",
+    "name": "Knowledge of the land",
+    "difficultLevel": "EASY",
+    "credit": 2,
+    "finish": false
+  },
+  {
+    "icon": ".py",
+    "subjectId": "01418113",
+    "name": "Fundamental Programing",
+    "difficultLevel": "MEDIUM",
+    "credit": 3,
+    "finish": false
+  },
+  {
+    "icon": "IC_",
+    "subjectId": "01418131",
+    "name": "Digital computer logic",
+    "difficultLevel": "MEDIUM",
+    "credit": 3,
+    "finish": false
+  },
+  {
+    "icon": "Eng",
+    "subjectId": "01355112",
+    "name": "English xxxxxx",
+    "difficultLevel": "ANY",
+    "credit": 3,
+    "finish": false
+  }
+]
