@@ -17,6 +17,7 @@ public class MainPageController {
     @FXML private Stage stage;
     @FXML private StackPane chooseYearStackPane;
     @FXML private StackPane chooseCourseStackPane;
+    @FXML private StackPane goTodetail;
 
     public MainPageController() {
     }
@@ -24,6 +25,7 @@ public class MainPageController {
     @FXML
     public void initialize() {
         handleChangeToChooseYearPageOnclickStackPane();
+        goToDetail();
     }
 
     public void setStage(Stage stage) {
@@ -40,6 +42,23 @@ public class MainPageController {
                     stage.setScene(new Scene(root, 800, 600));
 
                     ChooseYearPageController controller = loader.getController();
+                    controller.setStage(stage);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+    private void goToDetail(){
+        goTodetail.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                try {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("detailsPage.fxml"));
+                    Parent root = loader.load();
+                    stage.setScene(new Scene(root, 800, 600));
+
+                    DetailsPageController controller = loader.getController();
                     controller.setStage(stage);
                 } catch (IOException e) {
                     e.printStackTrace();
