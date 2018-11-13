@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,15 +16,15 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class SubjectDataController {
-    @FXML Stage stage;
-    @FXML StackPane subjectDetailStackPane;
-    @FXML Label iconLabel;
-    @FXML Label subjectIdLabel;
-    @FXML Label subjectNameLabel;
-    @FXML Label difficultLevelLabel;
-    @FXML Label creditLabel;
-    @FXML CheckBox subjectPassedCheckbox;
-    @FXML Ellipse iconEllipse;
+    private Stage stage;
+    @FXML private StackPane subjectDetailStackPane;
+    @FXML private Label iconLabel;
+    @FXML private Label subjectIdLabel;
+    @FXML private Label subjectNameLabel;
+    @FXML private Label difficultLevelLabel;
+    @FXML private Label creditLabel;
+    @FXML private CheckBox subjectPassedCheckbox;
+    @FXML private Ellipse iconEllipse;
     private Subject subject;
 
     @FXML
@@ -45,21 +46,26 @@ public class SubjectDataController {
         difficultLevelLabel.setTextFill(subject.getDifficlutLevelColor());
     }
 
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
+
     private void goToDetail(){
-        subjectDetailStackPane.setOnMouseClicked(new EventHandler<MouseEvent>() {
+        subjectDetailStackPane.setOnMouseClicked(new EventHandler<>() {
             @Override
             public void handle(MouseEvent event) {
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("detailsPage.fxml"));
                     Parent root = loader.load();
-                    stage.setScene(new Scene(root, 800, 600));
 
-//                    DetailsPageController controller = loader.getController();
-//                    controller.setStage(stage);
+                    stage.setScene(new Scene(root, 800, 600));
+                    DetailsPageController controller = loader.getController();
+                    controller.setStage(stage);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         });
     }
+
 }

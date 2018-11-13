@@ -3,6 +3,7 @@ package sample;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
+import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,15 +22,16 @@ import java.io.IOException;
 public class CourseInAYearPageController {
     @FXML Stage stage;
     @FXML VBox displayDataSubjectVbox;
-    @FXML
-    StackPane backTo;
+    @FXML StackPane backTo;
 
     @FXML
     public void initialize() {
+        Platform.runLater(() -> {
+            readJsonFile();
+        });
         backToPage();
-        readJsonFile();
-    }
 
+    }
     private void readJsonFile() {
         Gson gson = new Gson();
         try {
@@ -46,12 +48,13 @@ public class CourseInAYearPageController {
             e.printStackTrace();
         }
     }
-
+//
     private Parent readSubjectDataStackPane(Subject subject) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("subjectData.fxml"));
             Parent root = loader.load();
             SubjectDataController subjectDataController = loader.getController();
+            subjectDataController.setStage(stage);
             subjectDataController.setAllNode(subject);
             return root;
         } catch (IOException e) {
@@ -60,7 +63,7 @@ public class CourseInAYearPageController {
         return null;
     }
 
-    private void backToPage(){
+    private void backToPage() {
         backTo.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
