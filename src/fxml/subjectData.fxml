@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="subjectDetailStackPane" prefHeight="14.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.SubjectDataController">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="81.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 30;" width="623.0" />
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <StackPane layoutX="14.0" layoutY="14.0">
+                <Ellipse fx:id="iconEllipse" fill="#cc2a36" radiusX="28.0" radiusY="28.0" stroke="#cc2a36" strokeType="INSIDE" />
+                <Label fx:id="iconLabel" style="-fx-font-family: Segoe UI; -fx-font-weight: bold;" text="∑∫dx" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </StackPane>
+            <VBox layoutX="92.0" layoutY="19.0" prefHeight="46.0" prefWidth="265.0">
+                <Label fx:id="subjectIdLabel" prefHeight="17.0" prefWidth="147.0" style="-fx-font-family: K2D;" text="01417111">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="subjectNameLabel" prefHeight="20.0" prefWidth="358.0" style="-fx-font-family: K2D;" text="Calculus I" textFill="#656565">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="361.0" layoutY="19.0" prefHeight="46.0" prefWidth="194.0">
+                <Label fx:id="difficultLevelLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="281.0" style="-fx-font-family: K2D;" text="ระดับความยาก : ค่อนข้างยาก" textFill="#cc2a36">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="creditLabel" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="161.0" style="-fx-font-family: K2D;" text="3 หน่วยกิต" textAlignment="RIGHT" textFill="#656565">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </VBox>
+          <CheckBox fx:id="subjectPassedCheckbox" layoutX="586.0" layoutY="33.0" mnemonicParsing="false" style="fx: red;" />
+          <Label alignment="CENTER" layoutX="575.0" layoutY="13.0" prefHeight="20.0" prefWidth="38.0" style="-fx-font-family: K2D;" text="ผ่าน" textAlignment="RIGHT" textFill="#656565">
+              <font>
+                  <Font size="10.0" />
+              </font>
+          </Label>
+        </children>
+      <StackPane.margin>
+         <Insets bottom="15.0" />
+      </StackPane.margin>
+    </AnchorPane>
+</StackPane>
