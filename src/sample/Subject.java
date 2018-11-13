@@ -9,8 +9,9 @@ public class Subject {
     private DifficultLevel difficultLevel;
     private int credit;
     private boolean finish;
+    private String detail;
 
-    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int weight, boolean finish) {
+    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int weight, boolean finish ) {
         this.icon = icon;
         this.subjectId = subjectId;
         this.name = name;

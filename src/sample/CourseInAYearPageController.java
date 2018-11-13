@@ -3,9 +3,14 @@ package sample;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
+import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -17,12 +22,16 @@ import java.io.IOException;
 public class CourseInAYearPageController {
     @FXML Stage stage;
     @FXML VBox displayDataSubjectVbox;
+    @FXML StackPane backTo;
 
     @FXML
     public void initialize() {
-        readJsonFile();
-    }
+        Platform.runLater(() -> {
+            readJsonFile();
+        });
+        backToPage();
 
+    }
     private void readJsonFile() {
         Gson gson = new Gson();
         try {
@@ -39,18 +48,37 @@ public class CourseInAYearPageController {
             e.printStackTrace();
         }
     }
-
+//
     private Parent readSubjectDataStackPane(Subject subject) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("subjectData.fxml"));
             Parent root = loader.load();
             SubjectDataController subjectDataController = loader.getController();
+            subjectDataController.setStage(stage);
             subjectDataController.setAllNode(subject);
             return root;
         } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    private void backToPage() {
+        backTo.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                try {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("chooseYearPage.fxml"));
+                    Parent root = loader.load();
+                    stage.setScene(new Scene(root, 800, 600));
+
+                    ChooseYearPageController controller = loader.getController();
+                    controller.setStage(stage);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     public void setStage(Stage stage) {

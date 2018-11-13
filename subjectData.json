@@ -5,7 +5,8 @@
     "name": "Calculus 1",
     "difficultLevel": "QUITE_HARD",
     "credit": 3,
-    "finish": false
+    "finish": false,
+    "detail": "ลิมิตและความต่อเนื่อง"
   },
   {
     "icon": "0101",
@@ -13,7 +14,8 @@
     "name": "Introduction to computer science",
     "difficultLevel": "QUITE_EASY",
     "credit": 2,
-    "finish": false
+    "finish": false,
+    "detail": "ลิมิตและความต่อเนื่อง"
   },
   {
     "icon": "KU",
@@ -21,7 +23,8 @@
     "name": "Knowledge of the land",
     "difficultLevel": "EASY",
     "credit": 2,
-    "finish": false
+    "finish": false,
+    "detail": "ลิมิตและความต่อเนื่อง"
   },
   {
     "icon": ".py",
@@ -29,7 +32,8 @@
     "name": "Fundamental Programing",
     "difficultLevel": "MEDIUM",
     "credit": 3,
-    "finish": false
+    "finish": false,
+    "detail": "ลิมิตและความต่อเนื่อง"
   },
   {
     "icon": "IC_",
@@ -37,7 +41,8 @@
     "name": "Digital computer logic",
     "difficultLevel": "MEDIUM",
     "credit": 3,
-    "finish": false
+    "finish": false,
+    "detail": "ลิมิตและความต่อเนื่อง"
   },
   {
     "icon": "Eng",
@@ -45,6 +50,7 @@
     "name": "English xxxxxx",
     "difficultLevel": "ANY",
     "credit": 3,
-    "finish": false
+    "finish": false,
+    "detail": "ลิมิตและความต่อเนื่อง"
   }
 ]
