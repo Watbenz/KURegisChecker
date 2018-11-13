@@ -26,9 +26,7 @@ public class CourseInAYearPageController {
 
     @FXML
     public void initialize() {
-        Platform.runLater(() -> {
-            readJsonFile();
-        });
+        Platform.runLater(() -> readJsonFile());
         backToPage();
 
     }
