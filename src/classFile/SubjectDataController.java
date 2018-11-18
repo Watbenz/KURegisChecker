@@ -1,5 +1,6 @@
 package classFile;
 
+import ChangePage.Page;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +17,6 @@ import java.io.IOException;
 
 public class SubjectDataController {
     private Stage stage;
-    @FXML private StackPane subjectDetailStackPane;
     @FXML private Label iconLabel;
     @FXML private Label subjectIdLabel;
     @FXML private Label subjectNameLabel;
@@ -25,11 +25,6 @@ public class SubjectDataController {
     @FXML private CheckBox subjectPassedCheckbox;
     @FXML private Ellipse iconEllipse;
     private Subject subject;
-
-    @FXML
-    public void initialize() {
-        goToDetail();
-    }
 
     public void setAllNode(Subject subject) {
         this.subject = subject;
@@ -49,22 +44,16 @@ public class SubjectDataController {
         this.stage = stage;
     }
 
+    @FXML
     private void goToDetail(){
-        subjectDetailStackPane.setOnMouseClicked(new EventHandler<>() {
-            @Override
-            public void handle(MouseEvent event) {
-                try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/detailsPage.fxml"));
-                    Parent root = loader.load();
-
-                    stage.setScene(new Scene(root, 800, 600));
-                    DetailsPageController controller = loader.getController();
-                    controller.setStage(stage);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+        try {
+            FXMLLoader loader = Page.changeToPage(stage, getClass().getResource("../fxml/detailsPage.fxml"));
+            DetailsPageController controller = loader.getController();
+            controller.setStage(stage);
+            controller.setSubject(subject);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

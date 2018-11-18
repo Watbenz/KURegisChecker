@@ -1,16 +1,13 @@
 package classFile;
 
+import ChangePage.Page;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -22,13 +19,10 @@ import java.io.IOException;
 public class CourseInAYearPageController {
     @FXML Stage stage;
     @FXML VBox displayDataSubjectVbox;
-    @FXML StackPane backTo;
 
     @FXML
     public void initialize() {
-        Platform.runLater(() -> readJsonFile());
-        backToPage();
-
+        Platform.runLater(this::readJsonFile);
     }
     private void readJsonFile() {
         Gson gson = new Gson();
@@ -46,7 +40,7 @@ public class CourseInAYearPageController {
             e.printStackTrace();
         }
     }
-//
+
     private Parent readSubjectDataStackPane(Subject subject) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/subjectData.fxml"));
@@ -61,22 +55,15 @@ public class CourseInAYearPageController {
         return null;
     }
 
-    private void backToPage() {
-        backTo.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/chooseYearPage.fxml"));
-                    Parent root = loader.load();
-                    stage.setScene(new Scene(root, 800, 600));
-
-                    ChooseYearPageController controller = loader.getController();
-                    controller.setStage(stage);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+    @FXML
+    private void backToPrevious() {
+        try {
+            FXMLLoader loader = Page.changeToPage(stage, getClass().getResource("../fxml/chooseYearPage.fxml"));
+            ChooseYearPageController controller = loader.getController();
+            controller.setStage(stage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void setStage(Stage stage) {

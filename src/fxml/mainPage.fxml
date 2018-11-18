@@ -35,7 +35,7 @@
          </Label>
       </StackPane>
       <VBox layoutX="131.0" layoutY="69.0" prefHeight="200.0" prefWidth="349.0">
-         <StackPane fx:id="chooseYearStackPane" prefHeight="14.0" prefWidth="271.0">
+         <StackPane fx:id="chooseYearStackPane" prefHeight="14.0" prefWidth="271.0" onMouseClicked="#handleChangeToChooseYearPageOnclickStackPane">
             <VBox.margin>
                <Insets />
             </VBox.margin>
@@ -79,5 +79,4 @@
          </StackPane>
       </VBox>
    </AnchorPane>
-   <StackPane fx:id="goTodetail" prefHeight="150.0" prefWidth="200.0" />
 </VBox>

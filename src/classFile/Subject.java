@@ -11,13 +11,14 @@ public class Subject {
     private boolean finish;
     private String detail;
 
-    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int weight, boolean finish ) {
+    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int weight, boolean finish, String detail) {
         this.icon = icon;
         this.subjectId = subjectId;
         this.name = name;
         this.difficultLevel = difficultLevel;
         this.credit = weight;
         this.finish = finish;
+        this.detail = detail;
     }
 
     public String getIcon() {
@@ -42,6 +43,10 @@ public class Subject {
 
     public int getCredit() {
         return credit;
+    }
+
+    public String getDetail() {
+        return detail;
     }
 
     public boolean isFinish() {
