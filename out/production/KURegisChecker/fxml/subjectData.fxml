@@ -9,8 +9,9 @@
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ToggleSwitch?>
 
-<StackPane prefHeight="14.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.SubjectDataController" onMouseClicked="#goToDetail">
+<StackPane onMouseClicked="#goToDetail" prefHeight="14.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.SubjectDataController">
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="81.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 30;" width="623.0" />
     <AnchorPane prefHeight="200.0" prefWidth="200.0">
         <children>
@@ -45,6 +46,7 @@
                         <Font size="14.0" />
                     </font>
                 </Label>
+            <ToggleSwitch />
             </VBox>
           <CheckBox fx:id="subjectPassedCheckbox" layoutX="586.0" layoutY="33.0" mnemonicParsing="false" style="fx: red;" />
           <Label alignment="CENTER" layoutX="575.0" layoutY="13.0" prefHeight="20.0" prefWidth="38.0" style="-fx-font-family: K2D;" text="ผ่าน" textAlignment="RIGHT" textFill="#656565">
