@@ -8,8 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
 
@@ -31,13 +29,13 @@ public class SubjectDataController {
         iconLabel.setText(subject.getIcon());
         subjectIdLabel.setText(subject.getSubjectId());
         subjectNameLabel.setText(subject.getName());
-        difficultLevelLabel.setText("ระดับความยาก : " + subject.getDifficultLevel());
+        difficultLevelLabel.setText("ระดับความยาก : " + subject.getDifficultLevel().getLevel());
         creditLabel.setText(subject.getCredit() + " หน่วยกิต");
         subjectPassedCheckbox.setAllowIndeterminate(subject.isFinish());
 
-        iconEllipse.setFill(subject.getDifficlutLevelColor());
-        iconEllipse.setStroke(subject.getDifficlutLevelColor());
-        difficultLevelLabel.setTextFill(subject.getDifficlutLevelColor());
+        iconEllipse.setFill(subject.getDifficultLevel().getLinearColor());
+        iconEllipse.setStroke(subject.getDifficultLevel().getLinearColor());
+        difficultLevelLabel.setTextFill(subject.getDifficultLevel().getColor());
     }
 
     public void setStage(Stage stage) {

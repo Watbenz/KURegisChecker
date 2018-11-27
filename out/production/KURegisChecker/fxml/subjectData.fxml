@@ -6,6 +6,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -16,7 +18,23 @@
     <AnchorPane prefHeight="200.0" prefWidth="200.0">
         <children>
             <StackPane layoutX="14.0" layoutY="14.0">
-                <Ellipse fx:id="iconEllipse" fill="#cc2a36" radiusX="28.0" radiusY="28.0" stroke="#cc2a36" strokeType="INSIDE" />
+                <Ellipse fx:id="iconEllipse" radiusX="28.0" radiusY="28.0" strokeType="INSIDE">
+               <stroke>
+                  <LinearGradient endX="0.4770992075213949" endY="1.0" startX="0.46946564930995915">
+                     <stops>
+                        <Stop color="#c9445d" />
+                        <Stop color="#ff0022" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+               <fill>
+                  <LinearGradient endX="0.4770992075213949" endY="1.0" startX="0.46946564930995915">
+                     <stops>
+                        <Stop color="#c9445d" />
+                        <Stop color="#ff0022" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Ellipse>
                 <Label fx:id="iconLabel" style="-fx-font-family: Segoe UI; -fx-font-weight: bold;" text="∑∫dx" textFill="WHITE">
                     <font>
                         <Font size="20.0" />

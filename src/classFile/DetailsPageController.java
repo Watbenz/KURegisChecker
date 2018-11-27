@@ -29,13 +29,13 @@ public class DetailsPageController {
     }
 
     private void setAllNode() {
-        iconEllipse.setFill(subject.getDifficlutLevelColor());
-        iconEllipse.setStroke(subject.getDifficlutLevelColor());
+        iconEllipse.setFill(subject.getDifficultLevel().getLinearColor());
+        iconEllipse.setStroke(subject.getDifficultLevel().getColor());
 
         subjectNameLabel.setText(subject.getName());
         iconLabel.setText(subject.getIcon());
         detailLabel.setText(subject.getDetail());
-        difficultLevelLabel.setText("ระดับความยาก : " + subject.getDifficultLevel());
+        difficultLevelLabel.setText("ระดับความยาก : " + subject.getDifficultLevel().getLevel());
         creditLabel.setText(subject.getCredit() + " หน่วยกิต");
     }
 

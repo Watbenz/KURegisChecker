@@ -33,12 +33,8 @@ public class Subject {
         return name;
     }
 
-    public String getDifficultLevel() {
-        return difficultLevel.getAsString();
-    }
-
-    public Color getDifficlutLevelColor() {
-        return difficultLevel.getColor();
+    public DifficultLevel getDifficultLevel() {
+        return difficultLevel;
     }
 
     public int getCredit() {
