@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
@@ -17,7 +16,7 @@
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="81.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 30;" width="623.0" />
     <AnchorPane prefHeight="200.0" prefWidth="200.0">
         <children>
-            <StackPane layoutX="14.0" layoutY="14.0">
+            <StackPane layoutX="14.0" layoutY="16.0">
                 <Ellipse fx:id="iconEllipse" radiusX="28.0" radiusY="28.0" strokeType="INSIDE">
                <stroke>
                   <LinearGradient endX="0.4770992075213949" endY="1.0" startX="0.46946564930995915">
@@ -41,7 +40,7 @@
                     </font>
                 </Label>
             </StackPane>
-            <VBox layoutX="92.0" layoutY="19.0" prefHeight="46.0" prefWidth="265.0">
+            <VBox layoutX="92.0" layoutY="15.0" prefHeight="46.0" prefWidth="265.0">
                 <Label fx:id="subjectIdLabel" prefHeight="17.0" prefWidth="147.0" style="-fx-font-family: K2D;" text="01417111">
                     <font>
                         <Font size="17.0" />
@@ -52,22 +51,19 @@
                         <Font size="14.0" />
                     </font>
                 </Label>
-            </VBox>
-            <VBox alignment="TOP_RIGHT" layoutX="361.0" layoutY="19.0" prefHeight="46.0" prefWidth="194.0">
-                <Label fx:id="difficultLevelLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="281.0" style="-fx-font-family: K2D;" text="ระดับความยาก : ค่อนข้างยาก" textFill="#cc2a36">
+                <Label fx:id="difficultLevelLabel" alignment="TOP_LEFT" prefHeight="24.0" prefWidth="281.0" style="-fx-font-family: K2D;" text="ค่อนข้างยาก" textFill="#cc2a36">
                     <font>
-                        <Font size="15.0" />
+                        <Font size="10.0" />
                     </font>
                 </Label>
-                <Label fx:id="creditLabel" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="161.0" style="-fx-font-family: K2D;" text="3 หน่วยกิต" textAlignment="RIGHT" textFill="#656565">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-            <ToggleSwitch />
             </VBox>
-          <CheckBox fx:id="subjectPassedCheckbox" layoutX="586.0" layoutY="33.0" mnemonicParsing="false" style="fx: red;" />
-          <Label alignment="CENTER" layoutX="575.0" layoutY="13.0" prefHeight="20.0" prefWidth="38.0" style="-fx-font-family: K2D;" text="ผ่าน" textAlignment="RIGHT" textFill="#656565">
+             <Label fx:id="creditLabel" alignment="CENTER_RIGHT" layoutX="387.0" layoutY="33.0" prefHeight="20.0" prefWidth="161.0" style="-fx-font-family: K2D;" text="3 หน่วยกิต" textAlignment="RIGHT" textFill="#656565">
+                 <font>
+                     <Font size="14.0" />
+                 </font>
+             </Label>
+         <ToggleSwitch layoutX="566.0" layoutY="35.0" prefHeight="18.0" prefWidth="29.0" />
+          <Label alignment="CENTER" layoutX="563.0" layoutY="14.0" prefHeight="20.0" prefWidth="38.0" style="-fx-font-family: K2D;" text="ผ่าน" textAlignment="RIGHT" textFill="#656565">
               <font>
                   <Font size="10.0" />
               </font>

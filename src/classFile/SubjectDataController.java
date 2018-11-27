@@ -20,7 +20,6 @@ public class SubjectDataController {
     @FXML private Label subjectNameLabel;
     @FXML private Label difficultLevelLabel;
     @FXML private Label creditLabel;
-    @FXML private CheckBox subjectPassedCheckbox;
     @FXML private Ellipse iconEllipse;
     private Subject subject;
 
@@ -31,7 +30,7 @@ public class SubjectDataController {
         subjectNameLabel.setText(subject.getName());
         difficultLevelLabel.setText("ระดับความยาก : " + subject.getDifficultLevel().getLevel());
         creditLabel.setText(subject.getCredit() + " หน่วยกิต");
-        subjectPassedCheckbox.setAllowIndeterminate(subject.isFinish());
+//        subjectPassedCheckbox.setAllowIndeterminate(subject.isFinish());
 
         iconEllipse.setFill(subject.getDifficultLevel().getLinearColor());
         iconEllipse.setStroke(subject.getDifficultLevel().getLinearColor());

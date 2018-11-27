@@ -30,32 +30,27 @@
       <content>
          <AnchorPane prefHeight="486.0" prefWidth="800.0">
             <children>
-               <AnchorPane layoutY="54.0" prefHeight="366.0" prefWidth="800.0" style="-fx-background-color: #D8FFBB;">
-                  <StackPane fx:id="chooseYearStackPane1" layoutX="261.0" layoutY="-19.0" prefHeight="14.0" prefWidth="271.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="277.0" />
-                        <AnchorPane prefHeight="26.0" prefWidth="332.0">
-                           <children>
-                              <StackPane layoutX="6.0" layoutY="4.0">
-                                 <children>
-                                    <Ellipse fill="#00b596" radiusX="14.0" radiusY="14.0" stroke="#00b596" strokeType="INSIDE" />
-                                    <Label style="-fx-font-family: Segoe UI;" text="1" textFill="WHITE" />
-                                 </children>
-                              </StackPane>
-                              <Label fx:id="semisterLabel" layoutX="44.0" layoutY="1.0" prefHeight="34.0" prefWidth="173.0" style="-fx-font-family: Segoe UI;" text="ภาคเรียนที่ 1 / 2560">
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </StackPane>
-                  <VBox fx:id="displayDataSubjectVbox" layoutX="88.0" layoutY="54.0" prefHeight="236.0" prefWidth="623.0" />
-                  <padding>
-                     <Insets top="50.0" />
-                  </padding>
-               </AnchorPane>
+               <StackPane fx:id="chooseYearStackPane1" layoutX="261.0" layoutY="35.0" prefHeight="14.0" prefWidth="271.0">
+                  <children>
+                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="277.0" />
+                     <AnchorPane prefHeight="26.0" prefWidth="332.0">
+                        <children>
+                           <StackPane layoutX="6.0" layoutY="4.0">
+                              <children>
+                                 <Ellipse fill="#00b596" radiusX="14.0" radiusY="14.0" stroke="#00b596" strokeType="INSIDE" />
+                                 <Label style="-fx-font-family: Segoe UI;" text="1" textFill="WHITE" />
+                              </children>
+                           </StackPane>
+                           <Label fx:id="semisterLabel" layoutX="44.0" layoutY="1.0" prefHeight="34.0" prefWidth="173.0" style="-fx-font-family: Segoe UI;" text="ภาคเรียนที่ 1 / 2560">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </AnchorPane>
+                  </children>
+               </StackPane>
+               <VBox fx:id="displayDataSubjectVbox" layoutX="88.0" layoutY="108.0" prefHeight="236.0" prefWidth="623.0" />
                <StackPane layoutX="705.0" layoutY="14.0" onMouseClicked="#backToPrevious">
                   <children>
                      <Label style="-fx-font-family: K2D;" text="กลับ" textFill="WHITE" />
