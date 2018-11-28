@@ -4,6 +4,8 @@ import classFile.changePage.Page;
 import classFile.subject.Subject;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
@@ -39,12 +41,19 @@ public class SubjectDataController {
     }
 
     @FXML
-    private void goToDetail(){
+    private void openDetail(){
         try {
-            FXMLLoader loader = Page.changeToPage(stage, getClass().getResource("../fxml/detailsPage.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/detailsPage.fxml"));
+            Stage popup = new Stage();
+            Parent root = loader.load();
+            popup.setScene(new Scene(root, 500, 500));
+            popup.setTitle("Subject detail");
+
             DetailsPageController controller = loader.getController();
-            controller.setStage(stage);
+            controller.setStage(popup);
             controller.setSubject(subject);
+
+            popup.show();
         } catch (IOException e) {
             e.printStackTrace();
         }

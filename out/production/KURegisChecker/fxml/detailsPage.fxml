@@ -1,117 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Ellipse?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ToggleSwitch?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EEFFE1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.DetailsPageController">
-   <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #004D40;">
-      <VBox.margin>
-         <Insets />
-      </VBox.margin>
-      <ImageView fitHeight="56.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="file:/D:/Work/Java/RegisChecker/image/logo.png" />
-      </ImageView>
-      <Label layoutX="578.0" layoutY="16.0" prefHeight="34.0" prefWidth="189.0" style="-fx-font-weight: bold; -fx-font-family: K2D;" text="ตรวจสอบการลงทะเบียน" textFill="WHITE">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-   </AnchorPane>
-   <ScrollPane hbarPolicy="NEVER" prefHeight="605.0" prefWidth="800.0" stylesheets="@../classFile/scrollPaneChangeColor.css">
-      <AnchorPane prefHeight="486.0" prefWidth="800.0">
-         <AnchorPane layoutY="54.0" prefHeight="366.0" prefWidth="800.0" style="-fx-background-color: #D8FFBB;">
-            <VBox layoutX="41.0" layoutY="39.0" prefHeight="625.0" prefWidth="718.0">
-               <AnchorPane>
-                  <VBox.margin>
-                     <Insets bottom="10.0" />
-                  </VBox.margin>
-                  <Label fx:id="subjectNameLabel" layoutX="73.0" layoutY="7.0" prefHeight="43.0" prefWidth="636.0" style="-fx-font-family: K2D;" text="Calculus I" textFill="#656565">
-                     <font>
-                        <Font size="29.0" />
-                     </font>
-                  </Label>
-                  <StackPane>
-                     <Ellipse fx:id="iconEllipse" fill="#cc2a36" radiusX="28.0" radiusY="28.0" stroke="#cc2a36" strokeType="INSIDE" />
-                     <Label fx:id="iconLabel" style="-fx-font-family: Segoe UI; -fx-font-weight: bold;" text="∑∫dx" textFill="WHITE">
-                        <font>
-                           <Font size="20.0" />
-                        </font>
-                     </Label>
-                  </StackPane>
-               </AnchorPane>
-               <AnchorPane prefHeight="83.0" prefWidth="718.0">
-                  <children>
-                     <Label fx:id="detailLabel" alignment="TOP_LEFT" layoutX="108.0" layoutY="24.0" prefWidth="500.0" style="-fx-font-family: K2D; -fx-background-color: white; -fx-background-radius: 10; -fx-label-padding: 10;" text="วิชานี้เป็นวิชาที่น้อยคนนักจะผ่าน นักรบไฟนอลทั้งหลายน้อยคนนักที่จะผ่านไปได้ มีเพียงนักรบที่ผ่านการ..." textFill="#656565">
-                        <font>
-                           <Font name="K2D Regular" size="16.0" />
-                        </font>
-                     </Label>
-                  </children>
-               </AnchorPane>
-               <AnchorPane prefHeight="103.0" prefWidth="718.0">
-                  <children>
-                     <VBox alignment="TOP_RIGHT" layoutY="52.0" prefHeight="55.0" prefWidth="718.0">
-                        <Label fx:id="difficultLevelLabel" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="248.0" text="ระดับความยาก : ค่อนข้างยาก" textFill="#cc2a36">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="creditLabel" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="254.0" text="3 หน่วยกิต" textFill="#656565">
-                           <font>
-                              <Font name="K2D Regular" size="14.0" />
-                           </font>
-                        </Label>
-                     </VBox>
-                  </children>
-               </AnchorPane>
-               <VBox alignment="TOP_CENTER">
-                  <VBox.margin>
-                     <Insets top="50.0" />
-                  </VBox.margin>
-                  <Label text="แผนผังวิชา" textFill="#656565">
-                     <font>
-                        <Font name="K2D Regular" size="24.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </Label>
-                  <StackPane style="-fx-background-color: #ffffff;">
-                     <VBox.margin>
-                        <Insets top="25.0" />
-                     </VBox.margin>
-                     <ImageView fx:id="subjectMapImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  </StackPane>
-               </VBox>
-            </VBox>
-            <padding>
-               <Insets top="50.0" />
-            </padding>
-         </AnchorPane>
-         <StackPane layoutX="705.0" layoutY="14.0">
-            <Label style="-fx-font-family: K2D;" text="กลับ" textFill="WHITE" />
-         </StackPane>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.DetailsPageController">
+   <children>
+      <AnchorPane prefHeight="46.0" prefWidth="500.0" style="-fx-background-color: #004D40;">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="27.0" layoutX="13.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/Work/Java/RegisChecker/image/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" layoutX="347.0" layoutY="12.0" prefHeight="22.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-family: K2D;" text="ข้อมูลรายวิชา" textFill="WHITE" />
+         </children>
       </AnchorPane>
-   </ScrollPane>
-   <AnchorPane prefHeight="0.0" prefWidth="800.0">
-      <VBox.margin>
-         <Insets bottom="20.0" top="10.0" />
-      </VBox.margin>
-      <StackPane layoutX="30.0" layoutY="3.0">
-         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00b596" height="33.0" onMouseClicked="#goToPrevious" stroke="#00b596" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="68.0" />
-         <Label style="-fx-font-family: K2D;" text="กลับ" textFill="WHITE" />
-      </StackPane>
-   </AnchorPane>
+      <AnchorPane prefHeight="152.0" prefWidth="500.0">
+         <children>
+            <StackPane layoutX="214.0" layoutY="19.0">
+               <children>
+                  <Circle fill="WHITE" radius="34.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Ellipse fx:id="iconEllipse" fill="#cc2a36" radiusX="28.0" radiusY="28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(#C9445D 0%, #FF0022 100%);" />
+                  <Label fx:id="iconLabel" style="-fx-font-family: Segoe UI; -fx-font-weight: bold;" text="∑∫dx" textFill="WHITE">
+                     <font>
+                        <Font name="K2D Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <VBox layoutX="88.0" layoutY="94.0">
+               <children>
+                  <Label fx:id="subjectNameLabel" alignment="CENTER" prefHeight="22.0" prefWidth="323.0" style="-fx-font-family: K2D;" text="แคลคูลัส" textFill="#656565">
+                     <font>
+                        <Font name="K2D Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="subjectIDLabel" alignment="CENTER" prefHeight="22.0" prefWidth="323.0" style="-fx-font-family: K2D;" text="01175xxx" textFill="#656565">
+                     <font>
+                        <Font name="K2D Regular" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="405.0" layoutY="108.0" prefHeight="36.0" prefWidth="74.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="71.0" text="ลงทะเบียน" />
+                  <ToggleSwitch prefHeight="18.0" prefWidth="24.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" stylesheets="@../classFile/scrollPaneChangeColor.css">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+         <content>
+            <AnchorPane prefHeight="141.0" prefWidth="500.0" style="-fx-background-color: rgba(255,255,255,0.25);">
+               <children>
+                  <VBox layoutX="17.0" layoutY="14.0" prefWidth="466.0">
+                     <children>
+                        <Label fx:id="detailLabel" alignment="TOP_LEFT" prefWidth="466.0" text="วิชานี้เป็นวิชาที่น้อยคนนักจะผ่าน นักรบไฟนอลทั้งหลายน้อยคนนักที่จะผ่านไปได้ มีเพียงนักรบที่ผ่านการ...">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="creditLabel" alignment="TOP_RIGHT" prefHeight="16.0" prefWidth="466.0" text="หน่วยกิต: 3">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane>
+         <children>
+            <Label alignment="CENTER" layoutX="150.0" prefHeight="18.0" prefWidth="200.0" text="ผังตาราง">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <ScrollPane prefHeight="69.0" prefWidth="500.0" stylesheets="@../classFile/scrollPaneChangeColor.css" vbarPolicy="NEVER">
+         <content>
+            <AnchorPane prefHeight="58.0" prefWidth="554.0" style="-fx-background-color: rgba(255,255,255,0.25);">
+               <children>
+                  <HBox layoutX="14.0" layoutY="2.0" prefHeight="56.0" prefWidth="473.0" />
+               </children>
+            </AnchorPane>
+         </content>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </ScrollPane>
+      <AnchorPane>
+         <children>
+            <Button layoutX="222.0" mnemonicParsing="false" onAction="#closePopup" prefHeight="26.0" prefWidth="56.0" text="ปิด" />
+         </children>
+      </AnchorPane>
+   </children>
 </VBox>

@@ -19,7 +19,6 @@ public class DetailsPageController {
     @FXML private Label subjectNameLabel;
     @FXML private Label iconLabel;
     @FXML private Label detailLabel;
-    @FXML private Label difficultLevelLabel;
     @FXML private Label creditLabel;
     @FXML private ImageView subjectMapImageView;
     private Subject subject;
@@ -36,7 +35,6 @@ public class DetailsPageController {
         subjectNameLabel.setText(subject.getName());
         iconLabel.setText(subject.getIcon());
         detailLabel.setText(subject.getDetail());
-        difficultLevelLabel.setText("ระดับความยาก : " + subject.getDifficultLevel().getLevel());
         creditLabel.setText(subject.getCredit() + " หน่วยกิต");
     }
 
@@ -49,13 +47,7 @@ public class DetailsPageController {
     }
 
     @FXML
-    public void goToPrevious() {
-        try {
-            FXMLLoader loader = Page.changeToPage(stage, getClass().getResource("../fxml/courseInAYearPage.fxml"));
-            CourseInAYearPageController controller = loader.getController();
-            controller.setStage(stage);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void closePopup() {
+        stage.close();
     }
 }
