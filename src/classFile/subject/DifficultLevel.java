@@ -1,6 +1,5 @@
 package classFile.subject;
 
-import javafx.css.converter.PaintConverter;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.CycleMethod;
 import javafx.scene.paint.LinearGradient;

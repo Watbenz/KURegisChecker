@@ -1,16 +1,12 @@
 package classFile;
 
-import classFile.changePage.Page;
 import classFile.subject.Subject;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class DetailsPageController {
     @FXML private Stage stage;
