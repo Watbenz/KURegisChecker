@@ -3,8 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0dea5f27-9e16-41d9-a877-904b0b12ca28" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/RegisUI.xd" beforeDir="false" afterPath="$PROJECT_DIR$/image/RegisUI.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChangePage/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/changePage/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/ChooseYearPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/ChooseYearPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/CourseInAYearPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/CourseInAYearPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/DetailsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/DetailsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/DifficultLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/subject/DifficultLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/MainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/MainWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/MainWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/subject/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classFile/SubjectDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/SubjectDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/chooseYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/chooseYearPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxml/courseInAYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/courseInAYearPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/mainPage.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,16 +80,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="21" />
-          <entry key="java" value="28" />
+          <entry key="css" value="1" />
+          <entry key="fxml" value="22" />
+          <entry key="java" value="30" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
+          <entry key="CSS" value="1" />
+          <entry key="JAVA" value="30" />
           <entry key="JSON" value="2" />
-          <entry key="XML" value="21" />
+          <entry key="XML" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -97,29 +109,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/subjectData.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classFile/MainWriteFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="110">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classFile/SubjectDataController.java">
+        <entry file="file://$PROJECT_DIR$/src/classFile/subject/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="44">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/classFile/subject/DifficultLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,50 +140,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classFile/DetailsPageController.java">
+        <entry file="file://$PROJECT_DIR$/src/classFile/scrollPaneChangeColor.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classFile/Subject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classFile/CourseInAYearPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1034">
-              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classFile/DifficultLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fxml/subjectData.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1430">
-              <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -232,11 +204,13 @@
         <option value="$PROJECT_DIR$/src/fxml/detailsPage.fxml" />
         <option value="$PROJECT_DIR$/src/fxml/detailPage.fxml" />
         <option value="$PROJECT_DIR$/subjectData.json" />
-        <option value="$PROJECT_DIR$/src/classFile/Subject.java" />
         <option value="$PROJECT_DIR$/src/classFile/DifficultLevel.java" />
         <option value="$PROJECT_DIR$/src/classFile/DetailsPageController.java" />
         <option value="$PROJECT_DIR$/src/fxml/subjectData.fxml" />
         <option value="$PROJECT_DIR$/src/classFile/SubjectDataController.java" />
+        <option value="$PROJECT_DIR$/src/classFile/Subject.java" />
+        <option value="$PROJECT_DIR$/src/classFile/subject/Subject.java" />
+        <option value="$PROJECT_DIR$/src/classFile/subject/DifficultLevel.java" />
       </list>
     </option>
   </component>
@@ -247,7 +221,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="905" />
+    <option name="x" value="577" />
+    <option name="y" value="-18" />
     <option name="width" value="930" />
     <option name="height" value="1090" />
   </component>
@@ -259,7 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -272,11 +246,6 @@
               <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
               <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
               <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
@@ -308,22 +277,24 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543392610083" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543431280810" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Java\RegisChecker\src\fxml" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\Java\RegisChecker" />
       <recent name="D:\Work\Java\RegisChecker\data" />
       <recent name="D:\Work\Java\RegisChecker\src\data" />
       <recent name="D:\Work\Java\RegisChecker\src\jsonFile" />
-      <recent name="D:\Work\Java\RegisChecker\src\fxml" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Work\Java\RegisChecker\src\fxml" />
     </key>
   </component>
@@ -345,7 +316,7 @@
       <module name="KURegisChecker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classFile.*" />
+          <option name="PATTERN" value="classFile.subject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -386,7 +357,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34355000" />
+    <option name="totallyTimeSpent" value="36520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1476" height="878" extended-state="6" />
@@ -397,7 +368,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15800273" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19562243" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -461,12 +432,12 @@
     <entry file="file://$PROJECT_DIR$/src/sample/detailPage.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/detailsPage.java" />
     <entry file="file://$PROJECT_DIR$/src/fxml/courseInAYearPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
           <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/ChooseYearPageController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -477,14 +448,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fxml/detailPage.fxml" />
     <entry file="file://$PROJECT_DIR$/src/fxml/mainPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChangePage/Page.java">
+    <entry file="file://$PROJECT_DIR$/src/classFile/changePage/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
@@ -492,20 +463,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fxml/detailsPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxml/chooseYearPage.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/MainPageController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -526,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classFile/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/CourseInAYearPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1034">
@@ -540,23 +496,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classFile/DifficultLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fxml/subjectData.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1430">
           <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/SubjectDataController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/MainWriteFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        <state relative-caret-position="110">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -586,6 +532,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classFile/subject/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classFile/scrollPaneChangeColor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fxml/chooseYearPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classFile/subject/DifficultLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

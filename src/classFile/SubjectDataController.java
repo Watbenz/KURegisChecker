@@ -1,12 +1,9 @@
 package classFile;
 
-import ChangePage.Page;
-import javafx.event.EventHandler;
+import classFile.changePage.Page;
+import classFile.subject.Subject;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;

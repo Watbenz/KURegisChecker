@@ -1,6 +1,7 @@
 package classFile;
 
-import ChangePage.Page;
+import classFile.changePage.Page;
+import classFile.subject.Subject;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

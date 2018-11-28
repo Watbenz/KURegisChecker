@@ -1,4 +1,4 @@
-package ChangePage;
+package classFile.changePage;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

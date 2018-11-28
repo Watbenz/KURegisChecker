@@ -1,6 +1,6 @@
 package classFile;
 
-import ChangePage.Page;
+import classFile.changePage.Page;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;

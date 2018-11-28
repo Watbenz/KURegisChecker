@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EEFFE1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.MainPageController">
+<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.MainPageController">
    <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #004D40;">
       <VBox.margin>
          <Insets bottom="75.0" />
@@ -25,7 +25,7 @@
          </font>
       </Label>
    </AnchorPane>
-   <AnchorPane prefHeight="366.0" prefWidth="800.0" style="-fx-background-color: #D8FFBB;">
+   <AnchorPane prefHeight="366.0" prefWidth="800.0" style="-fx-background-color: rgba(255,255,255,0.25);">
       <StackPane layoutX="264.0" layoutY="-24.0" prefHeight="14.0" prefWidth="271.0">
          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="271.0" />
          <Label prefHeight="34.0" prefWidth="82.0" style="-fx-font-family: K2D;" text="หน้าหลัก">
@@ -35,7 +35,7 @@
          </Label>
       </StackPane>
       <VBox layoutX="131.0" layoutY="69.0" prefHeight="200.0" prefWidth="349.0">
-         <StackPane fx:id="chooseYearStackPane" prefHeight="14.0" prefWidth="271.0" onMouseClicked="#handleChangeToChooseYearPageOnclickStackPane">
+         <StackPane fx:id="chooseYearStackPane" onMouseClicked="#handleChangeToChooseYearPageOnclickStackPane" prefHeight="14.0" prefWidth="271.0">
             <VBox.margin>
                <Insets />
             </VBox.margin>

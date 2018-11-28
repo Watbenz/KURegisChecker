@@ -1,6 +1,7 @@
 package classFile;
 
-import ChangePage.Page;
+import classFile.changePage.Page;
+import classFile.subject.Subject;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

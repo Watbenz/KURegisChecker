@@ -1,6 +1,4 @@
-package classFile;
-
-import javafx.scene.paint.Color;
+package classFile.subject;
 
 public class Subject {
     private String icon;

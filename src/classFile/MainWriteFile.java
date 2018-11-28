@@ -1,5 +1,7 @@
 package classFile;
 
+import classFile.subject.DifficultLevel;
+import classFile.subject.Subject;
 import com.google.gson.Gson;
 
 import java.io.BufferedWriter;
