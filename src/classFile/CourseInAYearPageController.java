@@ -2,6 +2,7 @@ package classFile;
 
 import classFile.changePage.Page;
 import classFile.subject.Subject;
+import classFile.subject.SubjectIO;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -16,6 +17,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class CourseInAYearPageController {
     @FXML Stage stage;
@@ -25,20 +27,11 @@ public class CourseInAYearPageController {
     public void initialize() {
         Platform.runLater(this::readJsonFile);
     }
+
     private void readJsonFile() {
-        Gson gson = new Gson();
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("subjectData.json"));
-            JsonArray jsonArray = gson.fromJson(reader, JsonArray.class);
-
-            for (int i=0; i<jsonArray.size(); i++) {
-                JsonElement jsonElement = jsonArray.get(i);
-                Subject subject = gson.fromJson(jsonElement, Subject.class);
-
-                displayDataSubjectVbox.getChildren().addAll(readSubjectDataStackPane(subject));
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        ArrayList<Subject> subjects = SubjectIO.readSubject("subjectData.json");
+        for (Subject each: subjects) {
+            displayDataSubjectVbox.getChildren().addAll(readSubjectDataStackPane(each));
         }
     }
 
