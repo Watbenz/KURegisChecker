@@ -15,7 +15,7 @@ public class MainPageController {
     }
 
     @FXML
-    public void handleChangeToChooseYearPageOnclickStackPane() {
+    public void goToChooseYearPage() {
         try {
             FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/chooseYearPage.fxml"));
             ChooseYearPageController controller = loader.getController();

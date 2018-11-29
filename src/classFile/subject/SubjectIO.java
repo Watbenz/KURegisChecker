@@ -30,17 +30,14 @@ public class SubjectIO {
         allSubject.add(eng2);
     }
 
-    private void writeSubject() {
-        Gson gson = new Gson();
-        String json = gson.toJson(allSubject);
+    public void writeSubject() {
 
         try {
             File subjectData = new File("SubjectData.json");
 
-            if (subjectData.exists()) {
-
-            }
-            else {
+            if (!subjectData.exists()) {
+                Gson gson = new Gson();
+                String json = gson.toJson(allSubject);
                 PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(subjectData)));
                 writer.println(json);
                 writer.close();
