@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
+import org.controlsfx.control.ToggleSwitch;
 
 import java.io.IOException;
 
@@ -19,6 +20,7 @@ public class SubjectDataController {
     @FXML private Label difficultLevelLabel;
     @FXML private Label creditLabel;
     @FXML private Ellipse iconEllipse;
+    @FXML private ToggleSwitch addToggleSwitch;
     private Subject subject;
 
     public void setAllNode(Subject subject) {

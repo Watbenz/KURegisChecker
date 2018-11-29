@@ -14,12 +14,12 @@ import java.util.List;
 public class MainWriteFile {
     public static void main(String[] args) {
         List<Subject> allSubject = new ArrayList<>();
-        Subject calculus_1 = new Subject("∑∫dx", "01417111", "Calculus 1", DifficultLevel.QUITE_HARD, 3, false, "ยา");
-        Subject introCS = new Subject("0101", "01418114", "Introduction to computer science", DifficultLevel.QUITE_EASY, 2, false, "ยา");
-        Subject knowledgeOfTheLand = new Subject("KU", "01999111", "Knowledge of the land", DifficultLevel.EASY, 2, false, "ยา");
-        Subject funCom = new Subject(".py", "01418113", "Fundamental Programing", DifficultLevel.MEDIUM, 3, false, "ยา");
-        Subject digital = new Subject("IC_", "01418131", "Digital computer logic", DifficultLevel.MEDIUM, 3, false, "ยา");
-        Subject eng2 = new Subject("Eng", "01355112", "English xxxxxx", DifficultLevel.ANY, 3, false, "ยา");
+        Subject calculus_1 = new Subject("∑∫dx", "01417111", "Calculus 1", DifficultLevel.QUITE_HARD, 3, "ยา");
+        Subject introCS = new Subject("0101", "01418114", "Introduction to computer science", DifficultLevel.QUITE_EASY, 2, "ยา");
+        Subject knowledgeOfTheLand = new Subject("KU", "01999111", "Knowledge of the land", DifficultLevel.EASY, 2, "ยา");
+        Subject funCom = new Subject(".py", "01418113", "Fundamental Programing", DifficultLevel.MEDIUM, 3, "ยา");
+        Subject digital = new Subject("IC_", "01418131", "Digital computer logic", DifficultLevel.MEDIUM, 3, "ยา");
+        Subject eng2 = new Subject("Eng", "01355112", "English xxxxxx", DifficultLevel.ANY, 3, "ยา");
         allSubject.add(calculus_1);
         allSubject.add(introCS);
         allSubject.add(knowledgeOfTheLand);
