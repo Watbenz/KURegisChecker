@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.URL;
 
 public class Page {
-    public static FXMLLoader changeToPage(Stage stage, URL url) throws IOException {
+    public static FXMLLoader loadPage(Stage stage, URL url) throws IOException {
         FXMLLoader loader = new FXMLLoader(url);
         Parent root = loader.load();
         stage.setScene(new Scene(root, 800, 600));
