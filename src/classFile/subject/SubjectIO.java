@@ -1,6 +1,7 @@
 package classFile.subject;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.*;
@@ -50,8 +51,8 @@ public class SubjectIO {
 
         Subject funCom = new Subject(
                 ".py",
-                "01418114",
-                "Fundamental Programing",
+                "01418112",
+                "Fundamental Programing Concepts",
                 DifficultLevel.MEDIUM,
                 3,
                 "แนวคิดพื้นฐานทางเทคโนโลยีคอมพิวเตอร์และสารสนเทศ " +
@@ -129,7 +130,6 @@ public class SubjectIO {
                 "กลุ่มรายวิชาภาษาไทย"
         );
 
-//        funCom.addPrevious(introCS);
 
         year1_1.add(calculus_1);
         year1_1.add(introCS);
@@ -216,9 +216,6 @@ public class SubjectIO {
                 3,
                 "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
         );
-
-//        calculus_2.addPrevious(findSubjectFromId(getSubjectInTerm(1,1), "01417111"));
-//        comPro.addPrevious(findSubjectFromId(getSubjectInTerm(1,1), "01418112"));
 
         year1_2.add(calculus_2);
         year1_2.add(comPro);
@@ -321,10 +318,6 @@ public class SubjectIO {
                 "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
         );
 
-//        java.addPrevious(getSubjectInTerm(1, 2).get(1));
-//        data.addPrevious(getSubjectInTerm(1, 2).get(1));
-//        linear.addPrevious(getSubjectInTerm(1, 2).get(0));
-
         year2_1.add(linear);
         year2_1.add(java);
         year2_1.add(data);
@@ -371,7 +364,7 @@ public class SubjectIO {
         Subject assem = new Subject(
                 "0001",
                 "01418233",
-                "Algorithm Design and Analysis",
+                "Assembly Language and Computer Architecture",
                 DifficultLevel.HARD,
                 4,
                 "โครงสร้างของภาษาแอสเซมบลี" +
@@ -413,12 +406,6 @@ public class SubjectIO {
                 2,
                 "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
         );
-
-//        dataBase.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418113"));
-//        assem.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418113"));
-//        assem.addPrevious(findSubjectFromId(getSubjectInTerm(1,1), "01418131"));
-//        algo.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418132"));
-//        algo.addPrevious(findSubjectFromId(getSubjectInTerm(2,1), "01418231"));
 
         year2_2.add(dataBase);
         year2_2.add(algo);
@@ -511,13 +498,6 @@ public class SubjectIO {
                 "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
         );
 
-//        system.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418221"));
-//        system.addPrevious(findSubjectFromId(getSubjectInTerm(2,1), "01418211"));
-//        operating.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418233"));
-//        seminar.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418221"));
-//        seminar.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418232"));
-//        seminar.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418233"));
-
         year3_1.add(system);
         year3_1.add(operating);
         year3_1.add(intel);
@@ -533,7 +513,7 @@ public class SubjectIO {
 
         Subject security = new Subject(
                 "Secu",
-                "01418322",
+                "01418332",
                 "Computer System and Communication Network Security",
                 DifficultLevel.MEDIUM,
                 3,
@@ -552,7 +532,7 @@ public class SubjectIO {
                 "\nการหาภาวะต่าสุด ไวยากรณ์ของภาษารูปนัย" +
                 "\nภาวะที่เอื้อต่อการคานวณ และเครื่องจักรทัวริง ");
 
-        Subject complier = new Subject(
+        Subject compiler = new Subject(
                 "Comp",
                 "01418334",
                 "Compiler Techniques",
@@ -603,22 +583,16 @@ public class SubjectIO {
         );
 
         Subject free = new Subject(
-                "F",
+                "Free",
                 "01xxxxxx",
-                "Major Electives 1",
+                "Free Electives 1",
                 DifficultLevel.ANY,
                 3,
                 "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
         );
 
-//        co_op.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418321"));
-//        security.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418321"));
-//        prin.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418331"));
-//        auto.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418132"));
-//        complier.addPrevious(auto);
-
         year3_2.add(security);
-        year3_2.add(complier);
+        year3_2.add(compiler);
         year3_2.add(auto);
         year3_2.add(prin);
         year3_2.add(co_op);
@@ -650,8 +624,6 @@ public class SubjectIO {
                 "การปฏิบัติงานในลักษณะพนักงานชั่วคราว" +
                 "\nตามโครงงานที่ได้รับมอบหมายตลอดจนการจัดทารายงานและการนาเสนอ"
         );
-
-//        co_op.addPrevious(findSubjectFromId(getSubjectInTerm(3,2), "01418390"));
 
         year4_1.add(co_op);
 
@@ -698,15 +670,13 @@ public class SubjectIO {
         );
 
         Subject free = new Subject(
-                "M",
+                "Free",
                 "01xxxxxx",
                 "Free Electives 2",
                 DifficultLevel.ANY,
                 3,
                 "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
         );
-
-//        cs.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418321"));
 
         year4_2.add(cs);
         year4_2.add(major4);
@@ -722,18 +692,86 @@ public class SubjectIO {
     }
 
     private void writeSubjectInit() {
-        if (!subjectData.exists()) {
+//        if (!subjectData.exists()) {
             allSubjectInit();
             writeSubject();
-        }
-        else {
-            readSubject();
-        }
+//        }
+//        else {
+//            readSubject();
+//        }
+        addAllPrevious();
+    }
+
+    private void addAllPrevious() {
+        Subject python = findSubjectFromId(getSubjectInTerm(1, 1), "01418112");
+        Subject intro = findSubjectFromId(getSubjectInTerm(1, 1), "01418114");
+        python.addPrevious(intro);
+
+        Subject calculus_1 = findSubjectFromId(getSubjectInTerm(1, 1), "01417111");
+        Subject calculus_2 = findSubjectFromId(getSubjectInTerm(1, 2), "01417112");
+        Subject linear = findSubjectFromId(getSubjectInTerm(2, 1), "01417322");
+        calculus_2.addPrevious(calculus_1);
+        linear.addPrevious(calculus_2);
+
+        Subject comPro = findSubjectFromId(getSubjectInTerm(1, 2), "01418113");
+        comPro.addPrevious(python);
+
+        Subject java = findSubjectFromId(getSubjectInTerm(2, 1), "01418211");
+        java.addPrevious(comPro);
+
+        Subject data = findSubjectFromId(getSubjectInTerm(2, 1), "01418231");
+        data.addPrevious(comPro);
+
+        Subject database = findSubjectFromId(getSubjectInTerm(2, 2), "01418221");
+        database.addPrevious(comPro);
+
+        Subject assembly = findSubjectFromId(getSubjectInTerm(2, 2), "01418233");
+        Subject digital = findSubjectFromId(getSubjectInTerm(1, 1), "01418131");
+        assembly.addPrevious(comPro);
+        assembly.addPrevious(digital);
+
+        Subject algorithm = findSubjectFromId(getSubjectInTerm(2, 2), "01418232");
+        Subject fundCom = findSubjectFromId(getSubjectInTerm(1, 2), "01418132");
+        algorithm.addPrevious(fundCom);
+        algorithm.addPrevious(data);
+
+        Subject sa = findSubjectFromId(getSubjectInTerm(3, 1), "01418321");
+        sa.addPrevious(java);
+        sa.addPrevious(database);
+
+        Subject os = findSubjectFromId(getSubjectInTerm(3, 1), "01418331");
+        os.addPrevious(assembly);
+
+        Subject seminar = findSubjectFromId(getSubjectInTerm(3, 1), "01418497");
+        seminar.addPrevious(database);
+        seminar.addPrevious(algorithm);
+        seminar.addPrevious(assembly);
+
+        Subject co_op = findSubjectFromId(getSubjectInTerm(3, 2), "01418390");
+        co_op.addPrevious(sa);
+
+        Subject security = findSubjectFromId(getSubjectInTerm(3, 2), "01418332");
+        security.addPrevious(os);
+
+        Subject cc = findSubjectFromId(getSubjectInTerm(3, 2), "01418351");
+        cc.addPrevious(os);
+
+        Subject autometa = findSubjectFromId(getSubjectInTerm(3, 2), "01418333");
+        autometa.addPrevious(fundCom);
+
+        Subject compiler = findSubjectFromId(getSubjectInTerm(3, 2), "01418334");
+        compiler.addPrevious(autometa);
+
+        Subject co_opEdu = findSubjectFromId(getSubjectInTerm(4, 1), "01418490");
+        co_opEdu.addPrevious(co_op);
+
+        Subject csProject = findSubjectFromId(getSubjectInTerm(4, 2), "01418499");
+        csProject.addPrevious(sa);
     }
 
     private void writeSubject() {
         try {
-            Gson gson = new Gson();
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
             String json = gson.toJson(allSubject);
             PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(subjectData)));
             writer.println(json);
@@ -759,7 +797,7 @@ public class SubjectIO {
                 return each;
             }
         }
-        return null;
+        throw new IndexOutOfBoundsException("Cannot find id in array");
     }
 
     private Subject findSubjectFromName(ArrayList<Subject> term, String name) {

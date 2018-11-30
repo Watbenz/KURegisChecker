@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dea5f27-9e16-41d9-a877-904b0b12ca28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubjectData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/SubjectIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/SubjectIO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/subject/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/subject/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubjectData.json" beforeDir="false" afterPath="$PROJECT_DIR$/SubjectData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/SubjectIO$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/SubjectIO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classFile/subject/SubjectIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classFile/subject/SubjectIO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,12 +60,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="89" />
-          <entry key="java" value="7993" />
+          <entry key="java" value="9467" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7993" />
+          <entry key="JAVA" value="9467" />
           <entry key="XML" value="89" />
         </counts>
       </usages-collector>
@@ -75,14 +74,14 @@
           <entry key="css" value="1" />
           <entry key="fxml" value="25" />
           <entry key="java" value="82" />
-          <entry key="json" value="6" />
+          <entry key="json" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="JAVA" value="82" />
-          <entry key="JSON" value="6" />
+          <entry key="JSON" value="7" />
           <entry key="XML" value="25" />
         </counts>
       </usages-collector>
@@ -151,25 +150,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/classFile/subject/SubjectIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="714" column="24" selection-start-line="714" selection-start-column="24" selection-end-line="714" selection-end-column="24" />
+            <state relative-caret-position="172">
+              <caret line="366" column="60" selection-start-line="366" selection-start-column="60" selection-end-line="366" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#allSubjectInit#0;class#SubjectIO#0" />
                 <element signature="method#year1Init#0;class#SubjectIO#0" />
-                <element signature="method#year1_1Init#0;class#SubjectIO#0" />
                 <element signature="method#year1_2Init#0;class#SubjectIO#0" />
                 <element signature="method#year2Init#0;class#SubjectIO#0" />
                 <element signature="method#year2_1Init#0;class#SubjectIO#0" />
                 <element signature="method#year3Init#0;class#SubjectIO#0" />
+                <element signature="method#year3_2Init#0;class#SubjectIO#0" />
                 <element signature="method#year4Init#0;class#SubjectIO#0" />
-                <element signature="method#writeSubject#0;class#SubjectIO#0" />
+                <element signature="method#year4_1Init#0;class#SubjectIO#0" />
                 <element signature="method#readSubject#0;class#SubjectIO#0" />
                 <element signature="e#17429#17430#0" expanded="true" />
                 <element signature="e#17462#17463#0" expanded="true" />
-                <element signature="method#getSubjectInYear#0;class#SubjectIO#0" />
-                <element signature="method#getSubjectInTerm#0;class#SubjectIO#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SubjectData.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -177,8 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classFile/subject/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="283">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="e#837#838#0" expanded="true" />
                 <element signature="e#870#871#0" expanded="true" />
@@ -199,21 +205,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stage</find>
-      <find>setStage</find>
-      <find>Sys</find>
-      <find>backToHomePageStackPane</find>
-      <find>firstYearStackPane</find>
-      <find>readSubjectDataStackPane</find>
-      <find>backTo</find>
-      <find>goTodetail</find>
-      <find>year</find>
-      <find>subjectDetailStackPane</find>
-      <find>goto</find>
-      <find>กลัล</find>
-      <find>fx:id</find>
-      <find>System</find>
-      <find>#</find>
       <find>subjectPassedCheckbox</find>
       <find>set</find>
       <find>onmouse</find>
@@ -222,6 +213,28 @@
       <find>132</find>
       <find>01418231</find>
       <find>Co</find>
+      <find>01418131</find>
+      <find>01418232</find>
+      <find>01418132</find>
+      <find>01418321</find>
+      <find>01418331</find>
+      <find>addPrevious</find>
+      <find>addprevious</find>
+      <find>01418497</find>
+      <find>01418390</find>
+      <find>01418332</find>
+      <find>01418351</find>
+      <find>01418333</find>
+      <find>01418334</find>
+      <find>01418490</find>
+      <find>01418499</find>
+      <find>allSubjectInit</find>
+      <find>01417112</find>
+      <find>01417111</find>
+      <find>01417113</find>
+      <find>linear</find>
+      <find>free</find>
+      <find>write</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -264,8 +277,8 @@
         <option value="$PROJECT_DIR$/src/classFile/ChooseYearPageController.java" />
         <option value="$PROJECT_DIR$/src/classFile/CourseInAYearPageController.java" />
         <option value="$PROJECT_DIR$/src/classFile/TermSubjectDataController.java" />
-        <option value="$PROJECT_DIR$/SubjectData.json" />
         <option value="$PROJECT_DIR$/src/classFile/subject/Subject.java" />
+        <option value="$PROJECT_DIR$/SubjectData.json" />
         <option value="$PROJECT_DIR$/src/classFile/subject/SubjectIO.java" />
       </list>
     </option>
@@ -277,8 +290,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-352" />
-    <option name="y" value="-23" />
+    <option name="x" value="-3" />
+    <option name="y" value="-20" />
     <option name="width" value="1615" />
     <option name="height" value="880" />
   </component>
@@ -342,7 +355,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543593428467" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543603281231" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -419,10 +432,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72855000" />
+    <option name="totallyTimeSpent" value="80569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1476" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -437,7 +451,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3294271" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.30989584" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.30989584" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997396" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -453,40 +467,32 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20177838" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.3294271" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.3294271" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3138021" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/classFile/subject/SubjectIO.java</url>
+          <line>429</line>
+          <properties class="classFile.subject.SubjectIO" method="year3_1Init">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/classFile/subject/SubjectIO.java</url>
+          <line>430</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/sample/DetailPageController.java" />
@@ -604,6 +610,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/classFile/SubjectDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classFile/subject/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/CourseInAYearPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -611,16 +638,6 @@
           <folding>
             <element signature="e#1713#1714#0" expanded="true" />
             <element signature="e#1755#1756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classFile/SubjectDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,44 +658,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classFile/subject/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SubjectData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/subject/SubjectIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="714" column="24" selection-start-line="714" selection-start-column="24" selection-end-line="714" selection-end-column="24" />
+        <state relative-caret-position="172">
+          <caret line="366" column="60" selection-start-line="366" selection-start-column="60" selection-end-line="366" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#allSubjectInit#0;class#SubjectIO#0" />
             <element signature="method#year1Init#0;class#SubjectIO#0" />
-            <element signature="method#year1_1Init#0;class#SubjectIO#0" />
             <element signature="method#year1_2Init#0;class#SubjectIO#0" />
             <element signature="method#year2Init#0;class#SubjectIO#0" />
             <element signature="method#year2_1Init#0;class#SubjectIO#0" />
             <element signature="method#year3Init#0;class#SubjectIO#0" />
+            <element signature="method#year3_2Init#0;class#SubjectIO#0" />
             <element signature="method#year4Init#0;class#SubjectIO#0" />
-            <element signature="method#writeSubject#0;class#SubjectIO#0" />
+            <element signature="method#year4_1Init#0;class#SubjectIO#0" />
             <element signature="method#readSubject#0;class#SubjectIO#0" />
             <element signature="e#17429#17430#0" expanded="true" />
             <element signature="e#17462#17463#0" expanded="true" />
-            <element signature="method#getSubjectInYear#0;class#SubjectIO#0" />
-            <element signature="method#getSubjectInTerm#0;class#SubjectIO#0" />
           </folding>
         </state>
       </provider>
