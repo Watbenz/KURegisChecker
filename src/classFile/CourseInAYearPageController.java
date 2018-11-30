@@ -1,9 +1,7 @@
 package classFile;
 
-import ChangePage.Page;
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
+import classFile.changePage.Page;
+import classFile.subject.SubjectIO;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,56 +9,42 @@ import javafx.scene.Parent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 
 public class CourseInAYearPageController {
-    @FXML Stage stage;
-    @FXML VBox displayDataSubjectVbox;
+    @FXML private Stage stage;
+    @FXML private VBox termVBox;
+    private String status;
+    private SubjectIO subjectIO;
 
     @FXML
     public void initialize() {
-        Platform.runLater(this::readJsonFile);
+        Platform.runLater(this::loadTermItems);
     }
-    private void readJsonFile() {
-        Gson gson = new Gson();
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("subjectData.json"));
-            JsonArray jsonArray = gson.fromJson(reader, JsonArray.class);
 
-            for (int i=0; i<jsonArray.size(); i++) {
-                JsonElement jsonElement = jsonArray.get(i);
-                Subject subject = gson.fromJson(jsonElement, Subject.class);
-
-                displayDataSubjectVbox.getChildren().addAll(readSubjectDataStackPane(subject));
+    private void loadTermItems() {
+        for (int i=1; i<=2; i++) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/termSubjectData.fxml"));
+                Parent root = loader.load();
+                termVBox.getChildren().add(root);
+                TermSubjectDataController controller = loader.getController();
+                controller.setStage(stage);
+                controller.setSubjectIO(subjectIO);
+                controller.setStatus(status + "_" + i);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
-    }
-
-    private Parent readSubjectDataStackPane(Subject subject) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/subjectData.fxml"));
-            Parent root = loader.load();
-            SubjectDataController subjectDataController = loader.getController();
-            subjectDataController.setStage(stage);
-            subjectDataController.setAllNode(subject);
-            return root;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 
     @FXML
     private void backToPrevious() {
         try {
-            FXMLLoader loader = Page.changeToPage(stage, getClass().getResource("../fxml/chooseYearPage.fxml"));
+            FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/chooseYearPage.fxml"));
             ChooseYearPageController controller = loader.getController();
             controller.setStage(stage);
+            controller.setSubjectIO(subjectIO);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -68,5 +52,13 @@ public class CourseInAYearPageController {
 
     public void setStage(Stage stage) {
         this.stage = stage;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setSubjectIO(SubjectIO subjectIO) {
+        this.subjectIO = subjectIO;
     }
 }
