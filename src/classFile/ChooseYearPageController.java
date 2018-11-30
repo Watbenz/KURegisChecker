@@ -1,6 +1,7 @@
 package classFile;
 
 import classFile.changePage.Page;
+import classFile.subject.SubjectIO;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.StackPane;
@@ -11,6 +12,7 @@ import java.io.IOException;
 public class ChooseYearPageController {
     @FXML private Stage stage;
     @FXML private StackPane year1, year2, year3, year4;
+    private SubjectIO subjectIO;
 
     @FXML
     public void initialize() {
@@ -29,6 +31,7 @@ public class ChooseYearPageController {
             FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/courseInAYearPage.fxml"));
             CourseInAYearPageController controller = loader.getController();
             controller.setStage(stage);
+            controller.setSubjectIO(subjectIO);
             controller.setStatus(status);
         } catch (IOException e) {
             e.printStackTrace();
@@ -41,9 +44,14 @@ public class ChooseYearPageController {
             FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/mainPage.fxml"));
             MainPageController controller = loader.getController();
             controller.setStage(stage);
+            controller.setSubjectIO(subjectIO);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void setSubjectIO(SubjectIO subjectIO) {
+        this.subjectIO = subjectIO;
     }
 
     public void setStage(Stage stage) {

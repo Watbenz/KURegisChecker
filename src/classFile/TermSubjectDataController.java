@@ -20,33 +20,32 @@ public class TermSubjectDataController {
     @FXML private Label semesterLabel;
     @FXML private VBox displayDataSubjectVbox;
     private String status;
+    private SubjectIO subjectIO;
+    private int year;
+    private int term;
 
     @FXML
     public void initialize() {
         Platform.runLater(() -> {
-            semesterLabel.setText(formatSemesterLabel(status));
-            numberTermLabel.setText("" + status.charAt(status.length()-1));
+            findYearFromStatus();
+            semesterLabel.setText("ชั้นปีที่ " + year + " เทอม " + term);
+            numberTermLabel.setText("" + term);
             addSubjectItems();
         });
     }
 
-    private String formatSemesterLabel(String status) {
-        StringBuilder builder = new StringBuilder();
-        builder.append("ชั้นปีที่ ");
-
+    private void findYearFromStatus() {
         for (int i=0; i<status.length(); i++) {
             if (status.charAt(i) == '_') {
-                builder.append(status.charAt(i-1));
-                builder.append(" เทอม ");
-                builder.append(status.charAt(i+1));
+                this.year = Integer.parseInt("" + status.charAt(i-1));
+                this.term = Integer.parseInt("" + status.charAt(i+1));
                 break;
             }
         }
-        return builder.toString();
     }
 
     private void addSubjectItems() {
-        ArrayList<Subject> subjects = SubjectIO.readSubject("subjectData.json");
+        ArrayList<Subject> subjects = subjectIO.getSubjectInTerm(year, term);
         for (Subject each: subjects) {
             displayDataSubjectVbox.getChildren().addAll(loadSubjectData(each));
         }
@@ -72,5 +71,9 @@ public class TermSubjectDataController {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public void setSubjectIO(SubjectIO subjectIO) {
+        this.subjectIO = subjectIO;
     }
 }

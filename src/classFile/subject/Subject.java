@@ -13,12 +13,12 @@ public class Subject {
     private ArrayList<Subject> previous;
     private ArrayList<Subject> next;
 
-    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int weight, String detail) {
+    public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int credit, String detail) {
         this.icon = icon;
         this.subjectId = subjectId;
         this.name = name;
         this.difficultLevel = difficultLevel;
-        this.credit = weight;
+        this.credit = credit;
         this.finish = false;
         this.detail = detail;
         this.previous = new ArrayList<>();

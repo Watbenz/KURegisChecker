@@ -1,5 +1,6 @@
 package classFile;
 
+import classFile.subject.SubjectIO;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,6 +19,7 @@ public class Main extends Application {
 
         MainPageController mainPageController = loader.getController();
         mainPageController.setStage(primaryStage);
+        mainPageController.setSubjectIO(new SubjectIO());                   // Init subject data
         primaryStage.show();
     }
 

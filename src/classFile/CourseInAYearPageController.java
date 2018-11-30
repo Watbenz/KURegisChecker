@@ -1,6 +1,7 @@
 package classFile;
 
 import classFile.changePage.Page;
+import classFile.subject.SubjectIO;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,6 +15,7 @@ public class CourseInAYearPageController {
     @FXML private Stage stage;
     @FXML private VBox termVBox;
     private String status;
+    private SubjectIO subjectIO;
 
     @FXML
     public void initialize() {
@@ -21,7 +23,6 @@ public class CourseInAYearPageController {
     }
 
     private void loadTermItems() {
-
         for (int i=1; i<=2; i++) {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/termSubjectData.fxml"));
@@ -29,6 +30,7 @@ public class CourseInAYearPageController {
                 termVBox.getChildren().add(root);
                 TermSubjectDataController controller = loader.getController();
                 controller.setStage(stage);
+                controller.setSubjectIO(subjectIO);
                 controller.setStatus(status + "_" + i);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -42,6 +44,7 @@ public class CourseInAYearPageController {
             FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/chooseYearPage.fxml"));
             ChooseYearPageController controller = loader.getController();
             controller.setStage(stage);
+            controller.setSubjectIO(subjectIO);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -53,5 +56,9 @@ public class CourseInAYearPageController {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public void setSubjectIO(SubjectIO subjectIO) {
+        this.subjectIO = subjectIO;
     }
 }

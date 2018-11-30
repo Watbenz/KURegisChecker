@@ -35,7 +35,7 @@
          </Label>
       </StackPane>
       <VBox layoutX="131.0" layoutY="69.0" prefHeight="200.0" prefWidth="349.0">
-         <StackPane fx:id="chooseYearStackPane" onMouseClicked="#handleChangeToChooseYearPageOnclickStackPane" prefHeight="14.0" prefWidth="271.0">
+         <StackPane fx:id="chooseYearStackPane" onMouseClicked="#goToChooseYearPage" prefHeight="14.0" prefWidth="271.0">
             <VBox.margin>
                <Insets />
             </VBox.margin>
@@ -70,7 +70,7 @@
                      </font>
                   </Label>
                </StackPane>
-               <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="219.0" style="-fx-font-family: K2D;" text="รายการที่ลงทะเบียนเรียน">
+               <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="219.0" style="-fx-font-family: K2D;" text="รายวิชาที่ยังไม่ได้ลงทะเบียน">
                   <font>
                      <Font size="17.0" />
                   </font>
