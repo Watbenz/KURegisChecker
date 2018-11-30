@@ -9,11 +9,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="486.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.TermSubjectDataController">
+<AnchorPane prefHeight="39.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classFile.TermSubjectDataController">
    <children>
-      <AnchorPane layoutX="1.0" layoutY="54.0" prefHeight="438.0" prefWidth="790.0" style="-fx-background-color: rgba(255,255,255,0.35);">
+      <AnchorPane layoutX="1.0" layoutY="54.0" prefHeight="82.0" prefWidth="790.0" style="-fx-background-color: rgba(255,255,255,0.35);">
          <children>
-            <VBox fx:id="displayDataSubjectVbox" layoutX="92.0" layoutY="37.0" prefHeight="78.0" prefWidth="606.0">
+            <VBox fx:id="displayDataSubjectVbox" layoutX="92.0" layoutY="37.0" prefHeight="38.0" prefWidth="606.0">
                <padding>
                   <Insets bottom="50.0" />
                </padding>

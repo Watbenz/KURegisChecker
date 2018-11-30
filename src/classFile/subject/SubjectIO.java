@@ -8,11 +8,12 @@ import java.util.ArrayList;
 
 public class SubjectIO {
     private ArrayList<ArrayList<ArrayList<Subject>>> allSubject;
+    private File subjectData;
 
     public SubjectIO() {
         this.allSubject = new ArrayList<>();
         initSubject();
-        writeSubject();
+        writeSubjectInit();
     }
 
     private void initSubject() {
@@ -387,7 +388,7 @@ public class SubjectIO {
                 "\nภาวะที่เอื้อต่อการคานวณ และเครื่องจักรทัวริง ");
 
         Subject tech = new Subject(
-                "...",
+                "Comp",
                 "01418334",
                 "Compiler Techniques",
                 DifficultLevel.HARD,
@@ -402,7 +403,6 @@ public class SubjectIO {
         year3_2.add(security);
         year3_2.add(tech);
         year3_2.add(auto);
-        year3_2.add(tech);
 
         return year3_2;
     }
@@ -451,18 +451,21 @@ public class SubjectIO {
     }
 
 
-    public void writeSubject() {
+    private void writeSubjectInit() {
+        File subjectData = new File("SubjectData.json");
+
+        if (!subjectData.exists()) {
+            writeSubject(subjectData);
+        }
+    }
+
+    private void writeSubject(File subjectData) {
         try {
-            File subjectData = new File("SubjectData.json");
-
-//            if (!subjectData.exists()) {
-                Gson gson = new Gson();
-                String json = gson.toJson(allSubject);
-                PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(subjectData)));
-                writer.println(json);
-                writer.close();
-//            }
-
+            Gson gson = new Gson();
+            String json = gson.toJson(allSubject);
+            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(subjectData)));
+            writer.println(json);
+            writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
