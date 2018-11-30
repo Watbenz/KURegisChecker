@@ -25,13 +25,13 @@ public class Subject {
         this.next = new ArrayList<>();
     }
 
-    public void addNext(Subject subject) {
+    private void addNext(Subject subject) {
         next.add(subject);
-        subject.addPrevious(this);
     }
 
     public void addPrevious(Subject subject) {
         previous.add(subject);
+        subject.addNext(this);
     }
 
     public ArrayList<Subject> getPrevious() {

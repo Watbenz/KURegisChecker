@@ -12,12 +12,12 @@ public class SubjectIO {
 
     public SubjectIO() {
         this.allSubject = new ArrayList<>();
+        this.subjectData = new File("SubjectData.json");
         initSubject();
-        writeSubjectInit();
     }
 
     private void initSubject() {
-        allSubjectInit();
+        writeSubjectInit();
     }
 
     private void allSubjectInit() {
@@ -45,7 +45,21 @@ public class SubjectIO {
                 3,
                 "ลิมิตและความต่อเนื่อง" +
                 "\n อนุพันธ์และการประยุกต์" +
-                "\n เทคนิคการอินทิเกรต");
+                "\n เทคนิคการอินทิเกรต"
+        );
+
+        Subject funCom = new Subject(
+                ".py",
+                "01418114",
+                "Fundamental Programing",
+                DifficultLevel.MEDIUM,
+                3,
+                "แนวคิดพื้นฐานทางเทคโนโลยีคอมพิวเตอร์และสารสนเทศ " +
+                        "\nลักษณะเฉพาะและส่วนประกอบของระบบคอมพิวเตอร์ " +
+                        "\nเครือข่ายคอมพิวเตอร์ อินเทอร์เน็ตและเวิลด์ไวด์เว็บ " +
+                        "\nการประยุกต์คอมพิวเตอร์ หลักการพัฒนาระบบสารสนเทศ " +
+                        "\nความมั่นคงและภาวะส่วนตัว จริยธรรมทางคอมพิวเตอร์ "
+        );
 
         Subject introCS = new Subject(
                 "0101",
@@ -69,7 +83,19 @@ public class SubjectIO {
                 "\nความมั่นคงของสารสนเทศ" +
                 "\nระบบคอมพิวเตอร์แบบขนานและกระจาย" +
                 "\nการประยุกต์ระบบคอมพิวเตอร์ในปัจจุบัน" +
-                "\nจริยธรรมทางคอมพิวเตอร์");
+                "\nจริยธรรมทางคอมพิวเตอร์"
+        );
+
+        Subject digital = new Subject(
+                "IC_",
+                "01418131",
+                "Digital computer logic",
+                DifficultLevel.MEDIUM, 3,
+                "การออกแบบวงจรตรรกะเบื้องต้น" +
+                        "\nการแทนข้อมูลและสารสนเทศโดยสัญญาณดิจิทัล " +
+                        "\nการลงรหัส การแทนตัวเลขและการคานวณ " +
+                        "\nสถาปัตยกรรมคอมพิวเตอร์ "
+        );
 
         Subject knowledgeOfTheLand = new Subject(
                 "KU",
@@ -82,42 +108,36 @@ public class SubjectIO {
                 "\nการเรียนรู้คนต้นแบบ การสำนึกในความเป็น " +
                 "\nพลเมืองไทยพลเมืองโลก " +
                 "\nการเสริมสร้างและพัฒนาทักษะในการเรียนรู้และการทำงาน " +
-                "\nสู่เป้าหมายภายใต้บริบทความสำนึกดี มุ่งมั่น สร้างสรรค์ สามัคคี");
+                "\nสู่เป้าหมายภายใต้บริบทความสำนึกดี มุ่งมั่น สร้างสรรค์ สามัคคี"
+        );
 
-        Subject funCom = new Subject(
-                ".py", "01418113",
-                "Fundamental Programing",
-                DifficultLevel.MEDIUM, 3,
-                "แนวคิดพื้นฐานทางเทคโนโลยีคอมพิวเตอร์และสารสนเทศ " +
-                "\nลักษณะเฉพาะและส่วนประกอบของระบบคอมพิวเตอร์ " +
-                "\nเครือข่ายคอมพิวเตอร์ อินเทอร์เน็ตและเวิลด์ไวด์เว็บ " +
-                "\nการประยุกต์คอมพิวเตอร์ หลักการพัฒนาระบบสารสนเทศ " +
-                "\nความมั่นคงและภาวะส่วนตัว จริยธรรมทางคอมพิวเตอร์ ");
-
-        Subject digital = new Subject(
-                "IC_",
-                "01418131",
-                "Digital computer logic",
-                DifficultLevel.MEDIUM, 3,
-                "การออกแบบวงจรตรรกะเบื้องต้น" +
-                "\nการแทนข้อมูลและสารสนเทศโดยสัญญาณดิจิทัล " +
-                "\nการลงรหัส การแทนตัวเลขและการคานวณ " +
-                "\nสถาปัตยกรรมคอมพิวเตอร์ ");
-
-        Subject eng2 = new Subject(
+        Subject eng = new Subject(
                 "Eng",
-                "01355112",
-                "English xxxxxx",
+                "01xxxxxx",
+                "(สาระภาษาฯ - ภาษาต่างประเทศ 1)",
                 DifficultLevel.ANY,
                 3,
-                "ภาษาอังกฤษทั่วไป");
+                "ภาษาอังกฤษทั่วไป"
+        );
+
+        Subject thai = new Subject(
+                "Thai",
+                "01xxxxxx",
+                "(สาระภาษาฯ - ภาษาไทย)",
+                DifficultLevel.ANY,
+                3,
+                "กลุ่มรายวิชาภาษาไทย"
+        );
+
+//        funCom.addPrevious(introCS);
 
         year1_1.add(calculus_1);
         year1_1.add(introCS);
         year1_1.add(knowledgeOfTheLand);
         year1_1.add(funCom);
         year1_1.add(digital);
-        year1_1.add(eng2);
+        year1_1.add(eng);
+        year1_1.add(thai);
 
         return year1_1;
     }
@@ -132,7 +152,8 @@ public class SubjectIO {
                 DifficultLevel.QUITE_HARD,
                 3,
                 "พื้นผิวกำลังสอง อนุพันธ์ย่อย" +
-                "\nอินทิกรัลหลายชั้น สมการเชิงอนุพันธ์เบื้องต้น");
+                "\nอินทิกรัลหลายชั้น สมการเชิงอนุพันธ์เบื้องต้น"
+        );
 
         Subject comPro = new Subject(
                 "C/C+",
@@ -147,7 +168,8 @@ public class SubjectIO {
                 "\nการปรากฏซ้า ข้อความสั่งวนซ้า" +
                 "\nโครงสร้างข้อมูลพื้นฐาน การกาหนดสาระสาคัญของข้อมูล" +
                 "\nการโปรแกรมเชิงวัตถุ คลาส ส่วนต่อประสานและการทาให้เกิดผล" +
-                "\nการรับทอด ภาวะพหุสัณฐาน การรับทอดแบบพหุคูณ และมิกซ์อิน ");
+                "\nการรับทอด ภาวะพหุสัณฐาน การรับทอดแบบพหุคูณ และมิกซ์อิน "
+        );
 
         Subject funComputing = new Subject(
                 "O(n)",
@@ -156,20 +178,55 @@ public class SubjectIO {
                 DifficultLevel.QUITE_HARD,
                 3,
                 "ทฤษฎีการคานวณเชิงวิยุต ความน่าจะเป็นและสถิติ" +
-                "\nการทาให้เกิดผลและการประยุกต์ในวิทยาการคอมพิวเตอร์ ");
+                "\nการทาให้เกิดผลและการประยุกต์ในวิทยาการคอมพิวเตอร์ "
+        );
 
         Subject sport = new Subject(
                 "Sprt",
-                "01175XXX",
-                "Sport",
+                "01175xxx",
+                "(สาระอยู่ดีมีสุข - พลศึกษา)",
                 DifficultLevel.ANY,
                 1,
-                "เรียนตามที่เลือก");
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject manage = new Subject(
+                "Spap",
+                "01xxxxxx",
+                "(สาระศาสตร์แห่งผู้ประกอบการณ์)",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject people = new Subject(
+                "Life",
+                "01xxxxxx",
+                "(สาระพลเมืองไทยฯ)",
+                DifficultLevel.ANY,
+                1,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject free = new Subject(
+                "?",
+                "01xxxxxx",
+                "(สาระสุนทรียศาสตร์)",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+//        calculus_2.addPrevious(findSubjectFromId(getSubjectInTerm(1,1), "01417111"));
+//        comPro.addPrevious(findSubjectFromId(getSubjectInTerm(1,1), "01418112"));
 
         year1_2.add(calculus_2);
         year1_2.add(comPro);
         year1_2.add(funComputing);
         year1_2.add(sport);
+        year1_2.add(manage);
+        year1_2.add(people);
+        year1_2.add(free);
 
         return year1_2;
     }
@@ -195,7 +252,8 @@ public class SubjectIO {
                 3,
                 "ปริภูมิเวกเตอร์ การแปลงเชิงเส้นและเมตริกซ์" +
                 "\nระบบของสมการเชิงเส้น ค่าเฉพาะ เวกเตอร์เฉพาะ" +
-                "\nการทำให้เป็นแนวทแยงมุม การประยุกต์");
+                "\nการทำให้เป็นแนวทแยงมุม การประยุกต์"
+        );
 
         Subject java = new Subject(
                 "java",
@@ -209,7 +267,8 @@ public class SubjectIO {
                 "\nข้อกาหนดของซอฟต์แวร์ ตัวยืนยงในการแทนค่า" +
                 "\nการแยกคู่ แผนภาพการขึ้นต่อกันระหว่างโมดูล แผนภาพเชิงพฤติกรรม" +
                 "\nการรีแฟกเตอร์ แบบรูปการออกแบบ หลักการออกแบบเชิงวัตถุ" +
-                "\nการโปรแกรมเชิงเหตุการณ์ การโปรแกรมในภาวะพร้อมกัน ");
+                "\nการโปรแกรมเชิงเหตุการณ์ การโปรแกรมในภาวะพร้อมกัน "
+        );
 
         Subject data = new Subject(
                 "Data",
@@ -218,7 +277,8 @@ public class SubjectIO {
                 DifficultLevel.QUITE_HARD,
                 3,
                 "โครงสร้างข้อมูล โครงสร้างแฟ้ม และการประมวลผลแฟ้ม" +
-                "\nขั้นตอนวิธีสาหรับใช้งานรายการ กองซ้อน แถวคอย ต้นไม้และกราฟ");
+                "\nขั้นตอนวิธีสาหรับใช้งานรายการ กองซ้อน แถวคอย ต้นไม้และกราฟ"
+        );
 
         Subject stat = new Subject(
                 "∑x/n",
@@ -231,12 +291,47 @@ public class SubjectIO {
                 "\nารแจกแจงปัวส์ซง การแจกแจงปกติ" +
                 "\nการแจกแจงตัวอย่าง  สถิติอนุมานส าหรับประชากรเดียวและสอง" +
                 "\nประชากร  การวิเคราะห์ข้อมูลจ านวนนับ  การวิเคราะห์ความแปรปรวนแบบทางเดียว" +
-                "\nการวิเคราะห์การถดถอยเชิงเส้นแบบง่าย");
+                "\nการวิเคราะห์การถดถอยเชิงเส้นแบบง่าย"
+        );
+
+        Subject com = new Subject(
+                "Lib",
+                "01xxxxxx",
+                "(สาระภาาาฯ - II/Computer)",
+                DifficultLevel.ANY,
+                1,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject sport = new Subject(
+                "sprt",
+                "01xxxxxx",
+                "(สาระอยู่ดีมีสุข)",
+                DifficultLevel.ANY,
+                2,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject sci = new Subject(
+                "Sci",
+                "01xxxxxx",
+                "(ทั้ง 5 สาระ - คณะวิทยาศาสตร์)",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+//        java.addPrevious(getSubjectInTerm(1, 2).get(1));
+//        data.addPrevious(getSubjectInTerm(1, 2).get(1));
+//        linear.addPrevious(getSubjectInTerm(1, 2).get(0));
 
         year2_1.add(linear);
         year2_1.add(java);
         year2_1.add(data);
         year2_1.add(stat);
+        year2_1.add(com);
+        year2_1.add(sport);
+        year2_1.add(sci);
 
         return year2_1;
     }
@@ -246,7 +341,7 @@ public class SubjectIO {
 
         Subject dataBase = new Subject(
                 "DB",
-                "01418211",
+                "01418221",
                 "Fundamentals of Database Systems",
                 DifficultLevel.HARD,
                 3,
@@ -258,7 +353,8 @@ public class SubjectIO {
                 "\nเชิงข่ายงาน และเชิงสัมพันธ์ บรรทัดฐานข้อมูล" +
                 "\nภาษานิยามข้อมูลพจนานุกรมข้อมูล" +
                 "\nเครื่องช่วยตอบข้อซักถาม" +
-                "\nการจัดแฟ้มข้อมูล ความปลอดภัยของแฟ้มข้อมูล ");
+                "\nการจัดแฟ้มข้อมูล ความปลอดภัยของแฟ้มข้อมูล "
+        );
 
         Subject algo = new Subject(
                 "n^2",
@@ -269,7 +365,8 @@ public class SubjectIO {
                 "แนวคิดพื้นฐานของขั้นตอนวิธี" +
                 "\nการวิเคราะห์ขั้นตอนวิธีในเชิงคณิตศาสตร์" +
                 "\nการวิเคราะห์ขั้นตอนวิธีการเรียงลาดับและการค้นหา" +
-                "\nเทคนิคเชิงขั้นตอนวิธี วิธีการออกแบบขั้นตอนวิธี ");
+                "\nเทคนิคเชิงขั้นตอนวิธี วิธีการออกแบบขั้นตอนวิธี "
+        );
 
         Subject assem = new Subject(
                 "0001",
@@ -287,11 +384,48 @@ public class SubjectIO {
                 "\nภาวะถ่วงดุลระหว่างราคาต่อสมรรถนะ" +
                 "\nการออกแบบชุดคาสั่ง ตัวประมวลผลกลาง" +
                 "\nระบบรับส่งข้อมูล การทางานแบบสายท่อ" +
-                "\nเวกเตอร์และสถาปัตยกรรมแบบริกส์ สถาปัตยกรรมแบบขนาน ");
+                "\nเวกเตอร์และสถาปัตยกรรมแบบริกส์ สถาปัตยกรรมแบบขนาน "
+        );
+
+        Subject major = new Subject(
+                "M",
+                "01418xxx",
+                "Major Electives 1",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject eng = new Subject(
+                "Eng",
+                "01xxxxxx",
+                "(สาระภาษาฯ - ภาษาต่างประเทศ 2)",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject sci = new Subject(
+                "Sci",
+                "01xxxxxx",
+                "(ทั้ง 5 สาระ - คณะวิทยาศาสตร์)",
+                DifficultLevel.ANY,
+                2,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+//        dataBase.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418113"));
+//        assem.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418113"));
+//        assem.addPrevious(findSubjectFromId(getSubjectInTerm(1,1), "01418131"));
+//        algo.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418132"));
+//        algo.addPrevious(findSubjectFromId(getSubjectInTerm(2,1), "01418231"));
 
         year2_2.add(dataBase);
         year2_2.add(algo);
         year2_2.add(assem);
+        year2_2.add(major);
+        year2_2.add(eng);
+        year2_2.add(sci);
 
         return year2_2;
     }
@@ -309,7 +443,7 @@ public class SubjectIO {
     private ArrayList<Subject> year3_1Init() {
         ArrayList<Subject> year3_1 = new ArrayList<>();
         Subject system = new Subject(
-                "Sys",
+                "SA",
                 "01418321",
                 "System Analysis and Design",
                 DifficultLevel.HARD,
@@ -321,7 +455,8 @@ public class SubjectIO {
                         "\nส่งออกและการออกแบบ" +
                         "\nการออกแบบวิธีการประมวลผลด้วยคอมพิวเตอร์" +
                         "\nการทาเอกสาร การนาไปใช้และการประเมินผล" +
-                        "\nการพิสูจน์ การออกแบบ กรณีศึกษา ");
+                        "\nการพิสูจน์ การออกแบบ กรณีศึกษา "
+        );
 
         Subject operating = new Subject(
                 "OS",
@@ -335,17 +470,19 @@ public class SubjectIO {
                 "\nลาดับขั้นของหน่วยความจา การจัดการหน่วยความจา" +
                 "\nหน่วยความจาเสมือน การจัดการระบบแฟ้ม" +
                 "\nการจัดการระบบรับเข้าและส่งออก" +
-                "\nความมั่นคง การป้องกัน ระบบปฏิบัติการแบบกระจาย ");
+                "\nความมั่นคง การป้องกัน ระบบปฏิบัติการแบบกระจาย "
+        );
 
         Subject intel = new Subject(
-                "Intl",
+                "IP",
                 "01418341",
                 "Computer Application in Linear Optimization and Network Analysis",
                 DifficultLevel.MEDIUM, 3,
                 "การโปรแกรมขั้นตอนวิธีสาหรับการหาค่าเหมาะที่สุดเชิงเส้น" +
                 "\nวิธีซิมเพล็กซ์ และวิธีซิมเพล็กซ์แบบปรับปรุง" +
                 "\nการวิเคราะห์เครือข่าย เทคนิคการประเมินค่าและควบคุมโครงการ" +
-                "\nระเบียบวิธีวิถีวิกฤต การโปรแกรมสาหรับทฤษฎีเกม ");
+                "\nระเบียบวิธีวิถีวิกฤต การโปรแกรมสาหรับทฤษฎีเกม "
+        );
 
         Subject seminar = new Subject(
                 "Semi",
@@ -353,12 +490,40 @@ public class SubjectIO {
                 "Seminar",
                 DifficultLevel.HARD,
                 1,
-                "การนาเสนอและอภิปรายหัวข้อที่น่าสนใจทางวิทยาการคอมพิวเตอร์ ในระดับปริญญาตรี ");
+                "การนาเสนอและอภิปรายหัวข้อที่น่าสนใจทางวิทยาการคอมพิวเตอร์ ในระดับปริญญาตรี "
+        );
+
+        Subject major = new Subject(
+                "M",
+                "01418xxx",
+                "Major Electives 2",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject eng = new Subject(
+                "Eng",
+                "01xxxxxx",
+                "(สาระภาษาฯ - ภาษาต่างประเทศ 3)",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+//        system.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418221"));
+//        system.addPrevious(findSubjectFromId(getSubjectInTerm(2,1), "01418211"));
+//        operating.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418233"));
+//        seminar.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418221"));
+//        seminar.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418232"));
+//        seminar.addPrevious(findSubjectFromId(getSubjectInTerm(2,2), "01418233"));
 
         year3_1.add(system);
         year3_1.add(operating);
         year3_1.add(intel);
         year3_1.add(seminar);
+        year3_1.add(major);
+        year3_1.add(eng);
 
         return year3_1;
     }
@@ -387,7 +552,7 @@ public class SubjectIO {
                 "\nการหาภาวะต่าสุด ไวยากรณ์ของภาษารูปนัย" +
                 "\nภาวะที่เอื้อต่อการคานวณ และเครื่องจักรทัวริง ");
 
-        Subject tech = new Subject(
+        Subject complier = new Subject(
                 "Comp",
                 "01418334",
                 "Compiler Techniques",
@@ -400,9 +565,65 @@ public class SubjectIO {
                 "\nตารางสัญลักษณ์ การแทนระหว่างกลาง" +
                 "\nการวิเคราะห์ความหมายและการก่อกาเนิดรหัส ");
 
+        Subject prin = new Subject(
+                "CC",
+                "01418351",
+                "Principle in CCs & Cloud Computing",
+                DifficultLevel.MEDIUM,
+                3,
+                "แนวคิดของเครือข่าวยการสื่อสารแบบมีสาย ไร้สาย และเซลลูลาร์ \n" +
+                        "องค์ประกอบของการสื่อสาร\n" +
+                        "คอมพิวเตอร์และเครือข่าย ชนิดของเครือข่ายคอมพิวเตอร์ \n" +
+                        "มาตรฐานและระดับชั้นโพรโทคอล โพรโทคอลชั้นโปรแกรม\n" +
+                        "ประยุกต์ สถาปัตยกรรมและการโปรแกรมโปรแกรมประยุกต์บนเครือข่าย \n" +
+                        "โพรโทคอลชั้นทรานสปอร์ต เครือข่ายแบบ\n" +
+                        "กำหนดโดยซอฟต์แวร์ การประมวลผลบนคลาวด์ องค์ประกอบและบริการ"
+        );
+
+        Subject co_op = new Subject(
+                "CO",
+                "01418390",
+                "Co-op. Education Preparation",
+                DifficultLevel.QUITE_EASY,
+                1,
+                "หลักการ แนวคิด และกระบวนการของสหกิจศึกษา \n" +
+                        "ระเบียบข้อบังคับที่เกที่ยวข้อง ความรู้พื้นฐานและ\n" +
+                        "เทคนิคในการสมัครงานและปฏิบัติงาน การสื่อสารและมนุษยสัมพันธ์ \n" +
+                        "การพัฒนาบุคลิกภาพ ระบบการบริหารคุณภาพ\n" +
+                        "ในสถานประกอบการ เทคนิคการนำเสนอ การเขียนรายงาน"
+        );
+
+        Subject major = new Subject(
+                "M",
+                "01418xxx",
+                "Major Electives 3",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject free = new Subject(
+                "F",
+                "01xxxxxx",
+                "Major Electives 1",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+//        co_op.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418321"));
+//        security.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418321"));
+//        prin.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418331"));
+//        auto.addPrevious(findSubjectFromId(getSubjectInTerm(1,2), "01418132"));
+//        complier.addPrevious(auto);
+
         year3_2.add(security);
-        year3_2.add(tech);
+        year3_2.add(complier);
         year3_2.add(auto);
+        year3_2.add(prin);
+        year3_2.add(co_op);
+        year3_2.add(major);
+        year3_2.add(free);
 
         return year3_2;
     }
@@ -427,7 +648,10 @@ public class SubjectIO {
                 DifficultLevel.HARD,
                 6,
                 "การปฏิบัติงานในลักษณะพนักงานชั่วคราว" +
-                "\nตามโครงงานที่ได้รับมอบหมายตลอดจนการจัดทารายงานและการนาเสนอ");
+                "\nตามโครงงานที่ได้รับมอบหมายตลอดจนการจัดทารายงานและการนาเสนอ"
+        );
+
+//        co_op.addPrevious(findSubjectFromId(getSubjectInTerm(3,2), "01418390"));
 
         year4_1.add(co_op);
 
@@ -443,23 +667,71 @@ public class SubjectIO {
                 "Computer Science Project",
                 DifficultLevel.HARD,
                 3,
-                "โครงงานที่น่าสนใจในแขนงต่างๆ ของวิทยาการคอมพิวเตอร์");
+                "โครงงานที่น่าสนใจในแขนงต่างๆ ของวิทยาการคอมพิวเตอร์"
+        );
+
+        Subject major4 = new Subject(
+                "M",
+                "01418xxx",
+                "Major Electives 4",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject major5 = new Subject(
+                "M",
+                "01418xxx",
+                "Major Electives 5",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject major6 = new Subject(
+                "M",
+                "01418xxx",
+                "Major Electives 6",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+        Subject free = new Subject(
+                "M",
+                "01xxxxxx",
+                "Free Electives 2",
+                DifficultLevel.ANY,
+                3,
+                "รายวิชาขึ้นอยู่กับวิชาที่ลงเรียน"
+        );
+
+//        cs.addPrevious(findSubjectFromId(getSubjectInTerm(3,1), "01418321"));
 
         year4_2.add(cs);
+        year4_2.add(major4);
+        year4_2.add(major5);
+        year4_2.add(major6);
+        year4_2.add(free);
 
         return year4_2;
     }
 
+    public void reset() {
+        writeSubject();
+    }
 
     private void writeSubjectInit() {
-        File subjectData = new File("SubjectData.json");
-
         if (!subjectData.exists()) {
-            writeSubject(subjectData);
+            allSubjectInit();
+            writeSubject();
+        }
+        else {
+            readSubject();
         }
     }
 
-    private void writeSubject(File subjectData) {
+    private void writeSubject() {
         try {
             Gson gson = new Gson();
             String json = gson.toJson(allSubject);
@@ -471,17 +743,33 @@ public class SubjectIO {
         }
     }
 
-//    public static ArrayList<Subject> readSubject(String filename) {
-//        ArrayList<Subject> subjects = null;
-//        try {
-//            Gson gson = new Gson();
-//            BufferedReader reader = new BufferedReader(new FileReader(filename));
-//            subjects = gson.fromJson(reader, new TypeToken<ArrayList<Subject>>(){}.getType());
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        return subjects;
-//    }
+    private void readSubject() {
+        try {
+            Gson gson = new Gson();
+            BufferedReader reader = new BufferedReader(new FileReader(subjectData));
+            allSubject = gson.fromJson(reader, new TypeToken<ArrayList<ArrayList<ArrayList<Subject>>>>(){}.getType());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private Subject findSubjectFromId(ArrayList<Subject> term, String id) {
+        for (Subject each: term) {
+            if (each.getSubjectId().equals(id)) {
+                return each;
+            }
+        }
+        return null;
+    }
+
+    private Subject findSubjectFromName(ArrayList<Subject> term, String name) {
+        for (Subject each: term) {
+            if (each.getName().equals(name)) {
+                return each;
+            }
+        }
+        return null;
+    }
 
     public ArrayList<ArrayList<ArrayList<Subject>>> getAllSubject() {
         return allSubject;
