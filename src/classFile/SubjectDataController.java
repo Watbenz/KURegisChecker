@@ -17,7 +17,7 @@ import org.controlsfx.control.ToggleSwitch;
 import java.io.IOException;
 
 public class SubjectDataController {
-    private Stage stage;
+    @FXML private Stage stage;
     @FXML private Label iconLabel;
     @FXML private Label subjectIdLabel;
     @FXML private Label subjectNameLabel;
