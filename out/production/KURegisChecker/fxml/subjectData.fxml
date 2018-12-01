@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -41,11 +42,20 @@
                 </Label>
             </StackPane>
             <VBox layoutX="92.0" layoutY="15.0" prefHeight="46.0" prefWidth="265.0">
-                <Label fx:id="subjectIdLabel" prefHeight="17.0" prefWidth="147.0" style="-fx-font-family: K2D;" text="01417111">
-                    <font>
-                        <Font size="17.0" />
-                    </font>
-                </Label>
+            <HBox prefHeight="24.0" prefWidth="192.0">
+               <children>
+                      <Label fx:id="subjectIdLabel" prefHeight="24.0" prefWidth="90.0" style="-fx-font-family: K2D;" text="01417111">
+                          <font>
+                              <Font size="17.0" />
+                          </font>
+                      </Label>
+                  <Label fx:id="statusLabel" prefHeight="24.0" prefWidth="106.0" style="-fx-font-family: K2D;" text="(ยังไม่ผ่าน)" textFill="#cc2a36">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
                 <Label fx:id="subjectNameLabel" prefHeight="20.0" prefWidth="358.0" style="-fx-font-family: K2D;" text="Calculus I" textFill="#656565">
                     <font>
                         <Font size="14.0" />
@@ -63,9 +73,9 @@
                  </font>
              </Label>
          <ToggleSwitch fx:id="addToggleSwitch" layoutX="566.0" layoutY="35.0" prefHeight="18.0" prefWidth="29.0" />
-          <Label fx:id="passLabel" alignment="CENTER" layoutX="563.0" layoutY="14.0" prefHeight="20.0" prefWidth="38.0" style="-fx-font-family: K2D;" text="ผ่าน" textAlignment="RIGHT" textFill="#656565">
+          <Label fx:id="passLabel" alignment="CENTER" layoutX="541.0" layoutY="14.0" prefHeight="20.0" prefWidth="82.0" style="-fx-font-family: K2D;" text="ผ่าน" textAlignment="RIGHT" textFill="#656565">
               <font>
-                  <Font size="10.0" />
+                  <Font size="7.0" />
               </font>
           </Label>
         </children>

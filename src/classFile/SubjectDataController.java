@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
 import org.controlsfx.control.ToggleSwitch;
@@ -23,6 +24,7 @@ public class SubjectDataController {
     @FXML private Label difficultLevelLabel;
     @FXML private Label creditLabel;
     @FXML private Label passLabel;
+    @FXML private Label statusLabel;
     @FXML private Ellipse iconEllipse;
     @FXML private ToggleSwitch addToggleSwitch;
     private Subject subject;
@@ -31,24 +33,27 @@ public class SubjectDataController {
     @FXML
     public void initialize() {
         Platform.runLater(() -> {
-            setAllNode();
+            update();
             setToggleSwitchOnClick();
         });
     }
 
     private void setToggleSwitchOnClick() {
         addToggleSwitch.setOnMouseClicked(event -> {
-            if (addToggleSwitch.isSelected()) {
+            if (!addToggleSwitch.isSelected()) {
                 passLabel.setText("ไม่ผ่าน");
+                subject.setFinish(false);
             }
             else {
                 passLabel.setText("ผ่าน");
+                subject.setFinish(true);
             }
-            subject.setFinish(addToggleSwitch.isSelected());
+            setStatusLabelProperty(subject.isFinish());
+            new Thread(() -> subjectIO.update()).start();
         });
     }
 
-    public void setAllNode() {
+    public void update() {
         iconLabel.setText(subject.getIcon());
         subjectIdLabel.setText(subject.getSubjectId());
         subjectNameLabel.setText(subject.getName());
@@ -61,12 +66,29 @@ public class SubjectDataController {
         difficultLevelLabel.setTextFill(subject.getDifficultLevel().getColor());
     }
 
+    private void setStatusLabelProperty(boolean isSubjectFinish) {
+        if (isSubjectFinish) {
+            statusLabel.setText("(ผ่านแล้ว)");
+            statusLabel.setTextFill(Color.web("#115511"));
+        }
+        else {
+            statusLabel.setText("(ยังไม่ผ่าน)");
+            statusLabel.setTextFill(Color.web("#A10719"));
+        }
+    }
+
     private void checkPreviousSubject(Subject subject) {
         if (subjectIO.isPreviousFinish(subject)) {
             addToggleSwitch.setSelected(subject.isFinish());
+            passLabel.setText(subject.isFinish()? "ผ่าน": "ไม่ผ่าน");
+            setStatusLabelProperty(subject.isFinish());
         }
         else {
             addToggleSwitch.setDisable(true);
+            statusLabel.setText("(กรุณาลงตัวก่อนหน้า)");
+            statusLabel.setTextFill(Color.BLACK);
+            passLabel.setText("กรุณาลงตัวก่อนหน้า");
+            passLabel.setTextFill(Color.web("#A10719"));
         }
     }
 

@@ -11,21 +11,21 @@ public class SubjectIO {
     private File subjectData;
 
     public SubjectIO() {
-        this.allSubject = new ArrayList<>();
         this.subjectData = new File("SubjectData.json");
         initSubject();
     }
 
     private void initSubject() {
-//        if (!subjectData.exists()) {
+        if (!subjectData.exists()) {
             reset();
-//        }
-//        else {
-//            readSubject();
-//        }
+        }
+        else {
+            readSubject();
+        }
     }
 
     private void allSubjectInit() {
+        this.allSubject = new ArrayList<>();
         allSubject.add(year1Init());
         allSubject.add(year2Init());
         allSubject.add(year3Init());
@@ -818,6 +818,7 @@ public class SubjectIO {
             String json = gson.toJson(allSubject);
             PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(subjectData)));
             writer.println(json);
+            writer.flush();
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
