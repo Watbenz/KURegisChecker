@@ -804,6 +804,17 @@ public class SubjectIO {
         return true;
     }
 
+    public void setPreviousToFalse(Subject subject) {
+        ArrayList<String> allPrevious = subject.getPrevious();
+
+        for (String each: allPrevious) {
+            Subject eachSubject = getSubjectFromString(each);
+            if (!eachSubject.isFinish()) {
+                subject.setFinish(false);
+            }
+        }
+    }
+
     private Subject getSubjectFromString(String subjectFormat) {
         String[] format = subjectFormat.split("_");
         int year = Integer.parseInt("" + format[0].charAt(0));

@@ -29,6 +29,7 @@ public class SubjectDataController {
     @FXML private ToggleSwitch addToggleSwitch;
     private Subject subject;
     private SubjectIO subjectIO;
+    private Runnable updateCallback;
 
     @FXML
     public void initialize() {
@@ -48,7 +49,9 @@ public class SubjectDataController {
                 passLabel.setText("ผ่าน");
                 subject.setFinish(true);
             }
+            passLabel.setTextFill(Color.BLACK);
             setStatusLabelProperty(subject.isFinish());
+            updateCallback.run();
             new Thread(() -> subjectIO.update()).start();
         });
     }
@@ -79,12 +82,15 @@ public class SubjectDataController {
 
     private void checkPreviousSubject(Subject subject) {
         if (subjectIO.isPreviousFinish(subject)) {
+            addToggleSwitch.setDisable(false);
             addToggleSwitch.setSelected(subject.isFinish());
             passLabel.setText(subject.isFinish()? "ผ่าน": "ไม่ผ่าน");
             setStatusLabelProperty(subject.isFinish());
         }
         else {
+            subjectIO.setPreviousToFalse(subject);
             addToggleSwitch.setDisable(true);
+            addToggleSwitch.setSelected(false);
             statusLabel.setText("(กรุณาลงตัวก่อนหน้า)");
             statusLabel.setTextFill(Color.BLACK);
             passLabel.setText("กรุณาลงตัวก่อนหน้า");
@@ -121,5 +127,9 @@ public class SubjectDataController {
 
     public void setSubjectIO(SubjectIO subjectIO) {
         this.subjectIO = subjectIO;
+    }
+
+    public void setUpdateCallback(Runnable updateCallback) {
+        this.updateCallback = updateCallback;
     }
 }

@@ -10,16 +10,25 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class CourseInAYearPageController {
     @FXML private Stage stage;
     @FXML private VBox termVBox;
     private String status;
     private SubjectIO subjectIO;
+    private ArrayList<TermSubjectDataController> allController;
 
     @FXML
     public void initialize() {
+        this.allController = new ArrayList<>();
         Platform.runLater(this::loadTermItems);
+    }
+
+    private void update() {
+        for (TermSubjectDataController controller: allController) {
+            controller.update();
+        }
     }
 
     private void loadTermItems() {
@@ -29,9 +38,11 @@ public class CourseInAYearPageController {
                 Parent root = loader.load();
                 termVBox.getChildren().add(root);
                 TermSubjectDataController controller = loader.getController();
+                allController.add(controller);
                 controller.setStage(stage);
                 controller.setSubjectIO(subjectIO);
                 controller.setStatus(status + "_" + i);
+                controller.setUpdateCallback(this::update);
             } catch (IOException e) {
                 e.printStackTrace();
             }

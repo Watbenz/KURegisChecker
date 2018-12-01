@@ -21,12 +21,15 @@ public class TermSubjectDataController {
     @FXML private VBox displayDataSubjectVbox;
     private String status;
     private SubjectIO subjectIO;
+    private ArrayList<SubjectDataController> allController;
     private int year;
     private int term;
+    private Runnable updateCallback;
 
     @FXML
     public void initialize() {
         Platform.runLater(() -> {
+            allController = new ArrayList<>();
             findYearFromStatus();
             semesterLabel.setText("ชั้นปีที่ " + year + " เทอม " + term);
             numberTermLabel.setText("" + term);
@@ -51,14 +54,22 @@ public class TermSubjectDataController {
         }
     }
 
+    public void update() {
+        for (SubjectDataController controller: allController) {
+            controller.update();
+        }
+    }
+
     private Parent loadSubjectData(Subject subject) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/subjectData.fxml"));
             Parent root = loader.load();
             SubjectDataController controller = loader.getController();
+            allController.add(controller);
             controller.setStage(stage);
             controller.setSubject(subject);
             controller.setSubjectIO(subjectIO);
+            controller.setUpdateCallback(updateCallback);
 
             return root;
         } catch (IOException e) {
@@ -77,5 +88,9 @@ public class TermSubjectDataController {
 
     public void setSubjectIO(SubjectIO subjectIO) {
         this.subjectIO = subjectIO;
+    }
+
+    public void setUpdateCallback(Runnable updateCallback) {
+        this.updateCallback = updateCallback;
     }
 }
