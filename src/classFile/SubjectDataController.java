@@ -81,10 +81,11 @@ public class SubjectDataController {
     }
 
     private void checkPreviousSubject(Subject subject) {
+        addToggleSwitch.setSelected(subject.isFinish());
         if (subjectIO.isPreviousFinish(subject)) {
             addToggleSwitch.setDisable(false);
-            addToggleSwitch.setSelected(subject.isFinish());
             passLabel.setText(subject.isFinish()? "ผ่าน": "ไม่ผ่าน");
+            passLabel.setTextFill(Color.BLACK);
             setStatusLabelProperty(subject.isFinish());
         }
         else {

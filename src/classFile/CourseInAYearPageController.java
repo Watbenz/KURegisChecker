@@ -6,6 +6,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 
 public class CourseInAYearPageController {
     @FXML private Stage stage;
+    @FXML private Button resetDataButton;
     @FXML private VBox termVBox;
     private String status;
     private SubjectIO subjectIO;
