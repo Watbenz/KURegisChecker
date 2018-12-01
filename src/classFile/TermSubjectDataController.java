@@ -64,11 +64,11 @@ public class TermSubjectDataController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/subjectData.fxml"));
             Parent root = loader.load();
             SubjectDataController controller = loader.getController();
-            allController.add(controller);
             controller.setStage(stage);
             controller.setSubject(subject);
             controller.setSubjectIO(subjectIO);
             controller.setUpdateCallback(updateCallback);
+            allController.add(controller);
 
             return root;
         } catch (IOException e) {

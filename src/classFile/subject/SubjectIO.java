@@ -17,7 +17,7 @@ public class SubjectIO {
 
     private void initSubject() {
         if (!subjectData.exists()) {
-            reset();
+            writeAllSubject();
         }
         else {
             readSubject();
@@ -718,10 +718,22 @@ public class SubjectIO {
         writeSubject();
     }
 
-    public void reset() {
+    public void writeAllSubject() {
         allSubjectInit();
         addAllPrevious();
         writeSubject();
+    }
+
+    public void resetData() {
+        for (ArrayList<ArrayList<Subject>> year: allSubject) {
+            for (ArrayList<Subject> term: year) {
+                for (Subject eachSubject: term) {
+                    if (eachSubject.isFinish()) {
+                        eachSubject.setFinish(false);
+                    }
+                }
+            }
+        }
     }
 
     private void addAllPrevious() {
@@ -796,7 +808,7 @@ public class SubjectIO {
         ArrayList<String> allPrevious = subject.getPrevious();
 
         for (String each: allPrevious) {
-            Subject eachSubject = getSubjectFromString(each);
+            Subject eachSubject = getSubjectFromFormat(each);
             if (!eachSubject.isFinish()) {
                 return false;
             }
@@ -808,14 +820,25 @@ public class SubjectIO {
         ArrayList<String> allPrevious = subject.getPrevious();
 
         for (String each: allPrevious) {
-            Subject eachSubject = getSubjectFromString(each);
+            Subject eachSubject = getSubjectFromFormat(each);
             if (!eachSubject.isFinish()) {
                 subject.setFinish(false);
             }
         }
     }
 
-    private Subject getSubjectFromString(String subjectFormat) {
+    public ArrayList<Subject> getPreviousAsArrayList(Subject subject) {
+        ArrayList<Subject> output = new ArrayList<>();
+
+        for (String each: subject.getPrevious()) {
+            Subject eachSubject = getSubjectFromFormat(each);
+            output.add(eachSubject);
+        }
+
+        return output;
+    }
+
+    public Subject getSubjectFromFormat(String subjectFormat) {
         String[] format = subjectFormat.split("_");
         int year = Integer.parseInt("" + format[0].charAt(0));
         int term = Integer.parseInt("" + format[0].charAt(1));
@@ -841,7 +864,6 @@ public class SubjectIO {
             Gson gson = new Gson();
             BufferedReader reader = new BufferedReader(new FileReader(subjectData));
             allSubject = gson.fromJson(reader, new TypeToken<ArrayList<ArrayList<ArrayList<Subject>>>>(){}.getType());
-            addAllPrevious();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

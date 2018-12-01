@@ -72,7 +72,7 @@ public class SubjectDataController {
     private void setStatusLabelProperty(boolean isSubjectFinish) {
         if (isSubjectFinish) {
             statusLabel.setText("(ผ่านแล้ว)");
-            statusLabel.setTextFill(Color.web("#115511"));
+            statusLabel.setTextFill(Color.web("#007D47"));
         }
         else {
             statusLabel.setText("(ยังไม่ผ่าน)");
@@ -91,7 +91,6 @@ public class SubjectDataController {
         else {
             subjectIO.setPreviousToFalse(subject);
             addToggleSwitch.setDisable(true);
-            addToggleSwitch.setSelected(false);
             statusLabel.setText("(กรุณาลงตัวก่อนหน้า)");
             statusLabel.setTextFill(Color.BLACK);
             passLabel.setText("กรุณาลงตัวก่อนหน้า");
@@ -111,6 +110,7 @@ public class SubjectDataController {
             DetailsPageController controller = loader.getController();
             controller.setStage(popup);
             controller.setSubject(subject);
+            controller.setSubjectIO(subjectIO);
 
             popup.show();
         } catch (IOException e) {

@@ -27,6 +27,13 @@ public class CourseInAYearPageController {
         Platform.runLater(this::loadTermItems);
     }
 
+    @FXML
+    public void resetData() {
+        subjectIO.resetData();
+        subjectIO.update();
+        update();
+    }
+
     private void update() {
         for (TermSubjectDataController controller: allController) {
             controller.update();
