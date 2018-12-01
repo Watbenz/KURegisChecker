@@ -1,7 +1,6 @@
 package classFile.subject;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.*;
@@ -18,7 +17,12 @@ public class SubjectIO {
     }
 
     private void initSubject() {
-        writeSubjectInit();
+//        if (!subjectData.exists()) {
+            reset();
+//        }
+//        else {
+//            readSubject();
+//        }
     }
 
     private void allSubjectInit() {
@@ -139,6 +143,8 @@ public class SubjectIO {
         year1_1.add(eng);
         year1_1.add(thai);
 
+        addYearAndTermEachSubject(year1_1, 1, 1);
+
         return year1_1;
     }
 
@@ -224,6 +230,8 @@ public class SubjectIO {
         year1_2.add(manage);
         year1_2.add(people);
         year1_2.add(free);
+
+        addYearAndTermEachSubject(year1_2, 1, 2);
 
         return year1_2;
     }
@@ -326,6 +334,8 @@ public class SubjectIO {
         year2_1.add(sport);
         year2_1.add(sci);
 
+        addYearAndTermEachSubject(year2_1, 2, 1);
+
         return year2_1;
     }
 
@@ -413,6 +423,8 @@ public class SubjectIO {
         year2_2.add(major);
         year2_2.add(eng);
         year2_2.add(sci);
+
+        addYearAndTermEachSubject(year2_2, 2, 2);
 
         return year2_2;
     }
@@ -504,6 +516,8 @@ public class SubjectIO {
         year3_1.add(seminar);
         year3_1.add(major);
         year3_1.add(eng);
+
+        addYearAndTermEachSubject(year3_1, 3, 1);
 
         return year3_1;
     }
@@ -599,6 +613,8 @@ public class SubjectIO {
         year3_2.add(major);
         year3_2.add(free);
 
+        addYearAndTermEachSubject(year3_2, 3, 2);
+
         return year3_2;
     }
 
@@ -626,6 +642,8 @@ public class SubjectIO {
         );
 
         year4_1.add(co_op);
+
+        addYearAndTermEachSubject(year4_1, 4, 1);
 
         return year4_1;
     }
@@ -684,89 +702,114 @@ public class SubjectIO {
         year4_2.add(major6);
         year4_2.add(free);
 
+        addYearAndTermEachSubject(year4_2, 4, 2);
+
         return year4_2;
     }
 
-    public void reset() {
+    private void addYearAndTermEachSubject(ArrayList<Subject> subjectInTerm, int year, int term) {
+        for (Subject each: subjectInTerm) {
+            each.setYear(year);
+            each.setTerm(term);
+        }
+    }
+
+    public void update() {
         writeSubject();
     }
 
-    private void writeSubjectInit() {
-//        if (!subjectData.exists()) {
-            allSubjectInit();
-            writeSubject();
-//        }
-//        else {
-//            readSubject();
-//        }
+    public void reset() {
+        allSubjectInit();
         addAllPrevious();
+        writeSubject();
     }
 
     private void addAllPrevious() {
-        Subject python = findSubjectFromId(getSubjectInTerm(1, 1), "01418112");
-        Subject intro = findSubjectFromId(getSubjectInTerm(1, 1), "01418114");
+        Subject python = findSubjectFromId(1, 1, "01418112");
+        Subject intro = findSubjectFromId(1, 1, "01418114");
         python.addPrevious(intro);
 
-        Subject calculus_1 = findSubjectFromId(getSubjectInTerm(1, 1), "01417111");
-        Subject calculus_2 = findSubjectFromId(getSubjectInTerm(1, 2), "01417112");
-        Subject linear = findSubjectFromId(getSubjectInTerm(2, 1), "01417322");
+        Subject calculus_1 = findSubjectFromId(1, 1, "01417111");
+        Subject calculus_2 = findSubjectFromId(1, 2, "01417112");
+        Subject linear = findSubjectFromId(2, 1, "01417322");
         calculus_2.addPrevious(calculus_1);
         linear.addPrevious(calculus_2);
+        linear.addPrevious(calculus_2);
 
-        Subject comPro = findSubjectFromId(getSubjectInTerm(1, 2), "01418113");
+        Subject comPro = findSubjectFromId(1, 2, "01418113");
         comPro.addPrevious(python);
 
-        Subject java = findSubjectFromId(getSubjectInTerm(2, 1), "01418211");
+        Subject java = findSubjectFromId(2, 1, "01418211");
         java.addPrevious(comPro);
 
-        Subject data = findSubjectFromId(getSubjectInTerm(2, 1), "01418231");
+        Subject data = findSubjectFromId(2, 1, "01418231");
         data.addPrevious(comPro);
 
-        Subject database = findSubjectFromId(getSubjectInTerm(2, 2), "01418221");
+        Subject database = findSubjectFromId(2, 2, "01418221");
         database.addPrevious(comPro);
 
-        Subject assembly = findSubjectFromId(getSubjectInTerm(2, 2), "01418233");
-        Subject digital = findSubjectFromId(getSubjectInTerm(1, 1), "01418131");
+        Subject assembly = findSubjectFromId(2, 2, "01418233");
+        Subject digital = findSubjectFromId(1, 1, "01418131");
         assembly.addPrevious(comPro);
         assembly.addPrevious(digital);
 
-        Subject algorithm = findSubjectFromId(getSubjectInTerm(2, 2), "01418232");
-        Subject fundCom = findSubjectFromId(getSubjectInTerm(1, 2), "01418132");
+        Subject algorithm = findSubjectFromId(2, 2, "01418232");
+        Subject fundCom = findSubjectFromId(1, 2, "01418132");
         algorithm.addPrevious(fundCom);
         algorithm.addPrevious(data);
 
-        Subject sa = findSubjectFromId(getSubjectInTerm(3, 1), "01418321");
+        Subject sa = findSubjectFromId(3, 1, "01418321");
         sa.addPrevious(java);
         sa.addPrevious(database);
 
-        Subject os = findSubjectFromId(getSubjectInTerm(3, 1), "01418331");
+        Subject os = findSubjectFromId(3, 1, "01418331");
         os.addPrevious(assembly);
 
-        Subject seminar = findSubjectFromId(getSubjectInTerm(3, 1), "01418497");
+        Subject seminar = findSubjectFromId(3, 1, "01418497");
         seminar.addPrevious(database);
         seminar.addPrevious(algorithm);
         seminar.addPrevious(assembly);
 
-        Subject co_op = findSubjectFromId(getSubjectInTerm(3, 2), "01418390");
+        Subject co_op = findSubjectFromId(3, 2, "01418390");
         co_op.addPrevious(sa);
 
-        Subject security = findSubjectFromId(getSubjectInTerm(3, 2), "01418332");
+        Subject security = findSubjectFromId(3, 2, "01418332");
         security.addPrevious(os);
 
-        Subject cc = findSubjectFromId(getSubjectInTerm(3, 2), "01418351");
+        Subject cc = findSubjectFromId(3, 2, "01418351");
         cc.addPrevious(os);
 
-        Subject autometa = findSubjectFromId(getSubjectInTerm(3, 2), "01418333");
+        Subject autometa = findSubjectFromId(3, 2, "01418333");
         autometa.addPrevious(fundCom);
 
-        Subject compiler = findSubjectFromId(getSubjectInTerm(3, 2), "01418334");
+        Subject compiler = findSubjectFromId(3, 2, "01418334");
         compiler.addPrevious(autometa);
 
-        Subject co_opEdu = findSubjectFromId(getSubjectInTerm(4, 1), "01418490");
+        Subject co_opEdu = findSubjectFromId(4, 1, "01418490");
         co_opEdu.addPrevious(co_op);
 
-        Subject csProject = findSubjectFromId(getSubjectInTerm(4, 2), "01418499");
+        Subject csProject = findSubjectFromId(4, 2, "01418499");
         csProject.addPrevious(sa);
+    }
+
+    public boolean isPreviousFinish(Subject subject) {
+        ArrayList<String> allPrevious = subject.getPrevious();
+
+        for (String each: allPrevious) {
+            Subject eachSubject = getSubjectFromString(each);
+            if (!eachSubject.isFinish()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private Subject getSubjectFromString(String subjectFormat) {
+        String[] format = subjectFormat.split("_");
+        int year = Integer.parseInt("" + format[0].charAt(0));
+        int term = Integer.parseInt("" + format[0].charAt(1));
+        String id = format[1];
+        return findSubjectFromId(year, term, id);
     }
 
     private void writeSubject() {
@@ -786,27 +829,20 @@ public class SubjectIO {
             Gson gson = new Gson();
             BufferedReader reader = new BufferedReader(new FileReader(subjectData));
             allSubject = gson.fromJson(reader, new TypeToken<ArrayList<ArrayList<ArrayList<Subject>>>>(){}.getType());
+            addAllPrevious();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    private Subject findSubjectFromId(ArrayList<Subject> term, String id) {
-        for (Subject each: term) {
+    private Subject findSubjectFromId(int year, int term, String id) {
+        ArrayList<Subject> subjectInTerm = getSubjectInTerm(year, term);
+        for (Subject each: subjectInTerm) {
             if (each.getSubjectId().equals(id)) {
                 return each;
             }
         }
         throw new IndexOutOfBoundsException("Cannot find id in array");
-    }
-
-    private Subject findSubjectFromName(ArrayList<Subject> term, String name) {
-        for (Subject each: term) {
-            if (each.getName().equals(name)) {
-                return each;
-            }
-        }
-        return null;
     }
 
     public ArrayList<ArrayList<ArrayList<Subject>>> getAllSubject() {

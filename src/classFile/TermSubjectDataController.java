@@ -55,9 +55,11 @@ public class TermSubjectDataController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/subjectData.fxml"));
             Parent root = loader.load();
-            SubjectDataController subjectDataController = loader.getController();
-            subjectDataController.setStage(stage);
-            subjectDataController.setAllNode(subject);
+            SubjectDataController controller = loader.getController();
+            controller.setStage(stage);
+            controller.setSubject(subject);
+            controller.setSubjectIO(subjectIO);
+
             return root;
         } catch (IOException e) {
             e.printStackTrace();

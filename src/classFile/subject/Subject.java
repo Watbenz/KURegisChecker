@@ -10,8 +10,10 @@ public class Subject {
     private int credit;
     private boolean finish;
     private String detail;
-    private ArrayList<Subject> previous;
-    private ArrayList<Subject> next;
+    private ArrayList<String> previous;
+    private ArrayList<String> next;
+    private int year;
+    private int term;
 
     public Subject(String icon, String subjectId, String name, DifficultLevel difficultLevel, int credit, String detail) {
         this.icon = icon;
@@ -26,19 +28,25 @@ public class Subject {
     }
 
     private void addNext(Subject subject) {
-        next.add(subject);
+        String format = formatSubjectId(subject);
+        next.add(format);
     }
 
     public void addPrevious(Subject subject) {
-        previous.add(subject);
+        String format = formatSubjectId(subject);
+        previous.add(format);
         subject.addNext(this);
     }
 
-    public ArrayList<Subject> getPrevious() {
+    private String formatSubjectId(Subject subject) {
+        return subject.getYear() + "" +  subject.getTerm() + "_" + subject.getSubjectId();
+    }
+
+    public ArrayList<String> getPrevious() {
         return previous;
     }
 
-    public ArrayList<Subject> getNext() {
+    public ArrayList<String> getNext() {
         return next;
     }
 
@@ -72,5 +80,21 @@ public class Subject {
 
     public void setFinish(boolean finish) {
         this.finish = finish;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public int getTerm() {
+        return term;
+    }
+
+    public void setTerm(int term) {
+        this.term = term;
     }
 }
