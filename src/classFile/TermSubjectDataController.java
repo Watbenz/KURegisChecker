@@ -17,13 +17,13 @@ public class TermSubjectDataController {
     @FXML private Stage stage;
     @FXML private Label numberTermLabel;
     @FXML private Label semesterLabel;
-    @FXML private VBox displayDataSubjectVbox;
-    private String status;
-    private SubjectIO subjectIO;
-    private ArrayList<SubjectDataController> allController;
-    private int year;
-    private int term;
-    private Runnable updateCallback;
+    @FXML VBox displayDataSubjectVbox;
+    String status;
+    SubjectIO subjectIO;
+    ArrayList<SubjectDataController> allController;
+    int year;
+    int term;
+    Runnable updateCallback;
 
     @FXML
     public void initialize() {
@@ -46,7 +46,7 @@ public class TermSubjectDataController {
         }
     }
 
-    private void addSubjectItems() {
+    protected void addSubjectItems() {
         ArrayList<Subject> subjects = subjectIO.getSubjectInTerm(year, term);
         for (Subject each: subjects) {
             displayDataSubjectVbox.getChildren().addAll(loadSubjectData(each));
@@ -59,7 +59,7 @@ public class TermSubjectDataController {
         }
     }
 
-    private Parent loadSubjectData(Subject subject) {
+    Parent loadSubjectData(Subject subject) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/subjectData.fxml"));
             Parent root = loader.load();

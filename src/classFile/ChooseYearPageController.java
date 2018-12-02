@@ -4,6 +4,8 @@ import classFile.changePage.Page;
 import classFile.subject.SubjectIO;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -28,8 +30,15 @@ public class ChooseYearPageController {
 
     private void openNextPage(String status) {
         try {
-            FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/courseInAYearPage.fxml"));
-            CourseInAYearPageController controller = loader.getController();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/courseInAYearPage.fxml"));
+
+            CourseInAYearPageController controller = new CourseInAYearPageController();
+            loader.setController(controller);
+
+            Parent root = loader.load();
+            stage.setScene(new Scene(root, 800, 600));
+
+            controller = loader.getController();
             controller.setStage(stage);
             controller.setSubjectIO(subjectIO);
             controller.setStatus(status);

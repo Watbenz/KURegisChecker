@@ -14,12 +14,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class CourseInAYearPageController {
-    @FXML private Stage stage;
-    @FXML private Button resetDataButton;
-    @FXML private VBox termVBox;
-    private String status;
-    private SubjectIO subjectIO;
-    private ArrayList<TermSubjectDataController> allController;
+    @FXML Stage stage;
+    @FXML VBox termVBox;
+    String status;
+    SubjectIO subjectIO;
+    ArrayList<TermSubjectDataController> allController;
 
     @FXML
     public void initialize() {
@@ -34,24 +33,28 @@ public class CourseInAYearPageController {
         update();
     }
 
-    private void update() {
+    protected void update() {
         for (TermSubjectDataController controller: allController) {
             controller.update();
         }
     }
 
-    private void loadTermItems() {
+    protected void loadTermItems() {
         for (int i=1; i<=2; i++) {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/termSubjectData.fxml"));
+
+                TermSubjectDataController controller = new TermSubjectDataController();
+                loader.setController(controller);
                 Parent root = loader.load();
+
                 termVBox.getChildren().add(root);
-                TermSubjectDataController controller = loader.getController();
-                allController.add(controller);
                 controller.setStage(stage);
                 controller.setSubjectIO(subjectIO);
                 controller.setStatus(status + "_" + i);
                 controller.setUpdateCallback(this::update);
+
+                allController.add(controller);
             } catch (IOException e) {
                 e.printStackTrace();
             }
