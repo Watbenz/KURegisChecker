@@ -74,6 +74,7 @@ public class DetailsPageController {
             Parent root = loader.load();
             PreviousDisplayController controller = loader.getController();
             controller.setSubject(subject);
+            controller.setSubjectIO(subjectIO);
 
             return root;
         } catch (IOException e) {
