@@ -1,15 +1,11 @@
 package classFile;
 
-import classFile.changePage.Page;
+import classFile.changePage.OpenCourseInAYear;
+import classFile.changePage.OpenMainPage;
 import classFile.subject.SubjectIO;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class ChooseYearPageController {
     @FXML private Stage stage;
@@ -25,38 +21,17 @@ public class ChooseYearPageController {
     }
 
     private void setOnClickStackPane(StackPane stackPane) {
-        stackPane.setOnMouseClicked(event -> openNextPage(stackPane.getId()));
+        stackPane.setOnMouseClicked(event -> openCourseInAYear(stackPane.getId()));
     }
 
-    private void openNextPage(String status) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/courseInAYearPage.fxml"));
-
-            CourseInAYearPageController controller = new CourseInAYearPageController();
-            loader.setController(controller);
-
-            Parent root = loader.load();
-            stage.setScene(new Scene(root, 800, 600));
-
-            controller = loader.getController();
-            controller.setStage(stage);
-            controller.setSubjectIO(subjectIO);
-            controller.setStatus(status);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void openCourseInAYear(String status) {
+        OpenCourseInAYear chooseYearPage = new OpenCourseInAYear(new CourseInAYearPageController(), status);
+        chooseYearPage.open(stage, subjectIO);
     }
 
     @FXML
     private void backToPrevious() {
-        try {
-            FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/mainPage.fxml"));
-            MainPageController controller = loader.getController();
-            controller.setStage(stage);
-            controller.setSubjectIO(subjectIO);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        new OpenMainPage().open(stage, subjectIO);
     }
 
     public void setSubjectIO(SubjectIO subjectIO) {

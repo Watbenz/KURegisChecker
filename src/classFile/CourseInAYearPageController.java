@@ -1,12 +1,11 @@
 package classFile;
 
-import classFile.changePage.Page;
+import classFile.changePage.OpenChooseYearPage;
 import classFile.subject.SubjectIO;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -41,36 +40,32 @@ public class CourseInAYearPageController {
 
     protected void loadTermItems() {
         for (int i=1; i<=2; i++) {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/termSubjectData.fxml"));
+            loadItemFromFile(new TermSubjectDataController(), status + "_" + i);
+        }
+    }
 
-                TermSubjectDataController controller = new TermSubjectDataController();
-                loader.setController(controller);
-                Parent root = loader.load();
+    protected void loadItemFromFile(TermSubjectDataController controller, String status) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/termSubjectData.fxml"));
 
-                termVBox.getChildren().add(root);
-                controller.setStage(stage);
-                controller.setSubjectIO(subjectIO);
-                controller.setStatus(status + "_" + i);
-                controller.setUpdateCallback(this::update);
+            loader.setController(controller);
+            Parent root = loader.load();
 
-                allController.add(controller);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            termVBox.getChildren().add(root);
+            controller.setStage(stage);
+            controller.setSubjectIO(subjectIO);
+            controller.setStatus(status);
+            controller.setUpdateCallback(this::update);
+
+            allController.add(controller);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
     @FXML
     private void backToPrevious() {
-        try {
-            FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../fxml/chooseYearPage.fxml"));
-            ChooseYearPageController controller = loader.getController();
-            controller.setStage(stage);
-            controller.setSubjectIO(subjectIO);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        new OpenChooseYearPage().open(stage, subjectIO);
     }
 
     public void setStage(Stage stage) {

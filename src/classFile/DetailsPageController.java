@@ -5,22 +5,16 @@ import classFile.subject.SubjectIO;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Ellipse;
-import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedList;
 
 public class DetailsPageController {
     @FXML private Stage stage;
@@ -30,7 +24,6 @@ public class DetailsPageController {
     @FXML private Label detailLabel;
     @FXML private Label creditLabel;
     @FXML private HBox displayPreviousHBox;
-//    @FXML private VBox displayPreviousVBox;
     private Subject subject;
     private SubjectIO subjectIO;
 

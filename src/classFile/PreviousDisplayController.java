@@ -1,5 +1,6 @@
 package classFile;
 
+import classFile.changePage.OpenDetailPopup;
 import classFile.subject.Subject;
 import classFile.subject.SubjectIO;
 import javafx.application.Platform;
@@ -54,21 +55,6 @@ public class PreviousDisplayController {
 
     @FXML
     private void openDetail(){
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/detailsPage.fxml"));
-            Stage popup = new Stage();
-            Parent root = loader.load();
-            popup.setScene(new Scene(root, 500, 500));
-            popup.setTitle("Subject detail");
-
-            DetailsPageController controller = loader.getController();
-            controller.setStage(popup);
-            controller.setSubject(subject);
-            controller.setSubjectIO(subjectIO);
-
-            popup.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        new OpenDetailPopup(subject).open(new Stage(), subjectIO);
     }
 }
