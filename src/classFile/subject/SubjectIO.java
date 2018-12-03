@@ -746,7 +746,6 @@ public class SubjectIO {
         Subject linear = findSubjectFromId(2, 1, "01417322");
         calculus_2.addPrevious(calculus_1);
         linear.addPrevious(calculus_2);
-        linear.addPrevious(calculus_2);
 
         Subject comPro = findSubjectFromId(1, 2, "01418113");
         comPro.addPrevious(python);
