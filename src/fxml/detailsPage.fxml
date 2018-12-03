@@ -51,6 +51,11 @@
                         <Font name="K2D Regular" size="13.0" />
                      </font>
                   </Label>
+                  <Label fx:id="yearAndTermLabel" alignment="CENTER" prefHeight="21.0" prefWidth="322.0" text="(ปี 1 เทอม 2)" textFill="#494949">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
                </children>
             </VBox>
             <VBox alignment="TOP_CENTER" layoutX="405.0" layoutY="108.0" prefHeight="36.0" prefWidth="74.0" />

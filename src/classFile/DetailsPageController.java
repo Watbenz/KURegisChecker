@@ -5,6 +5,7 @@ import classFile.subject.SubjectIO;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
@@ -23,6 +24,8 @@ public class DetailsPageController {
     @FXML private Label iconLabel;
     @FXML private Label detailLabel;
     @FXML private Label creditLabel;
+    @FXML private Label yearAndTermLabel;
+    @FXML private Label subjectIDLabel;
     @FXML private HBox displayPreviousHBox;
     private Subject subject;
     private SubjectIO subjectIO;
@@ -36,7 +39,9 @@ public class DetailsPageController {
         iconEllipse.setFill(subject.getDifficultLevel().getLinearColor());
         iconEllipse.setStroke(subject.getDifficultLevel().getColor());
 
+        yearAndTermLabel.setText("(ปี " + subject.getYear() + " เทอม " + subject.getTerm() +")");
         subjectNameLabel.setText(subject.getName());
+        subjectIDLabel.setText(subject.getSubjectId());
         iconLabel.setText(subject.getIcon());
         detailLabel.setText(subject.getDetail());
         creditLabel.setText(subject.getCredit() + " หน่วยกิต");
@@ -44,30 +49,46 @@ public class DetailsPageController {
 
     }
 
-    private ArrayList<Subject> getPrevious() {
-        ArrayList<Subject> allSubjectPrevious = subjectIO.getPreviousAsArrayList(subject);
-        Collections.reverse(allSubjectPrevious);
+    private void addPreviousSubjectItems() {
+        loadArrayListItem(subjectIO.getPreviousAsArrayList(subject), "วิชาก่อนหน้า");
+    }
 
-        return allSubjectPrevious;
+    private void addCurrentSubjectItems() {
+        ArrayList<Subject> array = new ArrayList<>();
+        array.add(subject);
+        loadArrayListItem(array, "วิชาปัจจุบัน");
+    }
+
+    private void addNextSubjectItems() {
+        loadArrayListItem(subjectIO.getNextAsArrayList(subject), "วิชาถัดไป");
+    }
+
+    private void loadArrayListItem(ArrayList<Subject> arrayList, String labelText) {
+        VBox vBox = new VBox();
+
+        if (!arrayList.isEmpty()) {
+            vBox.getChildren().addAll(new Label(labelText));
+        }
+        for (Subject eachNext: arrayList) {
+            vBox.getChildren().add(loadDisplay(eachNext));
+        }
+        displayPreviousHBox.getChildren().addAll(vBox);
     }
 
     private void addSubjectItems() {
-        VBox previousBox = new VBox();
-        for (Subject eachPrevious: getPrevious()) {
-            previousBox.getChildren().add(loadDisplayPrevious(eachPrevious));
-        }
-        displayPreviousHBox.getChildren().add(previousBox);
-
-        displayPreviousHBox.getChildren().add(new VBox(loadDisplayPrevious(subject)));
+        addPreviousSubjectItems();
+        addCurrentSubjectItems();
+        addNextSubjectItems();
     }
 
-    private Parent loadDisplayPrevious(Subject subject) {
+    private Parent loadDisplay(Subject subject) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/previousDisplay.fxml"));
             Parent root = loader.load();
             PreviousDisplayController controller = loader.getController();
             controller.setSubject(subject);
             controller.setSubjectIO(subjectIO);
+            controller.setStage(stage);
 
             return root;
         } catch (IOException e) {

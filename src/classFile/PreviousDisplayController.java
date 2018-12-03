@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class PreviousDisplayController {
+    private Stage stage;
     @FXML private Ellipse iconEllipse;
     @FXML private Label iconLabel;
     @FXML private Label subjectIdLabel;
@@ -55,6 +56,10 @@ public class PreviousDisplayController {
 
     @FXML
     private void openDetail(){
-        new OpenDetailPopup(subject).open(new Stage(), subjectIO);
+        new OpenDetailPopup(subject).open(stage, subjectIO);
+    }
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
     }
 }

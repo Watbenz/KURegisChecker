@@ -828,13 +828,20 @@ public class SubjectIO {
     }
 
     public ArrayList<Subject> getPreviousAsArrayList(Subject subject) {
+        return getAsArrayList(subject.getPrevious());
+    }
+
+    public ArrayList<Subject> getNextAsArrayList(Subject subject) {
+        return getAsArrayList(subject.getNext());
+    }
+
+    private ArrayList<Subject> getAsArrayList(ArrayList<String> subjectArray) {
         ArrayList<Subject> output = new ArrayList<>();
 
-        for (String each: subject.getPrevious()) {
+        for (String each: subjectArray) {
             Subject eachSubject = getSubjectFromFormat(each);
             output.add(eachSubject);
         }
-
         return output;
     }
 
