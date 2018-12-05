@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
+   <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #004D40;">
+      <VBox.margin>
+         <Insets bottom="75.0" />
+      </VBox.margin>
+      <ImageView fitHeight="56.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="file:/D:/Work/Java/RegisChecker/image/logo.png" />
+      </ImageView>
+      <Label layoutX="578.0" layoutY="16.0" prefHeight="34.0" prefWidth="189.0" style="-fx-font-weight: bold; -fx-font-family: K2D;" text="ตรวจสอบการลงทะเบียน" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane prefHeight="366.0" prefWidth="800.0" style="-fx-background-color: rgba(255,255,255,0.25);">
+      <StackPane layoutX="264.0" layoutY="-24.0" prefHeight="14.0" prefWidth="271.0">
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="271.0" />
+         <Label prefHeight="34.0" prefWidth="82.0" style="-fx-font-family: K2D;" text="หน้าหลัก">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </Label>
+      </StackPane>
+      <VBox layoutX="131.0" layoutY="69.0" prefHeight="200.0" prefWidth="349.0">
+         <StackPane fx:id="chooseYearStackPane" onMouseClicked="#goToChooseYearPage" prefHeight="14.0" prefWidth="271.0">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="20.0" />
+            </padding>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <StackPane layoutX="7.0" layoutY="4.0">
+                  <Ellipse fill="#00b596" radiusX="19.0" radiusY="20.0" stroke="#00b596" strokeType="INSIDE" />
+                  <Label style="-fx-font-family: Segoe UI;" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </StackPane>
+               <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D;" text="รายวิชาในแต่ละชั้นปี">
+                  <font>
+                     <Font size="17.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+         </StackPane>
+         <StackPane fx:id="chooseCourseStackPane" onMouseClicked="#goToResultPage" prefHeight="14.0" prefWidth="271.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <StackPane layoutX="7.0" layoutY="4.0">
+                  <Ellipse fill="#00b596" radiusX="19.0" radiusY="20.0" stroke="#00b596" strokeType="INSIDE" />
+                  <Label style="-fx-font-family: Segoe UI;" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </StackPane>
+               <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="219.0" style="-fx-font-family: K2D;" text="รายวิชาที่ยังไม่ได้ลงทะเบียน">
+                  <font>
+                     <Font size="17.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+         </StackPane>
+      </VBox>
+   </AnchorPane>
+</VBox>
