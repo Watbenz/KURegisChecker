@@ -10,6 +10,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+import java.io.File;
+
 public class ChooseYearPageController {
     @FXML private Stage stage;
     @FXML private StackPane year1, year2, year3, year4;
@@ -18,7 +20,10 @@ public class ChooseYearPageController {
 
     @FXML
     public void initialize() {
-        Image logo = new Image("file:/D:/Work/Java/RegisChecker/image/" + "logo.png");
+        String projectPath = new File(".").toURI().toString();
+        String imagePath = projectPath + "image/logo.png";
+
+        Image logo = new Image(imagePath);
         logoImageView.setImage(logo);
 
         setOnClickStackPane(year1);

@@ -1,64 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="KURegisChecker:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0dea5f27-9e16-41d9-a877-904b0b12ca28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/KURegisChecker_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/RegisUI.xd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/ChooseYearPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/CourseInAYearPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/DetailsPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/MainPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/PreviousDisplayController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/ResultPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/SubjectDataController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/TermSubjectDataController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/TermSubjectNotFinishController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/changePage/OpenChooseYearPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/changePage/OpenCourseInAYear.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/changePage/OpenDetailPopup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/changePage/OpenMainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/changePage/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/DifficultLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/SubjectIO$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/classFile/subject/SubjectIO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/chooseYearPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/courseInAYearPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/detailsPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/mainPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/previousDisplay.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/scrollPaneChangeColor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/subjectData.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/fxml/termSubjectData.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/ChooseYearPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/chooseYearPage/ChooseYearPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/CourseInAYearPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/CourseInAYearPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/DetailsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/DetailsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/mainPage/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/PreviousDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/previousDisplay/PreviousDisplayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/ResultPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/ResultPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/SubjectDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/subjectData/SubjectDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/TermSubjectDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/TermSubjectDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/TermSubjectNotFinishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/TermSubjectNotFinishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/changePage/OpenChooseYearPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/changePage/OpenChooseYearPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/changePage/OpenCourseInAYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/changePage/OpenCourseInAYear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/changePage/OpenDetailPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/changePage/OpenDetailPopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/changePage/OpenMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/changePage/OpenMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/changePage/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/changePage/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/subject/DifficultLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/subject/DifficultLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/subject/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/subject/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classFile/subject/SubjectIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/subject/SubjectIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/chooseYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/chooseYearPage/chooseYearPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/courseInAYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/courseInAYearPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/detailsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/detailsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/mainPage/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/previousDisplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/previousDisplay/previousDisplay.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/scrollPaneChangeColor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/cssFile/scrollPaneChangeColor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/subjectData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/subjectData/subjectData.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/termSubjectData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/termSubjectData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/mainPage/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/mainPage/MainPageController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,13 +63,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="120" />
-          <entry key="java" value="18042" />
+          <entry key="java" value="18303" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18042" />
+          <entry key="JAVA" value="18303" />
           <entry key="JSON" value="1" />
           <entry key="XML" value="120" />
         </counts>
@@ -128,21 +78,23 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="fxml" value="42" />
-          <entry key="java" value="175" />
+          <entry key="java" value="176" />
           <entry key="json" value="14" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JAVA" value="175" />
+          <entry key="JAVA" value="176" />
           <entry key="JSON" value="14" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
@@ -154,19 +106,19 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/chooseYearPage/ChooseYearPageController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/application/mainPage/MainPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="148">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,14 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/mainPage/MainPageController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/changePage/OpenChooseYearPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -296,11 +245,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1614" />
-    <option name="height" value="878" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="180" />
+    <option name="y" value="-29" />
+    <option name="width" value="1615" />
+    <option name="height" value="879" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -310,6 +259,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,7 +271,25 @@
             <path>
               <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
               <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="changePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
@@ -330,14 +299,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544023285600" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544024593930" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -409,7 +376,8 @@
       <workItem from="1543650419227" duration="4418000" />
       <workItem from="1543760381974" duration="1173000" />
       <workItem from="1543871115090" duration="819000" />
-      <workItem from="1544018931937" duration="3999000" />
+      <workItem from="1544018931937" duration="5632000" />
+      <workItem from="1544025652571" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="Add subject, scroll pane, color for each difficult level. New class with control subject data stack pane.">
       <created>1541521232013</created>
@@ -422,10 +390,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132607000" />
+    <option name="totallyTimeSpent" value="134769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1291" height="702" extended-state="0" />
+    <frame x="-7" y="-7" width="1476" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -433,7 +401,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24275646" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21203831" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -441,7 +409,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3294271" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.40202704" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.30989584" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997396" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -577,15 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1444#1445#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,33 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4068">
           <caret line="741" column="34" selection-start-line="741" selection-start-column="34" selection-end-line="741" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#year1Init#0;class#SubjectIO#0" />
-            <element signature="method#year1_2Init#0;class#SubjectIO#0" />
-            <element signature="method#year2Init#0;class#SubjectIO#0" />
-            <element signature="method#year2_1Init#0;class#SubjectIO#0" />
-            <element signature="method#year2_2Init#0;class#SubjectIO#0" />
-            <element signature="method#year3Init#0;class#SubjectIO#0" />
-            <element signature="method#year3_1Init#0;class#SubjectIO#0" />
-            <element signature="method#year3_2Init#0;class#SubjectIO#0" />
-            <element signature="method#year4Init#0;class#SubjectIO#0" />
-            <element signature="method#year4_1Init#0;class#SubjectIO#0" />
-            <element signature="method#year4_2Init#0;class#SubjectIO#0" />
-            <element signature="method#addYearAndTermEachSubject#0;class#SubjectIO#0" />
-            <element signature="method#getSubjectFromFormat#0;class#SubjectIO#0" />
-            <element signature="method#writeSubject#0;class#SubjectIO#0" />
-            <element signature="method#findSubjectFromId#0;class#SubjectIO#0" />
-            <element signature="method#getSubjectInYear#0;class#SubjectIO#0" />
-            <element signature="method#getSubjectInTerm#0;class#SubjectIO#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/changePage/OpenChooseYearPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -636,9 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,9 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,9 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="66" column="70" lean-forward="true" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,11 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="769">
           <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#update#0;class#SubjectDataController#0" />
-            <element signature="method#setStatusLabelProperty#0;class#SubjectDataController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,9 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,9 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,26 +634,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/license.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/chooseYearPage/ChooseYearPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/chooseYearPage/ChooseYearPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/changePage/OpenChooseYearPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/mainPage/MainPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="148">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
