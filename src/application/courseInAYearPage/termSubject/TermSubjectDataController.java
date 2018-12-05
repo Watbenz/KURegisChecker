@@ -1,5 +1,6 @@
-package application;
+package application.courseInAYearPage.termSubject;
 
+import application.courseInAYearPage.termSubject.subjectData.SubjectDataController;
 import application.subject.Subject;
 import application.subject.SubjectIO;
 import javafx.application.Platform;
@@ -61,7 +62,7 @@ public class TermSubjectDataController {
 
     Parent loadSubjectData(Subject subject) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/subjectData.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/courseInAYearPage/termSubject/subjectData/subjectData.fxml"));
             Parent root = loader.load();
             SubjectDataController controller = loader.getController();
             controller.setStage(stage);

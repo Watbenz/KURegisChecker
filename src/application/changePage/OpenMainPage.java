@@ -1,7 +1,7 @@
-package classFile.changePage;
+package application.changePage;
 
-import classFile.MainPageController;
-import classFile.subject.SubjectIO;
+import application.mainPage.MainPageController;
+import application.subject.SubjectIO;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 
@@ -11,7 +11,7 @@ public class OpenMainPage implements Page {
     @Override
     public void open(Stage stage, SubjectIO subjectIO) {
         try {
-            FXMLLoader loader = Page.loadPage(stage, getClass().getResource("../../fxml/mainPage.fxml"));
+            FXMLLoader loader = Page.loadPage(stage, getClass().getResource("/application/mainPage/mainPage.fxml"));
             MainPageController controller = loader.getController();
             controller.setStage(stage);
             controller.setSubjectIO(subjectIO);

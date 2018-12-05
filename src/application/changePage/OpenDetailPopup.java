@@ -1,8 +1,8 @@
-package classFile.changePage;
+package application.changePage;
 
-import classFile.DetailsPageController;
-import classFile.subject.Subject;
-import classFile.subject.SubjectIO;
+import application.detailPage.DetailsPageController;
+import application.subject.Subject;
+import application.subject.SubjectIO;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -20,7 +20,7 @@ public class OpenDetailPopup implements Page {
     @Override
     public void open(Stage stage, SubjectIO subjectIO) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../../fxml/detailsPage.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/detailPage/detailsPage.fxml"));
             Parent root = loader.load();
             stage.setScene(new Scene(root, 500, 500));
             stage.setTitle("Subject detail");

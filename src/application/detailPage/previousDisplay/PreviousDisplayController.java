@@ -1,4 +1,4 @@
-package application.detailPage;
+package application.detailPage.previousDisplay;
 
 import application.changePage.OpenDetailPopup;
 import application.subject.Subject;

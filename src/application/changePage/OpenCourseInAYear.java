@@ -1,7 +1,7 @@
-package classFile.changePage;
+package application.changePage;
 
-import classFile.CourseInAYearPageController;
-import classFile.subject.SubjectIO;
+import application.courseInAYearPage.CourseInAYearPageController;
+import application.subject.SubjectIO;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -21,7 +21,7 @@ public class OpenCourseInAYear implements Page {
     @Override
     public void open(Stage stage, SubjectIO subjectIO) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../../fxml/courseInAYearPage.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/courseInAYearPage/courseInAYearPage.fxml"));
             loader.setController(controller);
 
             Parent root = loader.load();

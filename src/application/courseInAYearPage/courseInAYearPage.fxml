@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -15,16 +14,14 @@
       <VBox.margin>
          <Insets />
       </VBox.margin>
-      <ImageView fitHeight="56.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="file:/D:/Work/Java/RegisChecker/image/logo.png" />
-      </ImageView>
+      <ImageView fx:id="logoImageView" fitHeight="56.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
       <Label layoutX="578.0" layoutY="16.0" prefHeight="34.0" prefWidth="189.0" style="-fx-font-weight: bold; -fx-font-family: K2D;" text="ตรวจสอบการลงทะเบียน" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
    </AnchorPane>
-   <ScrollPane hbarPolicy="NEVER" prefHeight="605.0" prefWidth="800.0" stylesheets="@scrollPaneChangeColor.css">
+   <ScrollPane hbarPolicy="NEVER" prefHeight="605.0" prefWidth="800.0" stylesheets="@../../cssFile/scrollPaneChangeColor.css">
       <content>
          <VBox fx:id="termVBox" />
       </content>

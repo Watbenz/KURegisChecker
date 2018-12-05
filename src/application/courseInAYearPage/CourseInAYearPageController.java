@@ -1,11 +1,14 @@
-package application;
+package application.courseInAYearPage;
 
+import application.courseInAYearPage.termSubject.TermSubjectDataController;
 import application.changePage.OpenChooseYearPage;
 import application.subject.SubjectIO;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -15,12 +18,16 @@ import java.util.ArrayList;
 public class CourseInAYearPageController {
     @FXML Stage stage;
     @FXML VBox termVBox;
+    @FXML private ImageView logoImageView;
     String status;
     SubjectIO subjectIO;
     ArrayList<TermSubjectDataController> allController;
 
     @FXML
     public void initialize() {
+        Image logo = new Image("file:/D:/Work/Java/RegisChecker/image/" + "logo.png");
+        logoImageView.setImage(logo);
+
         this.allController = new ArrayList<>();
         Platform.runLater(this::loadTermItems);
     }
@@ -46,7 +53,7 @@ public class CourseInAYearPageController {
 
     protected void loadItemFromFile(TermSubjectDataController controller, String status) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/termSubjectData.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/courseInAYearPage/termSubject/termSubjectData.fxml"));
 
             loader.setController(controller);
             Parent root = loader.load();

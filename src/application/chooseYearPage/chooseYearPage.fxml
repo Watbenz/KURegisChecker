@@ -3,7 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
@@ -12,15 +11,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChooseYearPageController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.chooseYearPage.ChooseYearPageController">
    <children>
       <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #004D40;">
          <children>
-            <ImageView fitHeight="56.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="file:/D:/Work/Java/RegisChecker/image/logo.png" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="logoImageView" fitHeight="56.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
             <Label layoutX="578.0" layoutY="16.0" prefHeight="34.0" prefWidth="189.0" style="-fx-font-weight: bold; -fx-font-family: K2D;" text="ตรวจสอบการลงทะเบียน" textFill="WHITE">
                <font>
                   <Font size="18.0" />

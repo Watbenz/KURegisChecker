@@ -1,4 +1,4 @@
-package application;
+package application.courseInAYearPage.termSubject;
 
 import application.subject.Subject;
 

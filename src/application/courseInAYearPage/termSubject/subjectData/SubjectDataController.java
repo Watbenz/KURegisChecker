@@ -1,4 +1,4 @@
-package application.courseInAYearPage.subjectData;
+package application.courseInAYearPage.termSubject.subjectData;
 
 import application.changePage.OpenDetailPopup;
 import application.subject.Subject;

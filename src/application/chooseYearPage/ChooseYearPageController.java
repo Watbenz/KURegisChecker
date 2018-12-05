@@ -1,19 +1,26 @@
-package application;
+package application.chooseYearPage;
 
+import application.courseInAYearPage.CourseInAYearPageController;
 import application.changePage.OpenCourseInAYear;
 import application.changePage.OpenMainPage;
 import application.subject.SubjectIO;
 import javafx.fxml.FXML;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class ChooseYearPageController {
     @FXML private Stage stage;
     @FXML private StackPane year1, year2, year3, year4;
+    @FXML private ImageView logoImageView;
     private SubjectIO subjectIO;
 
     @FXML
     public void initialize() {
+        Image logo = new Image("file:/D:/Work/Java/RegisChecker/image/" + "logo.png");
+        logoImageView.setImage(logo);
+
         setOnClickStackPane(year1);
         setOnClickStackPane(year2);
         setOnClickStackPane(year3);

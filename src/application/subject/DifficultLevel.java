@@ -1,4 +1,4 @@
-package classFile.subject;
+package application.subject;
 
 import javafx.scene.paint.Color;
 import javafx.scene.paint.CycleMethod;

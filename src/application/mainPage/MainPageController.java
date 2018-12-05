@@ -1,14 +1,24 @@
-package application;
+package application.mainPage;
 
+import application.courseInAYearPage.ResultPageController;
 import application.changePage.OpenChooseYearPage;
 import application.changePage.OpenCourseInAYear;
 import application.subject.SubjectIO;
 import javafx.fxml.FXML;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class MainPageController {
     @FXML private Stage stage;
+    @FXML private ImageView logoImageView;
     private SubjectIO subjectIO;
+
+    @FXML
+    public void initialize() {
+        Image logo = new Image("file:/D:/Work/Java/RegisChecker/image/" + "logo.png");
+        logoImageView.setImage(logo);
+    }
 
     public void setStage(Stage stage) {
         this.stage = stage;

@@ -1,6 +1,7 @@
-package classFile;
+package application.main;
 
-import classFile.subject.SubjectIO;
+import application.mainPage.MainPageController;
+import application.subject.SubjectIO;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,7 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/mainPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/mainPage/mainPage.fxml"));
         Parent root = loader.load();
         primaryStage.setTitle("KU Regis Checker");
         primaryStage.setScene(new Scene(root, 800, 600));

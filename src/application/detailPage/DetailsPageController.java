@@ -1,5 +1,6 @@
-package application;
+package application.detailPage;
 
+import application.detailPage.previousDisplay.PreviousDisplayController;
 import application.subject.Subject;
 import application.subject.SubjectIO;
 import javafx.application.Platform;
@@ -7,6 +8,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Ellipse;
@@ -25,15 +28,20 @@ public class DetailsPageController {
     @FXML private Label yearAndTermLabel;
     @FXML private Label subjectIDLabel;
     @FXML private HBox displayPreviousHBox;
+    @FXML private ImageView logoImageView;
     private Subject subject;
     private SubjectIO subjectIO;
 
     @FXML
     public void initialize() {
+        Image logo = new Image("file:/D:/Work/Java/RegisChecker/image/" + "logo.png");
+        logoImageView.setImage(logo);
+
         Platform.runLater(this::update);
     }
 
     private void update() {
+
         iconEllipse.setFill(subject.getDifficultLevel().getLinearColor());
         iconEllipse.setStroke(subject.getDifficultLevel().getColor());
 
@@ -81,7 +89,7 @@ public class DetailsPageController {
 
     private Parent loadDisplay(Subject subject) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/previousDisplay.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/detailPage/previousDisplay/previousDisplay.fxml"));
             Parent root = loader.load();
             PreviousDisplayController controller = loader.getController();
             controller.setSubject(subject);

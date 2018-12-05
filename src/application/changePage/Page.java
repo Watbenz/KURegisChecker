@@ -1,6 +1,6 @@
-package classFile.changePage;
+package application.changePage;
 
-import classFile.subject.SubjectIO;
+import application.subject.SubjectIO;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

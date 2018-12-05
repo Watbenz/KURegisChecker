@@ -1,4 +1,4 @@
-package classFile.subject;
+package application.subject;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;

@@ -1,5 +1,6 @@
-package application;
+package application.courseInAYearPage;
 
+import application.courseInAYearPage.termSubject.TermSubjectNotFinishController;
 import application.changePage.OpenMainPage;
 import javafx.fxml.FXML;
 
