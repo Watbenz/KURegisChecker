@@ -3,14 +3,15 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="previousDisplayAnchorPane" onMouseClicked="#openDetail" prefHeight="31.0" prefWidth="146.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.detailPage.previousDisplay.PreviousDisplayController">
+<AnchorPane fx:id="previousDisplayAnchorPane" onMouseClicked="#openDetail" prefHeight="59.0" style="-fx-cursor: hand;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.detailPage.previousDisplay.PreviousDisplayController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="15.0" layoutY="6.0" stroke="#6c6c6c" strokeType="INSIDE" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="132.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="15.0" layoutY="6.0" stroke="#6c6c6c" strokeType="INSIDE" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="191.0" />
       <AnchorPane layoutY="-4.0" prefHeight="44.0" prefWidth="44.0">
          <children>
             <StackPane layoutY="5.0">
@@ -25,10 +26,14 @@
             </StackPane>
          </children>
       </AnchorPane>
-      <Label fx:id="subjectIdLabel" layoutX="47.0" layoutY="13.0" prefHeight="18.0" prefWidth="70.0" text="01418112" textFill="#000000cb" />
-      <Label fx:id="statusLabel" layoutX="127.0" layoutY="13.0" text="✓" />
+      <HBox layoutX="47.0" layoutY="13.0">
+         <children>
+            <Label fx:id="subjectIdLabel" prefHeight="18.0" prefWidth="121.0" text="01418112" textFill="#000000cb" />
+            <Label fx:id="statusLabel" text="    ✓" />
+         </children>
+      </HBox>
    </children>
    <padding>
-      <Insets bottom="15.0" />
+      <Insets bottom="15.0" right="15.0" />
    </padding>
 </AnchorPane>

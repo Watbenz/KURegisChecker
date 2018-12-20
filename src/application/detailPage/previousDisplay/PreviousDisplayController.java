@@ -25,11 +25,9 @@ public class PreviousDisplayController {
     }
 
     private void update() {
-        Platform.runLater(() -> {
-            iconEllipse.setFill(subject.getDifficultLevel().getLinearColor());
-        });
+        Platform.runLater(() -> iconEllipse.setFill(subject.getDifficultLevel().getLinearColor()));
         iconLabel.setText(subject.getIcon());
-        subjectIdLabel.setText(subject.getSubjectId());
+        subjectIdLabel.setText(subject.getSubjectId() + "  " + subject.getName());
 
         if (subject.isFinish()) {
             statusLabel.setText("✓");

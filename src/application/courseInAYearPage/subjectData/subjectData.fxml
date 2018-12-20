@@ -79,7 +79,7 @@
                   <Font size="7.0" />
               </font>
           </Label>
-         <Pane onMouseClicked="#openDetail" prefHeight="81.0" prefWidth="557.0" />
+         <Pane onMouseClicked="#openDetail" prefHeight="81.0" prefWidth="557.0" style="-fx-cursor: hand;" />
         </children>
       <StackPane.margin>
          <Insets bottom="15.0" />

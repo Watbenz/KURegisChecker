@@ -7,6 +7,9 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonBar;
+import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
@@ -14,6 +17,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class CourseInAYearPageController {
     @FXML Stage stage;
@@ -31,9 +35,23 @@ public class CourseInAYearPageController {
     }
 
     public void resetData() {
-        subjectIO.resetData();
-        subjectIO.update();
-        update();
+        ButtonType yesButton = new ButtonType("ใช่", ButtonBar.ButtonData.YES);
+        ButtonType noButton = new ButtonType("ไม่", ButtonBar.ButtonData.NO);
+        Alert alert = new Alert(Alert.AlertType.WARNING,
+                "คุณต้องการที่จะรีเซ็ตข้อมูลทั้งหมดหรือไม่",
+                yesButton, noButton);
+
+        alert.setTitle("รีเซ็ตข้อมูลทั้งหมด");
+
+        Optional<ButtonType> result = alert.showAndWait();
+
+        if (result.orElse(noButton) == yesButton) {
+            subjectIO.resetData();
+            update();
+        }
+
+
+
     }
 
     protected void update() {
@@ -53,9 +71,9 @@ public class CourseInAYearPageController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/courseInAYearPage/termSubject/termSubjectData.fxml"));
 
             loader.setController(controller);
-            Parent root = loader.load();
+            Parent node = loader.load();
 
-            termVBox.getChildren().add(root);
+            termVBox.getChildren().add(node);
             controller.setStage(stage);
             controller.setSubjectIO(subjectIO);
             controller.setStatus(status);

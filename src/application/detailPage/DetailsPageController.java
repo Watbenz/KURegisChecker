@@ -27,7 +27,7 @@ public class DetailsPageController {
     @FXML private Label creditLabel;
     @FXML private Label yearAndTermLabel;
     @FXML private Label subjectIDLabel;
-    @FXML private HBox displayPreviousHBox;
+    @FXML private HBox displayHBox;
     @FXML private ImageView logoImageView;
     private Subject subject;
     private SubjectIO subjectIO;
@@ -54,20 +54,14 @@ public class DetailsPageController {
     }
 
     private void addPreviousSubjectItems() {
-        loadArrayListItem(subjectIO.getPreviousAsArrayList(subject), "วิชาก่อนหน้า");
-    }
-
-    private void addCurrentSubjectItems() {
-        ArrayList<Subject> array = new ArrayList<>();
-        array.add(subject);
-        loadArrayListItem(array, "วิชาปัจจุบัน");
+        loadSubjectItem(subjectIO.getPreviousAsArrayList(subject), "วิชาก่อนหน้า");
     }
 
     private void addNextSubjectItems() {
-        loadArrayListItem(subjectIO.getNextAsArrayList(subject), "วิชาถัดไป");
+        loadSubjectItem(subjectIO.getNextAsArrayList(subject), "วิชาถัดไป");
     }
 
-    private void loadArrayListItem(ArrayList<Subject> arrayList, String labelText) {
+    private void loadSubjectItem(ArrayList<Subject> arrayList, String labelText) {
         VBox vBox = new VBox();
 
         if (!arrayList.isEmpty()) {
@@ -76,12 +70,11 @@ public class DetailsPageController {
         for (Subject eachNext: arrayList) {
             vBox.getChildren().add(loadDisplay(eachNext));
         }
-        displayPreviousHBox.getChildren().addAll(vBox);
+        displayHBox.getChildren().addAll(vBox);
     }
 
     private void addSubjectItems() {
         addPreviousSubjectItems();
-        addCurrentSubjectItems();
         addNextSubjectItems();
     }
 

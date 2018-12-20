@@ -3,7 +3,6 @@ package application.subject;
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -738,6 +737,8 @@ public class SubjectIO {
                 }
             }
         }
+
+        update();
     }
 
     private void addAllPrevious() {
@@ -874,7 +875,7 @@ public class SubjectIO {
             BufferedReader reader = new BufferedReader(new FileReader(subjectData));
             allSubject = gson.fromJson(reader, new TypeToken<ArrayList<ArrayList<ArrayList<Subject>>>>(){}.getType());
         } catch (FileNotFoundException e) {
-            new Alert(Alert.AlertType.ERROR, "ไฟล์ข้อมูลผิดพลาด").show();
+            new Alert(Alert.AlertType.ERROR, "ไฟล์ SubjectData.json ผิดพลาด").show();
         }
     }
 

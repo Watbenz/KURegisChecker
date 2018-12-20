@@ -1,4 +1,4 @@
-package application.courseInAYearPage.termSubject.subjectData;
+package application.courseInAYearPage.subjectData;
 
 import application.changePage.OpenDetailPopup;
 import application.subject.Subject;
@@ -34,21 +34,20 @@ public class SubjectDataController {
         });
     }
 
-    private void setToggleSwitchOnClick() {
-        addToggleSwitch.setOnMouseClicked(event -> {
-            if (!addToggleSwitch.isSelected()) {
-                passLabel.setText("ไม่ผ่าน");
-                subject.setFinish(false);
-            }
-            else {
-                passLabel.setText("ผ่าน");
-                subject.setFinish(true);
-            }
-            passLabel.setTextFill(Color.BLACK);
-            setStatusLabelProperty(subject.isFinish());
-            updateCallback.run();
-            new Thread(() -> subjectIO.update()).start();
-        });
+    @FXML
+    public void setToggleSwitchOnClick() {
+        if (!addToggleSwitch.isSelected()) {
+            passLabel.setText("ไม่ผ่าน");
+            subject.setFinish(false);
+        }
+        else {
+            passLabel.setText("ผ่าน");
+            subject.setFinish(true);
+        }
+        passLabel.setTextFill(Color.BLACK);
+        setStatusLabelProperty(subject.isFinish());
+        updateCallback.run();
+        new Thread(() -> subjectIO.update()).start();
     }
 
     public void update() {

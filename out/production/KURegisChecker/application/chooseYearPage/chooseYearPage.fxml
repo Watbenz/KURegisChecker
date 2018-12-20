@@ -44,7 +44,7 @@
                      <Insets bottom="15.0" />
                   </padding>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-cursor: hand;">
                      <StackPane layoutX="7.0" layoutY="4.0">
                         <Ellipse fill="#00b596" radiusX="19.0" radiusY="20.0" stroke="#00b596" strokeType="INSIDE" />
                         <Label style="-fx-font-family: Segoe UI;" text="1" textFill="WHITE">
@@ -63,7 +63,7 @@
                <StackPane fx:id="year2" prefHeight="14.0" prefWidth="271.0">
                   <children>
                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
-                     <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-cursor: hand;">
                         <children>
                            <StackPane layoutX="7.0" layoutY="4.0">
                               <children>
@@ -90,7 +90,7 @@
                <StackPane fx:id="year3" prefHeight="14.0" prefWidth="271.0">
                   <children>
                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
-                     <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-cursor: hand;">
                         <children>
                            <StackPane layoutX="7.0" layoutY="4.0">
                               <children>
@@ -117,7 +117,7 @@
                <StackPane fx:id="year4" prefHeight="14.0" prefWidth="271.0">
                   <children>
                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
-                     <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-cursor: hand;">
                         <children>
                            <StackPane layoutX="7.0" layoutY="4.0">
                               <children>
@@ -149,7 +149,7 @@
       </AnchorPane>
       <AnchorPane>
          <children>
-            <Button layoutX="40.0" mnemonicParsing="false" onAction="#backToPrevious" prefHeight="28.0" prefWidth="58.0" style="-fx-background-radius: 5;" text="กลับ" />
+            <Button layoutX="40.0" mnemonicParsing="false" onAction="#backToPrevious" prefHeight="28.0" prefWidth="58.0" style="-fx-background-radius: 5; -fx-cursor: hand;" text="กลับ" />
          </children>
       </AnchorPane>
    </children>

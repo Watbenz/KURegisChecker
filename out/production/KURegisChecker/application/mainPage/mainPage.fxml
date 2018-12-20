@@ -32,13 +32,10 @@
          </Label>
       </StackPane>
       <VBox layoutX="131.0" layoutY="69.0" prefHeight="200.0" prefWidth="349.0">
-         <StackPane fx:id="chooseYearStackPane" onMouseClicked="#goToChooseYearPage" prefHeight="14.0" prefWidth="271.0">
+         <StackPane onMouseClicked="#goToChooseYearPage" prefHeight="14.0" prefWidth="271.0" style="-fx-cursor: hand;">
             <VBox.margin>
-               <Insets />
-            </VBox.margin>
-            <padding>
                <Insets bottom="20.0" />
-            </padding>
+            </VBox.margin>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <StackPane layoutX="7.0" layoutY="4.0">
@@ -56,7 +53,7 @@
                </Label>
             </AnchorPane>
          </StackPane>
-         <StackPane fx:id="chooseCourseStackPane" onMouseClicked="#goToResultPage" prefHeight="14.0" prefWidth="271.0">
+         <StackPane onMouseClicked="#goToResultPage" prefHeight="14.0" prefWidth="271.0" style="-fx-cursor: hand;">
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="538.0" />
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <StackPane layoutX="7.0" layoutY="4.0">

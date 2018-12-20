@@ -1,6 +1,6 @@
 package application.courseInAYearPage.termSubject;
 
-import application.courseInAYearPage.termSubject.subjectData.SubjectDataController;
+import application.courseInAYearPage.subjectData.SubjectDataController;
 import application.subject.Subject;
 import application.subject.SubjectIO;
 import javafx.application.Platform;
@@ -29,7 +29,7 @@ public class TermSubjectDataController {
     @FXML
     public void initialize() {
         Platform.runLater(() -> {
-            allController = new ArrayList<>();
+            this.allController = new ArrayList<>();
             findYearFromStatus();
             semesterLabel.setText("ชั้นปีที่ " + year + " เทอม " + term);
             numberTermLabel.setText("" + term);
@@ -62,7 +62,7 @@ public class TermSubjectDataController {
 
     Parent loadSubjectData(Subject subject) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/courseInAYearPage/termSubject/subjectData/subjectData.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/courseInAYearPage/subjectData/subjectData.fxml"));
             Parent root = loader.load();
             SubjectDataController controller = loader.getController();
             controller.setStage(stage);
