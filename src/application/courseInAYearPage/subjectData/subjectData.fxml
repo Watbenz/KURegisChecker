@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.controlsfx.control.ToggleSwitch?>
 
-<StackPane prefHeight="14.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.courseInAYearPage.termSubject.subjectData.SubjectDataController">
+<StackPane prefHeight="14.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.courseInAYearPage.subjectData.SubjectDataController">
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="81.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 20; -fx-arc-height: 30;" width="623.0" />
     <AnchorPane prefHeight="200.0" prefWidth="200.0">
         <children>
@@ -73,7 +73,7 @@
                      <Font size="14.0" />
                  </font>
              </Label>
-         <ToggleSwitch fx:id="addToggleSwitch" layoutX="566.0" layoutY="35.0" prefHeight="18.0" prefWidth="29.0" />
+         <ToggleSwitch fx:id="addToggleSwitch" layoutX="566.0" layoutY="35.0" onMouseClicked="#setToggleSwitchOnClick" prefHeight="18.0" prefWidth="29.0" style="-fx-cursor: hand;" />
           <Label fx:id="passLabel" alignment="CENTER" layoutX="541.0" layoutY="14.0" prefHeight="20.0" prefWidth="82.0" style="-fx-font-family: K2D;" text="ผ่าน" textAlignment="RIGHT" textFill="#656565">
               <font>
                   <Font size="7.0" />
