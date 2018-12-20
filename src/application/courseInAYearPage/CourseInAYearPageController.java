@@ -12,7 +12,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -26,17 +25,11 @@ public class CourseInAYearPageController {
 
     @FXML
     public void initialize() {
-        String projectPath = new File(".").toURI().toString();
-        String imagePath = projectPath + "image/logo.png";
-
-        Image logo = new Image(imagePath);
-        logoImageView.setImage(logo);
-
+        logoImageView.setImage(new Image("/image/logo.png"));
         this.allController = new ArrayList<>();
         Platform.runLater(this::loadTermItems);
     }
 
-    @FXML
     public void resetData() {
         subjectIO.resetData();
         subjectIO.update();

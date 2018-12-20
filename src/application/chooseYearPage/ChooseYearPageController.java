@@ -20,17 +20,13 @@ public class ChooseYearPageController {
 
     @FXML
     public void initialize() {
-        String projectPath = new File(".").toURI().toString();
-        String imagePath = projectPath + "image/logo.png";
-
-        Image logo = new Image(imagePath);
-        logoImageView.setImage(logo);
-
+        logoImageView.setImage(new Image("/image/logo.png"));
         setOnClickStackPane(year1);
         setOnClickStackPane(year2);
         setOnClickStackPane(year3);
         setOnClickStackPane(year4);
     }
+
 
     private void setOnClickStackPane(StackPane stackPane) {
         stackPane.setOnMouseClicked(event -> openCourseInAYear(stackPane.getId()));

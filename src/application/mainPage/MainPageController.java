@@ -9,8 +9,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-import java.io.File;
-
 public class MainPageController {
     @FXML private Stage stage;
     @FXML private ImageView logoImageView;
@@ -18,11 +16,7 @@ public class MainPageController {
 
     @FXML
     public void initialize() {
-        String projectPath = new File(".").toURI().toString();
-        String imagePath = projectPath + "image/logo.png";
-
-        Image logo = new Image(imagePath);
-        logoImageView.setImage(logo);
+        logoImageView.setImage(new Image("/image/logo.png"));
     }
 
     public void setStage(Stage stage) {

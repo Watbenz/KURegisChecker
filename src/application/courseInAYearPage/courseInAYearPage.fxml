@@ -21,7 +21,7 @@
          </font>
       </Label>
    </AnchorPane>
-   <ScrollPane hbarPolicy="NEVER" prefHeight="605.0" prefWidth="800.0" stylesheets="@../../cssFile/scrollPaneChangeColor.css">
+   <ScrollPane hbarPolicy="NEVER" prefHeight="605.0" prefWidth="800.0" stylesheets="@../../css/scrollPaneChangeColor.css">
       <content>
          <VBox fx:id="termVBox" />
       </content>

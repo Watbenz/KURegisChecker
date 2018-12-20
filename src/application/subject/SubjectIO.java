@@ -2,6 +2,8 @@ package application.subject;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -11,7 +13,8 @@ public class SubjectIO {
     private File subjectData;
 
     public SubjectIO() {
-        this.subjectData = new File("SubjectData.json");
+        String jsonPath = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+        this.subjectData = new File(jsonPath + "SubjectData.json");
         initSubject();
     }
 
@@ -30,6 +33,8 @@ public class SubjectIO {
         allSubject.add(year2Init());
         allSubject.add(year3Init());
         allSubject.add(year4Init());
+
+        addAllPrevious();
     }
 
     // Year 1 init
@@ -720,7 +725,6 @@ public class SubjectIO {
 
     public void writeAllSubject() {
         allSubjectInit();
-        addAllPrevious();
         writeSubject();
     }
 
@@ -858,7 +862,6 @@ public class SubjectIO {
             String json = gson.toJson(allSubject);
             PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(subjectData)));
             writer.println(json);
-            writer.flush();
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -871,7 +874,7 @@ public class SubjectIO {
             BufferedReader reader = new BufferedReader(new FileReader(subjectData));
             allSubject = gson.fromJson(reader, new TypeToken<ArrayList<ArrayList<ArrayList<Subject>>>>(){}.getType());
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            new Alert(Alert.AlertType.ERROR, "ไฟล์ข้อมูลผิดพลาด").show();
         }
     }
 

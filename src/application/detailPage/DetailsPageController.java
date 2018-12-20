@@ -34,9 +34,7 @@ public class DetailsPageController {
 
     @FXML
     public void initialize() {
-        Image logo = new Image("file:/D:/Work/Java/RegisChecker/image/" + "logo.png");
-        logoImageView.setImage(logo);
-
+        logoImageView.setImage(new Image("/image/logo.png"));
         Platform.runLater(this::update);
     }
 
