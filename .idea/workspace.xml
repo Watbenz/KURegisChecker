@@ -7,32 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dea5f27-9e16-41d9-a877-904b0b12ca28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/css/font-face.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font/K2D-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font/segoeui.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/KURegisChecker_jar/KURegisChecker.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/KURegisChecker_jar/KURegisChecker.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/SubjectData.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/SubjectData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/chooseYearPage/chooseYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/chooseYearPage/chooseYearPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/CourseInAYearPageController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/courseInAYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/courseInAYearPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/termSubject/TermSubjectDataController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/termSubject/subjectData/SubjectDataController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/termSubject/subjectData/subjectData.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/detailPage/DetailsPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/detailPage/DetailsPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/subjectData/subjectData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/subjectData/subjectData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/termSubject/termSubjectData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/courseInAYearPage/termSubject/termSubjectData.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/detailPage/detailsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/detailPage/detailsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/detailPage/previousDisplay/PreviousDisplayController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/detailPage/previousDisplay/previousDisplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/detailPage/previousDisplay/previousDisplay.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/mainPage/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/mainPage/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/subject/SubjectIO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/subject/SubjectIO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KURegisChecker/application/subject/SubjectIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KURegisChecker/application/subject/SubjectIO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/chooseYearPage/chooseYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/chooseYearPage/chooseYearPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/courseInAYearPage/CourseInAYearPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/CourseInAYearPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/courseInAYearPage/courseInAYearPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/courseInAYearPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/TermSubjectDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/TermSubjectDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/subjectData/SubjectDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/SubjectDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/subjectData/subjectData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/subjectData.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/detailPage/DetailsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/DetailsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/subjectData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/subjectData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/termSubjectData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/termSubjectData.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/detailPage/detailsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/detailsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/detailPage/previousDisplay/PreviousDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/previousDisplay/PreviousDisplayController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/detailPage/previousDisplay/previousDisplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/detailPage/previousDisplay/previousDisplay.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/mainPage/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/mainPage/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/subject/SubjectIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/subject/SubjectIO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,36 +129,110 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="890255158">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="fxml" value="4" />
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="120" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="120" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/detailPage/previousDisplay/PreviousDisplayController.java">
+        <entry file="file://$PROJECT_DIR$/src/application/mainPage/mainPage.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+            <state relative-caret-position="374">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/courseInAYearPage.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="26" column="192" selection-start-line="26" selection-start-column="166" selection-end-line="26" selection-end-column="192" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/application/subject/SubjectIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="65" lean-forward="true" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#year1Init#0;class#SubjectIO#0" />
+                <element signature="method#year1_1Init#0;class#SubjectIO#0" />
+                <element signature="method#year1_2Init#0;class#SubjectIO#0" />
+                <element signature="method#year2Init#0;class#SubjectIO#0" />
+                <element signature="method#year2_1Init#0;class#SubjectIO#0" />
+                <element signature="method#year2_2Init#0;class#SubjectIO#0" />
+                <element signature="method#year3Init#0;class#SubjectIO#0" />
+                <element signature="method#year3_1Init#0;class#SubjectIO#0" />
+                <element signature="method#year3_2Init#0;class#SubjectIO#0" />
+                <element signature="method#year4Init#0;class#SubjectIO#0" />
+                <element signature="method#year4_1Init#0;class#SubjectIO#0" />
+                <element signature="method#year4_2Init#0;class#SubjectIO#0" />
+                <element signature="method#addYearAndTermEachSubject#0;class#SubjectIO#0" />
+                <element signature="method#addAllPrevious#0;class#SubjectIO#0" />
+                <element signature="method#isPreviousFinish#0;class#SubjectIO#0" />
+                <element signature="method#getSubjectFromFormat#0;class#SubjectIO#0" />
+                <element signature="method#getSubjectInYear#0;class#SubjectIO#0" />
+                <element signature="method#getSubjectInTerm#0;class#SubjectIO#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/CourseInAYearPageController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/subjectData.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2616#2617#0" expanded="true" />
-                <element signature="e#2679#2680#0" expanded="true" />
-                <element signature="e#2720#2721#0" expanded="true" />
-                <element signature="e#2754#2755#0" expanded="true" />
-                <element signature="e#2798#2799#0" expanded="true" />
-                <element signature="e#2834#2835#0" expanded="true" />
-                <element signature="e#2887#2888#0" expanded="true" />
-                <element signature="e#2929#2930#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1232">
+              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/detailPage/previousDisplay/previousDisplay.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -174,13 +242,12 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>public</find>
-      <find>format</find>
       <find>getPrevious</find>
       <find>PreviousDisPlay</find>
       <find>fx</find>
@@ -209,6 +276,8 @@
       <find>reset</find>
       <find>term</find>
       <find>update</find>
+      <find>*{-fx-background-radius: 5; -fx-cursor: hand; -fx-font-size: Segoe UI;}</find>
+      <find>-fx-font-size: Segoe UI;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,7 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/classFile/subject/DifficultLevel.java" />
         <option value="$PROJECT_DIR$/src/classFile/MainWriteFile.java" />
         <option value="$PROJECT_DIR$/src/classFile/SubjectIO.java" />
         <option value="$PROJECT_DIR$/src/fxml/chooseYearPage.fxml" />
@@ -266,8 +334,9 @@
         <option value="$PROJECT_DIR$/src/application/detailPage/previousDisplay/PreviousDisplayController.java" />
         <option value="$PROJECT_DIR$/src/application/detailPage/DetailsPageController.java" />
         <option value="$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/SubjectDataController.java" />
-        <option value="$PROJECT_DIR$/src/application/subject/SubjectIO.java" />
         <option value="$PROJECT_DIR$/src/application/courseInAYearPage/CourseInAYearPageController.java" />
+        <option value="$PROJECT_DIR$/src/css/font-face.css" />
+        <option value="$PROJECT_DIR$/src/application/subject/SubjectIO.java" />
       </list>
     </option>
   </component>
@@ -277,10 +346,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="905" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
     <option name="width" value="930" />
-    <option name="height" value="1088" />
+    <option name="height" value="1089" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -289,100 +358,28 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="KURegisChecker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="courseInAYearPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="courseInAYearPage" type="462c0819:PsiDirectoryNode" />
-              <item name="subjectData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RegisChecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="subject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RegisChecker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545324662088" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545498409051" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Java\KURegisChecker\src\css\font" />
+      <recent name="D:\Work\Java\RegisChecker\src\fxml" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\Java\RegisChecker\src" />
       <recent name="D:\Work\Java\RegisChecker\src\cssFile" />
       <recent name="D:\Work\Java\RegisChecker\src\application\detailPage\previousDisplay" />
       <recent name="D:\Work\Java\RegisChecker\src\application" />
       <recent name="D:\Work\Java\RegisChecker\src\application\detailPage" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\Java\RegisChecker\src\fxml" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -444,6 +441,7 @@
       <workItem from="1544025652571" duration="1333000" />
       <workItem from="1544077090850" duration="951000" />
       <workItem from="1545296601124" duration="12480000" />
+      <workItem from="1545544843964" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="Add subject, scroll pane, color for each difficult level. New class with control subject data stack pane.">
       <created>1541521232013</created>
@@ -456,10 +454,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149004000" />
+    <option name="totallyTimeSpent" value="154629000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="724" y="0" width="744" height="870" extended-state="0" />
+    <frame x="-7" y="-7" width="1476" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -467,7 +465,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.54657537" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.24623802" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -475,7 +473,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3294271" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3131579" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.30989584" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997396" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -515,14 +513,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classFile/subject/SubjectTree.java" />
     <entry file="file://$PROJECT_DIR$/src/fxml/displayPrevious.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/application/detailPage/previousDisplay/previousDisplay.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="13" column="151" selection-start-line="13" selection-start-column="149" selection-end-line="13" selection-end-column="151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SubjectData.json" />
     <entry file="file://$PROJECT_DIR$/src/application/changePage/OpenCourseInAYear.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -561,9 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-207">
           <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="method#Subject#0;class#Subject#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,20 +569,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/detailPage/detailsPage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="115" column="71" selection-start-line="115" selection-start-column="71" selection-end-line="115" selection-end-column="71" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/chooseYearPage/ChooseYearPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,9 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,37 +611,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/mainPage/mainPage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/chooseYearPage/chooseYearPage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="151" column="172" selection-start-line="151" selection-start-column="121" selection-end-line="151" selection-end-column="172" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/courseInAYearPage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/subjectData.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="75" column="39" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="39" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/TermSubjectDataController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -669,14 +626,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/termSubjectData.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -710,10 +659,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/CourseInAYearPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#2720#2721#0" expanded="true" />
+            <element signature="e#2754#2755#0" expanded="true" />
+            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#2834#2835#0" expanded="true" />
+            <element signature="e#2887#2888#0" expanded="true" />
+            <element signature="e#2929#2930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/font-face.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/termSubject/termSubjectData.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/mainPage/mainPage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/courseInAYearPage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="192" selection-start-line="26" selection-start-column="166" selection-end-line="26" selection-end-column="192" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/subjectData/subjectData.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/detailPage/previousDisplay/previousDisplay.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/subject/SubjectIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="720" column="22" selection-start-line="720" selection-start-column="16" selection-end-line="720" selection-end-column="22" />
+        <state relative-caret-position="330">
+          <caret line="15" column="65" lean-forward="true" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#year1Init#0;class#SubjectIO#0" />
@@ -734,24 +748,6 @@
             <element signature="method#getSubjectFromFormat#0;class#SubjectIO#0" />
             <element signature="method#getSubjectInYear#0;class#SubjectIO#0" />
             <element signature="method#getSubjectInTerm#0;class#SubjectIO#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/courseInAYearPage/CourseInAYearPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2616#2617#0" expanded="true" />
-            <element signature="e#2679#2680#0" expanded="true" />
-            <element signature="e#2720#2721#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
-            <element signature="e#2798#2799#0" expanded="true" />
-            <element signature="e#2834#2835#0" expanded="true" />
-            <element signature="e#2887#2888#0" expanded="true" />
-            <element signature="e#2929#2930#0" expanded="true" />
           </folding>
         </state>
       </provider>

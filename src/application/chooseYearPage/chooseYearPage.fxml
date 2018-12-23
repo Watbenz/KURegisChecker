@@ -9,18 +9,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.chooseYearPage.ChooseYearPageController">
    <children>
       <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #004D40;">
          <children>
             <ImageView fx:id="logoImageView" fitHeight="56.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="578.0" layoutY="16.0" prefHeight="34.0" prefWidth="189.0" style="-fx-font-weight: bold; -fx-font-family: K2D;" text="ตรวจสอบการลงทะเบียน" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
+            <Label layoutX="578.0" layoutY="16.0" prefHeight="34.0" prefWidth="189.0" style="-fx-font-weight: bold; -fx-font-family: K2D; -fx-font-size: 18;" text="ตรวจสอบการลงทะเบียน" textFill="WHITE" />
          </children>
          <VBox.margin>
             <Insets bottom="75.0" />
@@ -31,11 +26,7 @@
             <StackPane layoutX="264.0" layoutY="-24.0" prefHeight="14.0" prefWidth="271.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 360;" width="271.0" />
-                  <Label prefHeight="34.0" prefWidth="162.0" style="-fx-font-family: K2D;" text="เลือกปีการศึกษา">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
+                  <Label prefHeight="34.0" prefWidth="162.0" style="-fx-font-family: K2D; -fx-font-size: 22;" text="เลือกปีการศึกษา" />
                </children>
             </StackPane>
             <VBox layoutX="131.0" layoutY="57.0" prefHeight="200.0" prefWidth="100.0">
@@ -47,17 +38,9 @@
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-cursor: hand;">
                      <StackPane layoutX="7.0" layoutY="4.0">
                         <Ellipse fill="#00b596" radiusX="19.0" radiusY="20.0" stroke="#00b596" strokeType="INSIDE" />
-                        <Label style="-fx-font-family: Segoe UI;" text="1" textFill="WHITE">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
+                        <Label style="-fx-font-family: Segoe UI; -fx-font-size: 20;" text="1" textFill="WHITE" />
                      </StackPane>
-                     <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D;" text="ชั้นปีที่ 1">
-                        <font>
-                           <Font size="17.0" />
-                        </font>
-                     </Label>
+                     <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D; -fx-font-size: 17;" stylesheets="@../../css/font-face.css" text="ชั้นปีที่ 1" />
                   </AnchorPane>
                </StackPane>
                <StackPane fx:id="year2" prefHeight="14.0" prefWidth="271.0">
@@ -68,18 +51,10 @@
                            <StackPane layoutX="7.0" layoutY="4.0">
                               <children>
                                  <Ellipse fill="#00b596" radiusX="19.0" radiusY="20.0" stroke="#00b596" strokeType="INSIDE" />
-                                 <Label style="-fx-font-family: Segoe UI;" text="2" textFill="WHITE">
-                                    <font>
-                                       <Font size="20.0" />
-                                    </font>
-                                 </Label>
+                                 <Label style="-fx-font-family: Segoe UI; -fx-font-size: 20;" text="2" textFill="WHITE" />
                               </children>
                            </StackPane>
-                           <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D;" text="ชั้นปีที่ 2">
-                              <font>
-                                 <Font size="17.0" />
-                              </font>
-                           </Label>
+                           <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D; -fx-font-size: 17;" text="ชั้นปีที่ 2" />
                         </children>
                      </AnchorPane>
                   </children>
@@ -95,18 +70,10 @@
                            <StackPane layoutX="7.0" layoutY="4.0">
                               <children>
                                  <Ellipse fill="#00b596" radiusX="19.0" radiusY="20.0" stroke="#00b596" strokeType="INSIDE" />
-                                 <Label style="-fx-font-family: Segoe UI;" text="3" textFill="WHITE">
-                                    <font>
-                                       <Font size="20.0" />
-                                    </font>
-                                 </Label>
+                                 <Label style="-fx-font-family: Segoe UI; -fx-font-size: 20;" text="3" textFill="WHITE" />
                               </children>
                            </StackPane>
-                           <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D;" text="ชั้นปีที่ 3">
-                              <font>
-                                 <Font size="17.0" />
-                              </font>
-                           </Label>
+                           <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D; -fx-font-size: 17;" text="ชั้นปีที่ 3" />
                         </children>
                      </AnchorPane>
                   </children>
@@ -122,18 +89,10 @@
                            <StackPane layoutX="7.0" layoutY="4.0">
                               <children>
                                  <Ellipse fill="#00b596" radiusX="19.0" radiusY="20.0" stroke="#00b596" strokeType="INSIDE" />
-                                 <Label style="-fx-font-family: Segoe UI;" text="4" textFill="WHITE">
-                                    <font>
-                                       <Font size="20.0" />
-                                    </font>
-                                 </Label>
+                                 <Label style="-fx-font-family: Segoe UI; -fx-font-size: 20;" text="4" textFill="WHITE" />
                               </children>
                            </StackPane>
-                           <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D;" text="ชั้นปีที่ 4">
-                              <font>
-                                 <Font size="17.0" />
-                              </font>
-                           </Label>
+                           <Label layoutX="70.0" layoutY="7.0" prefHeight="34.0" prefWidth="148.0" style="-fx-font-family: K2D; -fx-font-size: 17;" text="ชั้นปีที่ 4" />
                         </children>
                      </AnchorPane>
                   </children>
@@ -149,7 +108,7 @@
       </AnchorPane>
       <AnchorPane>
          <children>
-            <Button layoutX="40.0" mnemonicParsing="false" onAction="#backToPrevious" prefHeight="28.0" prefWidth="58.0" style="-fx-background-radius: 5; -fx-cursor: hand;" text="กลับ" />
+            <Button layoutX="40.0" mnemonicParsing="false" onAction="#backToPrevious" prefHeight="28.0" prefWidth="58.0" style="-fx-background-radius: 5; -fx-cursor: hand; -fx-font-family: Segoe UI;" text="กลับ" />
          </children>
       </AnchorPane>
    </children>

@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="39.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -31,11 +30,7 @@
                         <Label fx:id="numberTermLabel" style="-fx-font-family: Segoe UI;" text="1" textFill="WHITE" />
                      </children>
                   </StackPane>
-                  <Label fx:id="semesterLabel" layoutX="44.0" layoutY="1.0" prefHeight="34.0" prefWidth="173.0" style="-fx-font-family: Segoe UI;" text="ภาคเรียนที่ 1 / 2560">
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
+                  <Label fx:id="semesterLabel" layoutX="44.0" layoutY="1.0" prefHeight="34.0" prefWidth="173.0" style="-fx-font-family: Segoe UI; -fx-font-size: 17;" text="ภาคเรียนที่ 1 / 2560" />
                </children>
             </AnchorPane>
          </children>

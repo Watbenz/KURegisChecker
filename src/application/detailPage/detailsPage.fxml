@@ -11,14 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Ellipse?>
-<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.detailPage.DetailsPageController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(#D9F3B4 0%, #06C497 100%);" stylesheets="@../../css/font-face.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.detailPage.DetailsPageController">
    <children>
       <AnchorPane prefHeight="46.0" prefWidth="500.0" style="-fx-background-color: #004D40;">
          <children>
             <ImageView fx:id="logoImageView" fitHeight="36.0" fitWidth="27.0" layoutX="13.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
-            <Label alignment="CENTER_RIGHT" layoutX="347.0" layoutY="12.0" prefHeight="22.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-family: K2D;" text="ข้อมูลรายวิชา" textFill="WHITE" />
+            <Label alignment="CENTER_RIGHT" layoutX="347.0" layoutY="12.0" prefHeight="22.0" prefWidth="138.0" style="-fx-font-weight: bold; -fx-font-family: K2D; -fx-text-fill: white;" stylesheets="@../../css/font-face.css" text="ข้อมูลรายวิชา" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="152.0" prefWidth="500.0">
@@ -27,30 +26,14 @@
                <children>
                   <Circle fill="WHITE" radius="34.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
                   <Ellipse fx:id="iconEllipse" fill="#cc2a36" radiusX="28.0" radiusY="28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(#C9445D 0%, #FF0022 100%);" />
-                  <Label fx:id="iconLabel" style="-fx-font-family: Segoe UI; -fx-font-weight: bold;" text="∑∫dx" textFill="WHITE">
-                     <font>
-                        <Font name="K2D Regular" size="20.0" />
-                     </font>
-                  </Label>
+                  <Label fx:id="iconLabel" style="-fx-font-family: Segoe UI; -fx-font-weight: bold; -fx-font-size: 20;" text="∑∫dx" textFill="WHITE" />
                </children>
             </StackPane>
             <VBox layoutX="88.0" layoutY="94.0">
                <children>
-                  <Label fx:id="subjectNameLabel" alignment="CENTER" prefHeight="22.0" prefWidth="323.0" style="-fx-font-family: K2D;" text="แคลคูลัส" textFill="#656565">
-                     <font>
-                        <Font name="K2D Bold" size="13.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="subjectIDLabel" alignment="CENTER" prefHeight="22.0" prefWidth="323.0" style="-fx-font-family: K2D;" text="01175xxx" textFill="#656565">
-                     <font>
-                        <Font name="K2D Regular" size="13.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="yearAndTermLabel" alignment="CENTER" prefHeight="21.0" prefWidth="322.0" text="(ปี 1 เทอม 2)" textFill="#494949">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                  </Label>
+                  <Label fx:id="subjectNameLabel" alignment="CENTER" prefHeight="22.0" prefWidth="323.0" style="-fx-font-family: K2D; -fx-font-size: 13; -fx-text-fill: #656565;" text="แคลคูลัส" />
+                  <Label fx:id="subjectIDLabel" alignment="CENTER" prefHeight="22.0" prefWidth="323.0" style="-fx-font-family: K2D; -fx-font-size: 13; -fx-text-fill: #656565;" text="01175xxx" />
+                  <Label fx:id="yearAndTermLabel" alignment="CENTER" prefHeight="21.0" prefWidth="322.0" style="-fx-font-size: 10; -fx-font-family: K2D; -fx-text-fill: #656565;" text="(ปี 1 เทอม 2)" />
                </children>
             </VBox>
             <VBox alignment="TOP_CENTER" layoutX="405.0" layoutY="108.0" prefHeight="36.0" prefWidth="74.0" />
@@ -65,18 +48,12 @@
                <children>
                   <VBox layoutX="17.0" layoutY="14.0" prefWidth="466.0">
                      <children>
-                        <Label fx:id="detailLabel" alignment="TOP_LEFT" prefWidth="466.0" text="วิชานี้เป็นวิชาที่น้อยคนนักจะผ่าน นักรบไฟนอลทั้งหลายน้อยคนนักที่จะผ่านไปได้ มีเพียงนักรบที่ผ่านการ...">
-                           <font>
-                              <Font name="Segoe UI" size="14.0" />
-                           </font>
+                        <Label fx:id="detailLabel" alignment="TOP_LEFT" prefWidth="466.0" style="-fx-font-family: Segoe UI; -fx-font-size: 14;" text="วิชานี้เป็นวิชาที่น้อยคนนักจะผ่าน นักรบไฟนอลทั้งหลายน้อยคนนักที่จะผ่านไปได้ มีเพียงนักรบที่ผ่านการ...">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
                         </Label>
-                        <Label fx:id="creditLabel" alignment="TOP_RIGHT" prefHeight="16.0" prefWidth="466.0" text="หน่วยกิต: 3">
-                           <font>
-                              <Font name="Segoe UI" size="15.0" />
-                           </font>
+                        <Label fx:id="creditLabel" alignment="TOP_RIGHT" prefHeight="16.0" prefWidth="466.0" style="-fx-font-family: Segoe UI; -fx-font-size: 15;" text="หน่วยกิต: 3">
                            <VBox.margin>
                               <Insets bottom="10.0" right="10.0" />
                            </VBox.margin>
@@ -89,11 +66,7 @@
       </ScrollPane>
       <AnchorPane>
          <children>
-            <Label alignment="CENTER" layoutX="150.0" prefHeight="18.0" prefWidth="200.0" text="ผังตาราง">
-               <font>
-                  <Font name="Segoe UI" size="16.0" />
-               </font>
-            </Label>
+            <Label alignment="CENTER" layoutX="150.0" prefHeight="18.0" prefWidth="200.0" style="-fx-font-family: Segoe UI; -fx-font-size: 16;" text="ผังตาราง" />
          </children>
          <VBox.margin>
             <Insets bottom="10.0" />
@@ -113,7 +86,7 @@
       </ScrollPane>
       <AnchorPane>
          <children>
-            <Button layoutX="222.0" mnemonicParsing="false" onAction="#closePopup" prefHeight="26.0" prefWidth="56.0" style="-fx-cursor: hand;" text="ปิด" />
+            <Button layoutX="222.0" mnemonicParsing="false" onAction="#closePopup" prefHeight="26.0" prefWidth="56.0" style="-fx-cursor: hand; -fx-font-family: Segoe UI;" text="ปิด" />
          </children>
       </AnchorPane>
    </children>
